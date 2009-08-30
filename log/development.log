@@ -1,0 +1,1034 @@
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090830024441')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing ApplicationController#index (for ::1 at 2009-08-29 20:21:34) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-08-29 20:22:01) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 20:36:19) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for ::1 at 2009-08-29 20:36:32) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (4.6ms)
+Completed in 82ms (View: 11, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for ::1 at 2009-08-29 20:39:19) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (4.7ms)
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for ::1 at 2009-08-29 20:40:24) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM=", "user"=>{"password_confirmation"=>"123456", "username"=>"captproton", "password"=>"123456", "email"=>"carl@betterbilling.net"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'carl@betterbilling.net') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'captproton') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '5a20a739ccc70dbd80fcefe19bee5db23c808f96b07e1d8b7ae9c628bc54c1e58106dc38dd1ca5c052f6f54734390b7451ea6b52d10b79a71a0c5148d45f7ff6') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("created_at", "crypted_password", "updated_at", "username", "password_salt", "persistence_token", "email") VALUES('2009-08-30 03:40:24', 'b5b8d852a04e63c0d7c6b34cbd01b186299e0b79c7f2a148f4c2a11979150fb4b14ab2b656a6f6410c870d55b7a9ec178da8c68f313bc7a53497250651ebd771', '2009-08-30 03:40:24', 'captproton', 'ydFXuv5e8eN5iZzIFWLB', '5a20a739ccc70dbd80fcefe19bee5db23c808f96b07e1d8b7ae9c628bc54c1e58106dc38dd1ca5c052f6f54734390b7451ea6b52d10b79a71a0c5148d45f7ff6', 'carl@betterbilling.net')[0m
+Redirected to http://localhost:3000/
+Completed in 278ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 20:40:25) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:14:24) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+
+ActionView::TemplateError (undefined local variable or method `new_session_path' for #<ActionView::Base:0x25fe9b4>) on line #13 of app/views/layouts/application.html.erb:
+10:     <div id="container">
+11: 		<div id="user_nav">
+12: 			<%= link_to "New User Page", new_user_path %> | 
+13: 			<%= link_to "Login", new_session_path %>
+14: 		</div>
+15:       <%- flash.each do |name, msg| -%>
+16:         <%= content_tag :div, msg, :id => "flash_#{name}" %>
+
+    app/views/layouts/application.html.erb:13
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:15:34) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-29 21:15:38) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 104ms (View: 6, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-29 21:15:41) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"captproton", "password"=>"ou812ou812"}, "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM="}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'captproton') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 18ms (View: 3, DB: 0) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-29 21:15:52) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"captproton", "password"=>"melorbode"}, "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM="}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'captproton') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 22ms (View: 5, DB: 0) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-29 21:15:59) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"captproton", "password"=>"ou812ou812"}, "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM="}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'captproton') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 21ms (View: 3, DB: 0) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UsersController#new (for ::1 at 2009-08-29 21:16:03) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (3.1ms)
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for ::1 at 2009-08-29 21:16:15) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM=", "user"=>{"password_confirmation"=>"123456", "username"=>"travis", "password"=>"123456", "email"=>"t@betterbilling.net"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 't@betterbilling.net') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'travis') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'f84606f6c0d5f1ef139dd7a252638e444500aaa5412555a9d7e756ad2a8757d48f6d707164ebeb7e17db09697c241876150bf28b030c29482e2b64e350717169') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("created_at", "crypted_password", "updated_at", "username", "password_salt", "persistence_token", "email") VALUES('2009-08-30 04:16:16', '83762b40bfd1d70481ff46f70668668059744d3df27366b1d596c7b375a2930f5d44e413996b6980314cbd2163b89b2eed3ce20232c06b91eb848e7fb3f4a062', '2009-08-30 04:16:16', 'travis', 'vwfvEAUwa0GponRoevkn', 'f84606f6c0d5f1ef139dd7a252638e444500aaa5412555a9d7e756ad2a8757d48f6d707164ebeb7e17db09697c241876150bf28b030c29482e2b64e350717169', 't@betterbilling.net')[0m
+Redirected to http://localhost:3000/
+Completed in 23ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:16:16) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:16:20) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-29 21:16:26) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'f84606f6c0d5f1ef139dd7a252638e444500aaa5412555a9d7e756ad2a8757d48f6d707164ebeb7e17db09697c241876150bf28b030c29482e2b64e350717169') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 166ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:16:26) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-29 21:16:29) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 20ms (View: 4, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-29 21:16:35) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"travis", "password"=>"123456"}, "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM="}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'travis') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:16:35) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:16:44) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+/!\ FAILSAFE /!\  Sat Aug 29 21:33:46 -0700 2009
+  Status: 500 Internal Server Error
+  /Users/heathertanner/Sites/rails/authlogicopenid/app/controllers/application_controller.rb:25: syntax error, unexpected kEND, expecting $end
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:90:in `dispatch'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:46:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:13:in `run'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Sat Aug 29 21:35:12 -0700 2009
+  Status: 500 Internal Server Error
+  /Users/heathertanner/Sites/rails/authlogicopenid/app/controllers/application_controller.rb:25: syntax error, unexpected kEND, expecting $end
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:90:in `dispatch'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:46:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:13:in `run'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Sat Aug 29 21:37:38 -0700 2009
+  Status: 500 Internal Server Error
+  /Users/heathertanner/Sites/rails/authlogicopenid/app/controllers/application_controller.rb:26: syntax error, unexpected kEND, expecting $end
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:90:in `dispatch'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:46:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:13:in `run'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Sat Aug 29 21:38:06 -0700 2009
+  Status: 500 Internal Server Error
+  /Users/heathertanner/Sites/rails/authlogicopenid/app/controllers/application_controller.rb:26: syntax error, unexpected kEND, expecting $end
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:90:in `dispatch'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:46:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:13:in `run'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Sat Aug 29 21:39:30 -0700 2009
+  Status: 500 Internal Server Error
+  /Users/heathertanner/Sites/rails/authlogicopenid/app/controllers/application_controller.rb:23: syntax error, unexpected $end, expecting kEND
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:380:in `load_file'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:379:in `load_file'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:80:in `const_missing'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:92:in `const_missing'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:90:in `dispatch'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:46:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:13:in `run'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:42:51) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 91ms (View: 89, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:44:05) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:45:25) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:46:43) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:47:10) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-29 21:47:13) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:47:13) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-29 21:47:15) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 18ms (View: 6, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-29 21:47:17) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"travis", "password"=>"123456"}, "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM="}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'travis') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 176ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:47:17) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-29 21:47:20) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:47:20) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-29 21:49:07) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 21ms (View: 4, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-29 21:49:08) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"travis", "password"=>"123456"}, "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM="}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'travis') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:49:08) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#edit (for ::1 at 2009-08-29 21:49:10) [GET]
+  Parameters: {"id"=>"current"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find User with ID=current):
+  app/controllers/users_controller.rb:17:in `edit'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.4ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#edit (for ::1 at 2009-08-29 21:50:52) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (2.6ms)
+Completed in 24ms (View: 9, DB: 0) | 200 OK [http://localhost/users/current/edit]
+
+
+Processing UsersController#update (for ::1 at 2009-08-29 21:51:19) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM=", "id"=>"2", "user"=>{"password_confirmation"=>"234567", "username"=>"travis", "password"=>"234567", "email"=>"t@betterbilling.net"}}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'b77e978b5e1dac2f68ab84d84b9b4e5ea515971423b3117c57c2d10d8928e75d45ace535d3592b8755eca759f07a1bc99f6edd77d8c9696864e379e415e90039' AND "users".id <> 2) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "persistence_token" = 'b77e978b5e1dac2f68ab84d84b9b4e5ea515971423b3117c57c2d10d8928e75d45ace535d3592b8755eca759f07a1bc99f6edd77d8c9696864e379e415e90039', "updated_at" = '2009-08-30 04:51:19', "password_salt" = 'mEunVd2nODaqO6s4tTqE', "crypted_password" = 'ceca57d0e28435e44e55c40ceb34af26ac0f0161746e2b531e34c387355c1c68bd581f50bd609f965c3b5251d29aee4bde818f58acf2817754e59a9fe5f25ee8' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/
+Completed in 23ms (DB: 1) | 302 Found [http://localhost/users/2]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:51:19) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-29 21:51:27) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 22ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:51:27) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 131ms (View: 129, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-29 21:51:27) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-29 21:51:30) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"travis", "password"=>"123456"}, "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM="}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'travis') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 18ms (View: 3, DB: 0) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-29 21:51:35) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"travis", "password"=>"234567"}, "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM="}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'travis') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 18ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:51:35) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-29 21:51:38) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 21ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 21:51:38) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090830024441')[0m
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 22:17:09) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 80ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-29 22:17:12) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 17ms (View: 6, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-29 22:17:13) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"travis", "password"=>"234567"}, "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM="}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'travis') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 121ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 22:17:13) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 24ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-29 22:17:16) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-29 22:17:16) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.6ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090830024441')[0m
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:35:13) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-30 10:35:16) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 21ms (View: 7, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-30 10:35:17) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"travis", "password"=>"234567"}, "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM="}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'travis') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 180ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:35:18) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 27ms (View: 25, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-30 10:35:20) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 21ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:35:20) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for ::1 at 2009-08-30 10:35:21) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (4.3ms)
+Completed in 97ms (View: 14, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for ::1 at 2009-08-30 10:35:46) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM=", "user"=>{"password_confirmation"=>"123456", "username"=>"kevin", "password"=>"123456", "email"=>"kevin@tweettocall.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'kevin@tweettocall.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'kevin') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '5423cb83bfb2e28e4fa195375b7012f4fd4ef97e42512246ffc764069cf68cd9940630a57af30abd61b162339de4a05a494b99b7d0c1462b06d396585e6b4d00') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("created_at", "crypted_password", "updated_at", "username", "password_salt", "persistence_token", "email") VALUES('2009-08-30 17:35:46', 'fe9e3e904d8a02c7fd6ba8521c34cc47a82e204dc0ee4a3965ab82d84baff1f6088db09ccedca10049efeeefab1ff62648426ced090efe0225fd9bdeac239737', '2009-08-30 17:35:46', 'kevin', 'D6VxnBz2XPjhaNbpBim3', '5423cb83bfb2e28e4fa195375b7012f4fd4ef97e42512246ffc764069cf68cd9940630a57af30abd61b162339de4a05a494b99b7d0c1462b06d396585e6b4d00', 'kevin@tweettocall.com')[0m
+Redirected to http://localhost:3000/
+Completed in 23ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:35:46) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '5423cb83bfb2e28e4fa195375b7012f4fd4ef97e42512246ffc764069cf68cd9940630a57af30abd61b162339de4a05a494b99b7d0c1462b06d396585e6b4d00') LIMIT 1[0m
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#edit (for ::1 at 2009-08-30 10:35:50) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '5423cb83bfb2e28e4fa195375b7012f4fd4ef97e42512246ffc764069cf68cd9940630a57af30abd61b162339de4a05a494b99b7d0c1462b06d396585e6b4d00') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (2.1ms)
+Completed in 21ms (View: 6, DB: 0) | 200 OK [http://localhost/users/current/edit]
+
+
+Processing UsersController#update (for ::1 at 2009-08-30 10:35:59) [PUT]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM=", "id"=>"3", "user"=>{"password_confirmation"=>"", "username"=>"kevin M", "password"=>"", "email"=>"kevin@tweettocall.com"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '5423cb83bfb2e28e4fa195375b7012f4fd4ef97e42512246ffc764069cf68cd9940630a57af30abd61b162339de4a05a494b99b7d0c1462b06d396585e6b4d00') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'kevin m' AND "users".id <> 3) LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "updated_at" = '2009-08-30 17:35:59', "username" = 'kevin M' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/
+Completed in 22ms (DB: 1) | 302 Found [http://localhost/users/3]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:35:59) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '5423cb83bfb2e28e4fa195375b7012f4fd4ef97e42512246ffc764069cf68cd9940630a57af30abd61b162339de4a05a494b99b7d0c1462b06d396585e6b4d00') LIMIT 1[0m
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-30 10:36:01) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '5423cb83bfb2e28e4fa195375b7012f4fd4ef97e42512246ffc764069cf68cd9940630a57af30abd61b162339de4a05a494b99b7d0c1462b06d396585e6b4d00') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 96ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:36:01) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "users" ADD "name" varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "users" ADD "facebook_uid" integer(8)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090830052906')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (13.6ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "facebook_uid" integer(8)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090830052906')[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090830024441')[0m
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:43:55) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 85ms (View: 84, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-30 10:43:57) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 18ms (View: 7, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-30 10:43:59) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"travis", "password"=>"234567"}, "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM="}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'travis') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 183ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:43:59) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-30 10:44:01) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:44:01) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for ::1 at 2009-08-30 10:44:03) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (4.5ms)
+Completed in 25ms (View: 15, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for ::1 at 2009-08-30 10:44:20) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM=", "user"=>{"password_confirmation"=>"123456", "username"=>"Gen", "password"=>"123456", "email"=>"gen@tweettocall.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'gen@tweettocall.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'gen') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'eec0b7067448641734419ad5e85d3f6ac6532e1d1046e9c06fb7ac7ff2a23a5486eb71425a9217e60d711e8f1ad748a8d43fab94d535d775203783de343077ae') LIMIT 1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "crypted_password", "updated_at", "facebook_uid", "username", "password_salt", "persistence_token", "email") VALUES(NULL, '2009-08-30 17:44:20', 'c8d25b81f98510377111d1d08ab0f1bbca31ac85fd7d4e960446f86b7f04207232c2a1b58bf4b9e45f05c3b44bcd93e61f61589c2700d8f8c6b230f4762a15df', '2009-08-30 17:44:20', NULL, 'Gen', 'QBmc4GGTkDFvFoXYYJ2Q', 'eec0b7067448641734419ad5e85d3f6ac6532e1d1046e9c06fb7ac7ff2a23a5486eb71425a9217e60d711e8f1ad748a8d43fab94d535d775203783de343077ae', 'gen@tweettocall.com')[0m
+Redirected to http://localhost:3000/
+Completed in 25ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:44:20) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'eec0b7067448641734419ad5e85d3f6ac6532e1d1046e9c06fb7ac7ff2a23a5486eb71425a9217e60d711e8f1ad748a8d43fab94d535d775203783de343077ae') LIMIT 1[0m
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#edit (for ::1 at 2009-08-30 10:44:27) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'eec0b7067448641734419ad5e85d3f6ac6532e1d1046e9c06fb7ac7ff2a23a5486eb71425a9217e60d711e8f1ad748a8d43fab94d535d775203783de343077ae') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_form (1.8ms)
+Completed in 21ms (View: 6, DB: 0) | 200 OK [http://localhost/users/current/edit]
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-30 10:44:30) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'eec0b7067448641734419ad5e85d3f6ac6532e1d1046e9c06fb7ac7ff2a23a5486eb71425a9217e60d711e8f1ad748a8d43fab94d535d775203783de343077ae') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:44:30) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-30 10:44:31) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 14ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-30 10:44:43) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"Gen", "password"=>"123456"}, "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM="}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'gen') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:44:43) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-30 10:44:45) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:44:45) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/]

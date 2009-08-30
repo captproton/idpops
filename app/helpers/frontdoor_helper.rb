@@ -1,0 +1,2 @@
+module FrontdoorHelper
+end

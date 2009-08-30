@@ -5,8 +5,8 @@
 # Make sure the secret is at least 30 characters and all random, 
 # no regular words or you'll be exposed to dictionary attacks.
 ActionController::Base.session = {
-  :key         => '_igadnet_session',
-  :secret      => 'bec15469be6bc88ce41f66a7ca8bbf7b6745c46dc936a12b58ea2e008f52895b75bc0b4b1108d6dbc63133245e18963fa11d37231a7efae72f0b5bad239a05c3'
+  :key         => '_authlogicopenid_session',
+  :secret      => 'a519e22fdc6710c34f480aa05e1fdb6803c09598a3b3fb959ae6b3a06cc4871e0e58873fa44a2da57823078a5e02f9ee2c5f9ebf2e459d188e3cb1b616d11722'
 }
 
 # Use the database for sessions instead of the cookie-based default,

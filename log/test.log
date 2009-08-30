@@ -1,0 +1,159 @@
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'f053f2fc68b89f3589ffc2022ee64b62982e3c47b19522fba80fe5fdc7d198b72a3cf90e8dbdd0e3daad7b82d99ba8830f5857183684f255643f882cb18a2dc3') LIMIT 1[0m
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-08-29 22:15:41) [POST]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 55ms (View: 52, DB: 1) | 200 OK [http://test.host/user_sessions]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-08-29 22:15:41) [POST]
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2009-08-29 22:15:41) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/user_sessions/new]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-08-29 22:15:41) [POST]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (5.2ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-08-29 22:15:41) [POST]
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("created_at", "crypted_password", "updated_at", "username", "password_salt", "persistence_token", "email") VALUES('2009-08-30 05:15:41', NULL, '2009-08-30 05:15:41', NULL, NULL, NULL, NULL)[0m
+Redirected to http://test.host/
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/users]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-08-29 22:15:41) [GET]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyString", password_salt: nil, persistence_token: nil, created_at: "2009-08-30 05:15:41", updated_at: "2009-08-30 05:15:41">}
+Rendering template within layouts/application
+Rendering users/edit
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-08-29 22:15:41) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (1.8ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-08-29 22:15:41) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyString", password_salt: nil, persistence_token: nil, created_at: "2009-08-30 05:15:41", updated_at: "2009-08-30 05:15:41">}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-08-29 22:15:41) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyString", password_salt: nil, persistence_token: nil, created_at: "2009-08-30 05:15:41", updated_at: "2009-08-30 05:15:41">}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '3355f05f977ac4d74e749adf8f0d755a6709ed5dd8f853e9e4b8ac95adaaa3af1afd98e664aeff28b8b8a5c99067e4909b7565cb3fc65f67bf4009b4b8ab9708') LIMIT 1[0m
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-08-29 22:17:27) [POST]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 10ms (View: 7, DB: 1) | 200 OK [http://test.host/user_sessions]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-08-29 22:17:27) [POST]
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2009-08-29 22:17:27) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/user_sessions/new]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-08-29 22:17:27) [POST]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (5.5ms)
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-08-29 22:17:27) [POST]
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("created_at", "crypted_password", "updated_at", "username", "password_salt", "persistence_token", "email") VALUES('2009-08-30 05:17:27', NULL, '2009-08-30 05:17:27', NULL, NULL, NULL, NULL)[0m
+Redirected to http://test.host/
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/users]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-08-29 22:17:27) [GET]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyString", password_salt: nil, persistence_token: nil, created_at: "2009-08-30 05:17:27", updated_at: "2009-08-30 05:17:27">}
+Rendering template within layouts/application
+Rendering users/edit
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-08-29 22:17:27) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (1.7ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-08-29 22:17:27) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyString", password_salt: nil, persistence_token: nil, created_at: "2009-08-30 05:17:27", updated_at: "2009-08-30 05:17:27">}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-08-29 22:17:27) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyString", password_salt: nil, persistence_token: nil, created_at: "2009-08-30 05:17:27", updated_at: "2009-08-30 05:17:27">}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '070ce6ce7172983545282db6115662bdba1a8ed0d8ea117df4475042090a828e6982f43b7038613209564e5e9151e09cc748682e5b10559abd5f069c6a89ab45') LIMIT 1[0m
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-08-30 10:36:58) [POST]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 15ms (View: 12, DB: 1) | 200 OK [http://test.host/user_sessions]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-08-30 10:36:58) [POST]
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2009-08-30 10:36:58) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/user_sessions/new]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-08-30 10:36:58) [POST]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (5.5ms)
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-08-30 10:36:58) [POST]
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "crypted_password", "updated_at", "facebook_uid", "username", "password_salt", "persistence_token", "email") VALUES(NULL, '2009-08-30 17:36:58', NULL, '2009-08-30 17:36:58', NULL, NULL, NULL, NULL, NULL)[0m
+Redirected to http://test.host/
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/users]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-08-30 10:36:58) [GET]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-08-30 17:36:58", updated_at: "2009-08-30 17:36:58", name: nil, facebook_uid: nil>}
+Rendering template within layouts/application
+Rendering users/edit
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-08-30 10:36:58) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (1.8ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-08-30 10:36:58) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-08-30 17:36:58", updated_at: "2009-08-30 17:36:58", name: nil, facebook_uid: nil>}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-08-30 10:36:58) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-08-30 17:36:58", updated_at: "2009-08-30 17:36:58", name: nil, facebook_uid: nil>}
