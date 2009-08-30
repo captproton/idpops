@@ -1032,3 +1032,68 @@ Processing FrontdoorController#index (for ::1 at 2009-08-30 10:44:45) [GET]
 Rendering template within layouts/application
 Rendering frontdoor/index
 Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:55:13) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:55:14) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:55:27) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 94ms (View: 91, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for ::1 at 2009-08-30 10:55:31) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (5.7ms)
+Completed in 31ms (View: 22, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for ::1 at 2009-08-30 10:55:56) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM=", "user"=>{"password_confirmation"=>"123456", "username"=>"captproton", "password"=>"123456", "email"=>"captproton@tmail.com"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'captproton@tmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'captproton') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '93f0ea86bc3870dee16b50a4ad8626ec24dcf28344a25fb2ec593a0bab7ff5a816042444de350e1ff148d52a4aec60e267a6f51f1885fce2960d88a5df872739') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (2.0ms)
+Completed in 193ms (View: 8, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for ::1 at 2009-08-30 10:56:06) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM=", "user"=>{"password_confirmation"=>"123456", "username"=>"captproton2", "password"=>"123456", "email"=>"captproton2@tmail.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'captproton2@tmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'captproton2') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'bb63837b8e37359a651d94c92540fcec06ae135e7b357a292a1949e7e0b2c2f4993b1ada77570f3f3ad229bcc8fc0fa215046e88a0b08a4c3eaf4e2b75a76caa') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "crypted_password", "updated_at", "facebook_uid", "username", "password_salt", "persistence_token", "email") VALUES(NULL, '2009-08-30 17:56:06', 'e0d0481d22befb6298698c774cd7ff71a81e36350e03da17205f7f8c00af87c4b6e86e5b56c025c374afaa8819c31c0bf3b4650e68ff214c423f39058089a02a', '2009-08-30 17:56:06', NULL, 'captproton2', 'iOYOU5-lk51hg4kUm-G2', 'bb63837b8e37359a651d94c92540fcec06ae135e7b357a292a1949e7e0b2c2f4993b1ada77570f3f3ad229bcc8fc0fa215046e88a0b08a4c3eaf4e2b75a76caa', 'captproton2@tmail.com')[0m
+Redirected to http://localhost:3000/
+Completed in 67ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:56:06) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'bb63837b8e37359a651d94c92540fcec06ae135e7b357a292a1949e7e0b2c2f4993b1ada77570f3f3ad229bcc8fc0fa215046e88a0b08a4c3eaf4e2b75a76caa') LIMIT 1[0m
+Completed in 27ms (View: 25, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-30 10:56:10) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'bb63837b8e37359a651d94c92540fcec06ae135e7b357a292a1949e7e0b2c2f4993b1ada77570f3f3ad229bcc8fc0fa215046e88a0b08a4c3eaf4e2b75a76caa') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 22ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 10:56:10) [GET]
+Rendering template within layouts/application
+Rendering frontdoor/index
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/]
