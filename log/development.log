@@ -4164,3 +4164,48 @@ Processing UserSessionsController#create (for ::1 at 2009-08-30 19:34:03) [POST]
   [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'gen') LIMIT 1[0m
 Redirected to http://localhost:3000/form.html
 Completed in 21ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 19:53:20) [GET]
+Rendering frontdoor/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 19:53:23) [GET]
+Rendering frontdoor/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 19:54:12) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 19:54:52) [GET]
+Rendering frontdoor/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 19:55:15) [GET]
+Rendering frontdoor/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 19:59:13) [GET]
+Rendering frontdoor/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 20:05:17) [GET]
+Rendering frontdoor/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 20:05:55) [GET]
+Rendering frontdoor/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 20:06:28) [GET]
+Rendering frontdoor/index
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/]
