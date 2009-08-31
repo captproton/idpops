@@ -4085,3 +4085,82 @@ ActionController::RoutingError (No route matches "/category.png" with {:method=>
   /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-08-30 19:30:52) [GET]
+
+ActionController::RoutingError (No route matches "/small_logo.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 19:31:00) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-30 19:31:07) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.8ms)
+Completed in 35ms (View: 7, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-30 19:31:12) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"Gen", "password"=>"123456"}, "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM="}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'gen') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 193ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 19:31:12) [GET]
+Rendering frontdoor/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 19:33:50) [GET]
+Rendering frontdoor/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-30 19:33:55) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+Rendered layouts/_user_nav (6.8ms)
+Completed in 28ms (View: 13, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-30 19:33:57) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 19ms (DB: 1) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 19:33:57) [GET]
+Rendering frontdoor/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-30 19:34:01) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (0.9ms)
+Completed in 17ms (View: 4, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-30 19:34:03) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"Gen", "password"=>"123456"}, "authenticity_token"=>"gCtDK+xPIPDWijaYy/YIL8t5dl2L7ZknyAN+CNO23JM="}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'gen') LIMIT 1[0m
+Redirected to http://localhost:3000/form.html
+Completed in 21ms (DB: 0) | 302 Found [http://localhost/user_sessions]
