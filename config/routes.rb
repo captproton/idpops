@@ -1,10 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :invitations
 
   map.resources :user_sessions
   map.resources :users
   
-  map.login "login", :controller => "user_sessions", :action => "new"
-  map.logout "logout", :controller => "user_sessions", :action => "destroy"
+  map.login "/login", :controller => "user_sessions", :action => "new"
+  map.logout "/logout", :controller => "user_sessions", :action => "destroy"
+  map.register "/register", :controller => "users", :action => "create"
+  map.register "/signup/:invitation_token", :controller => "users", :action => "new"
 
   map.root :controller => 'frontdoor'
   

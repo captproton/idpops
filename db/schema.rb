@@ -9,7 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090830052906) do
+ActiveRecord::Schema.define(:version => 20090830213446) do
+
+  create_table "invitations", :force => true do |t|
+    t.integer  "sender_id"
+    t.string   "recipient_email"
+    t.string   "token"
+    t.datetime "sent_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "username"
@@ -21,6 +30,8 @@ ActiveRecord::Schema.define(:version => 20090830052906) do
     t.datetime "updated_at"
     t.string   "name"
     t.integer  "facebook_uid",      :limit => 8
+    t.integer  "invitiation_id"
+    t.integer  "invitation_limit"
   end
 
 end
