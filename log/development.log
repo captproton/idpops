@@ -2944,3 +2944,15 @@ Rendering template within layouts/application
 Rendering user_sessions/new
 Rendered layouts/_user_nav (0.8ms)
 Completed in 16ms (View: 4, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 18:54:50) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-30 18:54:53) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.8ms)
+Completed in 24ms (View: 9, DB: 0) | 200 OK [http://localhost/login]
