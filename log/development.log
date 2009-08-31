@@ -2890,3 +2890,57 @@ ActionController::RoutingError (No route matches "/images3/IGAD_Mockup.003.jpg" 
   /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 18:38:32) [GET]
+Rendering frontdoor/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 18:39:13) [GET]
+Rendering frontdoor/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 18:39:45) [GET]
+Rendering frontdoor/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 18:40:19) [GET]
+Rendering frontdoor/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 18:42:36) [GET]
+Rendering frontdoor/index
+Completed in 19ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 18:43:18) [GET]
+Rendering frontdoor/index
+Completed in 56ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-30 18:44:17) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.3ms)
+Completed in 41ms (View: 26, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 18:46:01) [GET]
+Rendering frontdoor/index
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 18:46:50) [GET]
+Rendering frontdoor/index
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-30 18:46:56) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (0.8ms)
+Completed in 16ms (View: 4, DB: 0) | 200 OK [http://localhost/login]
