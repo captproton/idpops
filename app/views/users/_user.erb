@@ -1,5 +1,6 @@
 <% form_for @user do |f| %>
   <%= f.error_messages %>
+  <%= f.hidden_field :invitation_token %>
   <p>
     <%= f.label :username %><br />
     <%= f.text_field :username %>

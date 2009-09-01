@@ -4209,3 +4209,1708 @@ Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
 Processing FrontdoorController#index (for ::1 at 2009-08-30 20:06:28) [GET]
 Rendering frontdoor/index
 Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-30 20:08:23) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 11:08:15) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 13:23:47) [GET]
+Rendering frontdoor/index
+Completed in 103ms (View: 101, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 13:29:29) [GET]
+Rendering frontdoor/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 13:30:23) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (13.3ms)
+Completed in 169ms (View: 61, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-31 13:30:36) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"Gen", "password"=>"123456"}, "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0="}
+  [4;36;1mUser Load (14.2ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'gen') LIMIT 1[0m
+Redirected to http://localhost:3000/form.html
+Completed in 251ms (DB: 14) | 302 Found [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 13:30:47) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+Rendered layouts/_user_nav (5.3ms)
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing InvitationsController#new (for ::1 at 2009-08-31 13:33:55) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+Rendered layouts/_user_nav (20.3ms)
+Completed in 118ms (View: 75, DB: 1) | 200 OK [http://localhost/invitations/new]
+
+
+Processing InvitationsController#create (for ::1 at 2009-08-31 13:49:22) [POST]
+  Parameters: {"commit"=>"Invite!", "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0=", "invitation"=>{"recipient_email"=>"captproton@tmail.com"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'captproton@tmail.com') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.>):
+  app/models/invitation.rb:19:in `sender_has_invitations'
+  app/controllers/invitations_controller.rb:9:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.2ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 13:56:51) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+Rendered layouts/_user_nav (5.3ms)
+Completed in 21ms (View: 8, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-31 13:56:56) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 17ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 13:56:56) [GET]
+Rendering frontdoor/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 13:57:00) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.1ms)
+Completed in 23ms (View: 5, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 13:57:04) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (55.1ms)
+Rendered layouts/_user_nav (4.3ms)
+Completed in 95ms (View: 80, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for ::1 at 2009-08-31 13:57:25) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0=", "user"=>{"password_confirmation"=>"charity", "username"=>"hope", "password"=>"charity", "email"=>"charity@me.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'charity@me.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'hope') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "crypted_password", "updated_at", "facebook_uid", "username", "password_salt", "persistence_token", "invitiation_id", "email", "invitation_limit") VALUES(NULL, '2009-08-31 20:57:25', '533c31e57f1dba7876d805b7960b5250cfb82739f66be9d76fdce81764f06f41356b246a7fd9ca18d0968b1ba4b4af0e868a2332b6d482d41787df61a4261f4e', '2009-08-31 20:57:25', NULL, 'hope', '5lTYOngkM2ANJa2dMXtD', '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1', NULL, 'charity@me.com', 25)[0m
+Redirected to http://localhost:3000/
+Completed in 25ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 13:57:25) [GET]
+Rendering frontdoor/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 13:57:31) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+Rendered layouts/_user_nav (5.0ms)
+Completed in 20ms (View: 7, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 14:06:12) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+Rendered layouts/_user_nav (6.0ms)
+Completed in 23ms (View: 10, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing InvitationsController#new (for ::1 at 2009-08-31 14:06:55) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+Rendered layouts/_user_nav (16.4ms)
+Completed in 26ms (View: 20, DB: 0) | 200 OK [http://localhost/invitations/new]
+
+
+Processing InvitationsController#create (for ::1 at 2009-08-31 14:06:59) [POST]
+  Parameters: {"commit"=>"Invite!", "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0=", "invitation"=>{"recipient_email"=>"captproton@tmail.com"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'captproton@tmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "invitation_limit" = 24, "updated_at" = '2009-08-31 21:06:59' WHERE "id" = 7[0m
+  [4;35;1mInvitation Create (0.2ms)[0m   [0mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-08-31 21:06:59', 'captproton@tmail.com', '3644c700b40b9486204a08270dc4c84d6ec82814', '2009-08-31 21:06:59', NULL, 7)[0m
+
+NoMethodError (undefined method `signup_url' for #<InvitationsController:0x2393954>):
+  app/controllers/invitations_controller.rb:10:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InvitationsController#create (for ::1 at 2009-08-31 14:28:16) [POST]
+  Parameters: {"commit"=>"Invite!", "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0=", "invitation"=>{"recipient_email"=>"captproton@tmail.com"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'captproton@tmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "invitation_limit" = 23, "updated_at" = '2009-08-31 21:28:16' WHERE "id" = 7[0m
+  [4;35;1mInvitation Create (0.2ms)[0m   [0mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-08-31 21:28:16', 'captproton@tmail.com', '4de0241fa1f8c9f30a73ed0b1c970e3f4c565bc6', '2009-08-31 21:28:16', NULL, 7)[0m
+
+NoMethodError (undefined method `signup_url' for #<InvitationsController:0x2527428>):
+  app/controllers/invitations_controller.rb:10:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InvitationsController#new (for ::1 at 2009-08-31 14:28:20) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+Rendered layouts/_user_nav (94.8ms)
+Completed in 104ms (View: 98, DB: 0) | 200 OK [http://localhost/invitations/new]
+
+
+Processing InvitationsController#create (for ::1 at 2009-08-31 14:28:46) [POST]
+  Parameters: {"commit"=>"Invite!", "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0=", "invitation"=>{"recipient_email"=>"captproton@tmail.com"}}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'captproton@tmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.5ms)[0m   [0;1mUPDATE "users" SET "invitation_limit" = 22, "updated_at" = '2009-08-31 21:28:46' WHERE "id" = 7[0m
+  [4;35;1mInvitation Create (0.2ms)[0m   [0mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-08-31 21:28:46', 'captproton@tmail.com', '09c61bad89f59d52fd9d5ace6014ca03dab8d24c', '2009-08-31 21:28:46', NULL, 7)[0m
+
+NoMethodError (undefined method `signup_url' for #<InvitationsController:0x273a864>):
+  app/controllers/invitations_controller.rb:10:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InvitationsController#create (for ::1 at 2009-08-31 14:32:32) [POST]
+  Parameters: {"commit"=>"Invite!", "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0=", "invitation"=>{"recipient_email"=>"captproton@tmail.com"}}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'captproton@tmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "invitation_limit" = 21, "updated_at" = '2009-08-31 21:32:32' WHERE "id" = 7[0m
+  [4;35;1mInvitation Create (0.2ms)[0m   [0mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-08-31 21:32:32', 'captproton@tmail.com', 'a361b1dab54bf054e712f9f09d2339dadd771285', '2009-08-31 21:32:32', NULL, 7)[0m
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/controllers/invitations_controller.rb:10:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (102.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InvitationsController#new (for ::1 at 2009-08-31 14:33:19) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+Rendered layouts/_user_nav (21.9ms)
+Completed in 49ms (View: 37, DB: 0) | 200 OK [http://localhost/invitations/new]
+
+
+Processing InvitationsController#create (for ::1 at 2009-08-31 14:33:23) [POST]
+  Parameters: {"commit"=>"Invite!", "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0=", "invitation"=>{"recipient_email"=>"captproton@tmail.com"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'captproton@tmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE "users" SET "invitation_limit" = 20, "updated_at" = '2009-08-31 21:33:23' WHERE "id" = 7[0m
+  [4;36;1mInvitation Create (0.2ms)[0m   [0;1mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-08-31 21:33:23', 'captproton@tmail.com', '78fa3511bbf79eef204161efc5f955583913e49b', '2009-08-31 21:33:23', NULL, 7)[0m
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/controllers/invitations_controller.rb:10:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.8ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InvitationsController#create (for ::1 at 2009-08-31 14:33:53) [POST]
+  Parameters: {"commit"=>"Invite!", "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0=", "invitation"=>{"recipient_email"=>"captproton@tmail.com"}}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'captproton@tmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "invitation_limit" = 19, "updated_at" = '2009-08-31 21:33:53' WHERE "id" = 7[0m
+  [4;36;1mInvitation Create (0.2ms)[0m   [0;1mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-08-31 21:33:53', 'captproton@tmail.com', 'a725012812c86e19cde36267bf666765e531d582', '2009-08-31 21:33:53', NULL, 7)[0m
+
+ArgumentError (wrong number of arguments (1 for 2)):
+  app/controllers/invitations_controller.rb:10:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InvitationsController#create (for ::1 at 2009-08-31 14:35:01) [POST]
+  Parameters: {"commit"=>"Invite!", "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0=", "invitation"=>{"recipient_email"=>"captproton@tmail.com"}}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'captproton@tmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "invitation_limit" = 18, "updated_at" = '2009-08-31 21:35:01' WHERE "id" = 7[0m
+  [4;36;1mInvitation Create (0.2ms)[0m   [0;1mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-08-31 21:35:01', 'captproton@tmail.com', '66cd56f023c821eea7d8ff0ec061313f2ac22698', '2009-08-31 21:35:01', NULL, 7)[0m
+
+NoMethodError (undefined method `signup_url' for #<InvitationsController:0x258e1a0>):
+  app/controllers/invitations_controller.rb:10:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 14:48:14) [GET]
+Rendering frontdoor/index
+Completed in 84ms (View: 82, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing InvitationsController#new (for ::1 at 2009-08-31 15:02:29) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+Rendered layouts/_user_nav (54.7ms)
+Completed in 67ms (View: 59, DB: 0) | 200 OK [http://localhost/invitations/new]
+
+
+Processing InvitationsController#new (for ::1 at 2009-08-31 15:02:47) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+Rendered layouts/_user_nav (22.3ms)
+Completed in 49ms (View: 38, DB: 1) | 200 OK [http://localhost/invitations/new]
+
+
+Processing InvitationsController#create (for ::1 at 2009-08-31 15:02:52) [POST]
+  Parameters: {"commit"=>"Invite!", "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0=", "invitation"=>{"recipient_email"=>"captproton@tmail.com"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'captproton@tmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE "users" SET "invitation_limit" = 17, "updated_at" = '2009-08-31 22:02:52' WHERE "id" = 7[0m
+  [4;36;1mInvitation Create (0.2ms)[0m   [0;1mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-08-31 22:02:52', 'captproton@tmail.com', '5f11e35e2431caadd3d13355d2bee04f5c7f0523', '2009-08-31 22:02:52', NULL, 7)[0m
+
+NameError (undefined local variable or method `sent_at' for #<Mailer:0x256efd0>):
+  app/models/mailer.rb:6:in `invitation'
+  app/controllers/invitations_controller.rb:10:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.8ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing InvitationsController#create (for ::1 at 2009-08-31 15:03:21) [POST]
+  Parameters: {"commit"=>"Invite!", "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0=", "invitation"=>{"recipient_email"=>"captproton@tmail.com"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'captproton@tmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (21.5ms)[0m   [0;1mUPDATE "users" SET "invitation_limit" = 16, "updated_at" = '2009-08-31 22:03:22' WHERE "id" = 7[0m
+  [4;35;1mInvitation Create (0.2ms)[0m   [0mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-08-31 22:03:22', 'captproton@tmail.com', '4fcfd9f55cd7adb936d8e75e168246966e67f495', '2009-08-31 22:03:22', NULL, 7)[0m
+  [4;36;1mInvitation Update (0.4ms)[0m   [0;1mUPDATE "invitations" SET "updated_at" = '2009-08-31 22:03:22', "sent_at" = '2009-08-31 22:03:22' WHERE "id" = 24[0m
+Sent mail to captproton@tmail.com
+
+From: IGAD@igadnetwork.com
+To: captproton@tmail.com
+Subject: Invitation
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+You are invited to join our beta!
+
+4fcfd9f55cd7adb936d8e75e168246966e67f495
+Redirected to http://localhost:3000/
+Completed in 288ms (DB: 23) | 302 Found [http://localhost/invitations]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 15:03:22) [GET]
+Rendering frontdoor/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for ::1 at 2009-08-31 15:15:49) [GET]
+
+ActionController::RoutingError (No route matches "/signup" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#create (for ::1 at 2009-08-31 15:15:54) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'ea5e57f439c704e7c8a21fcf960a838d737797c93b1b37dedbbb03b0ba5ac80d7f499a20ce6f8b4f18e8a948e0ea5afc60376b67f180d5cdbe45e1b1f27b7b9b') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (3.9ms)
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+Rendered layouts/_user_nav (6.4ms)
+Completed in 41ms (View: 23, DB: 1) | 200 OK [http://localhost/register]
+
+
+Processing UsersController#show (for ::1 at 2009-08-31 15:16:14) [GET]
+  Parameters: {"id"=>"newew"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, edit, new, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-08-31 15:16:20) [GET]
+
+ActionController::RoutingError (No route matches "/signup" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#create (for ::1 at 2009-08-31 15:16:25) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'e1b2fc47db565a370ecf42e4facba23ca8f61d90bb282c816390d456b3c04dd5e1c05587b8a553d896254bb410ec61c6dd30a80b6a35300c7b30778f7e6eaa8c') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (2.8ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+Rendered layouts/_user_nav (5.4ms)
+Completed in 27ms (View: 10, DB: 1) | 200 OK [http://localhost/register]
+
+
+Processing InvitationsController#new (for ::1 at 2009-08-31 15:19:50) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+Rendered layouts/_user_nav (15.2ms)
+Completed in 98ms (View: 91, DB: 0) | 200 OK [http://localhost/invitations/new]
+
+
+Processing InvitationsController#create (for ::1 at 2009-08-31 15:20:01) [POST]
+  Parameters: {"commit"=>"Invite!", "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0=", "invitation"=>{"recipient_email"=>"captproton@tmail.com"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'captproton@tmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (127.2ms)[0m   [0;1mUPDATE "users" SET "invitation_limit" = 15, "updated_at" = '2009-08-31 22:20:01' WHERE "id" = 7[0m
+  [4;35;1mInvitation Create (0.2ms)[0m   [0mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-08-31 22:20:01', 'captproton@tmail.com', '4efe42d72d0757752d7c5a9b0b6503860aff67d2', '2009-08-31 22:20:01', NULL, 7)[0m
+  [4;36;1mInvitation Update (0.4ms)[0m   [0;1mUPDATE "invitations" SET "updated_at" = '2009-08-31 22:20:01', "sent_at" = '2009-08-31 22:20:01' WHERE "id" = 25[0m
+Sent mail to captproton@tmail.com
+
+From: IGAD@igadnetwork.com
+To: captproton@tmail.com
+Subject: Invitation
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+You are invited to join our beta!
+
+http://localhost:3000/signup/4efe42d72d0757752d7c5a9b0b6503860aff67d2
+Redirected to http://localhost:3000/
+Completed in 170ms (DB: 128) | 302 Found [http://localhost/invitations]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 15:20:01) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 15:36:55) [GET]
+  Parameters: {"invitation_token"=>"4efe42d72d0757752d7c5a9b0b6503860aff67d2"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (3.6ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+Rendered layouts/_user_nav (5.3ms)
+Completed in 22ms (View: 11, DB: 0) | 200 OK [http://localhost/signup/4efe42d72d0757752d7c5a9b0b6503860aff67d2]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-31 15:46:25) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '716767c90e389d342b47439d50e813d402699dfc6e751f14573dab6a2f448a9bbe232b8cb88cdf6a47818f622f87541482daa52360cb995e269b4ca69e525bb1') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 65ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 15:46:26) [GET]
+Rendering frontdoor/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 15:47:01) [GET]
+Rendering frontdoor/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 15:47:05) [GET]
+  Parameters: {"invitation_token"=>"4efe42d72d0757752d7c5a9b0b6503860aff67d2"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (3.5ms)
+Rendered layouts/_user_nav (3.1ms)
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://localhost/signup/4efe42d72d0757752d7c5a9b0b6503860aff67d2]
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 15:47:10) [GET]
+  Parameters: {"invitation_token"=>"4efe42d72d0757752d7c5a9b0b6503860aff67d2"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (3.6ms)
+Rendered layouts/_user_nav (2.9ms)
+Completed in 19ms (View: 8, DB: 0) | 200 OK [http://localhost/signup/4efe42d72d0757752d7c5a9b0b6503860aff67d2]
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 15:55:33) [GET]
+  Parameters: {"invitation_token"=>"4efe42d72d0757752d7c5a9b0b6503860aff67d2"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.7ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 15:56:56) [GET]
+Rendering frontdoor/index
+Completed in 77ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 15:58:01) [GET]
+  Parameters: {"invitation_token"=>"4efe42d72d0757752d7c5a9b0b6503860aff67d2"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 15:58:10) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (0.9ms)
+Completed in 19ms (View: 7, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-31 15:58:14) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"Gen", "password"=>"123456"}, "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0="}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'gen') LIMIT 1[0m
+Redirected to http://localhost:3000/form.html
+Completed in 177ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 15:58:19) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.>) on line #7 of app/views/layouts/_user_nav.html.erb:
+4: 				<%= link_to "Edit Profile", edit_user_path(:current) %> | 
+5: 				<%= link_to "Logout", logout_path %> | 
+6: 				<a href="/form.html">Invite to an Event</a>
+7: 				<% if current_user.invitation_limit >0 %>
+8: 					<p><%= link_to "Send invitation", new_invitation_path %>
+9: 						(<%= current_user.invitation_limit %> left)
+10: 					</p>
+
+    app/views/layouts/_user_nav.html.erb:7
+    app/views/layouts/application.html.erb:11
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 16:08:12) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.>) on line #7 of app/views/layouts/_user_nav.html.erb:
+4: 				<%= link_to "Edit Profile", edit_user_path(:current) %> | 
+5: 				<%= link_to "Logout", logout_path %> | 
+6: 				<a href="/form.html">Invite to an Event</a>
+7: 				<% if current_user.invitation_limit >0 %>
+8: 					<p><%= link_to "Send invitation", new_invitation_path %>
+9: 						(<%= current_user.invitation_limit %> left)
+10: 					</p>
+
+    app/views/layouts/_user_nav.html.erb:7
+    app/views/layouts/application.html.erb:11
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (52.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 16:10:09) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.>) on line #7 of app/views/layouts/_user_nav.html.erb:
+4: 				<%= link_to "Edit Profile", edit_user_path(:current) %> | 
+5: 				<%= link_to "Logout", logout_path %> | 
+6: 				<a href="/form.html">Invite to an Event</a>
+7: 				<% if current_user.invitation_limit > 0 %>
+8: 					<p><%= link_to "Send invitation", new_invitation_path %>
+9: 						(<%= current_user.invitation_limit %> left)
+10: 					</p>
+
+    app/views/layouts/_user_nav.html.erb:7
+    app/views/layouts/application.html.erb:11
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (45.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 16:10:40) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.>) on line #7 of app/views/layouts/_user_nav.html.erb:
+4: 				<%= link_to "Edit Profile", edit_user_path(:current) %> | 
+5: 				<%= link_to "Logout", logout_path %> | 
+6: 				<a href="/form.html">Invite to an Event</a>
+7: 				<%- if current_user.invitation_limit > 0 -%>
+8: 					<p><%= link_to "Send invitation", new_invitation_path %>
+9: 						(<%= current_user.invitation_limit %> left)
+10: 					</p>
+
+    app/views/layouts/_user_nav.html.erb:7
+    app/views/layouts/application.html.erb:11
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (128.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 16:13:57) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.>) on line #7 of app/views/layouts/_user_nav.html.erb:
+4: 				<%= link_to "Edit Profile", edit_user_path(:current) %> | 
+5: 				<%= link_to "Logout", logout_path %> | 
+6: 				<a href="/form.html">Invite to an Event</a>
+7: 					<%= link_to "Send invitation" + " ("+ current_user.invitation_limit + " left)", new_invitation_path if current_user.invitation_limit > 0 %>
+8: 					
+9: 			<%- else -%>
+10: 				<%= link_to "Register", new_user_path %> | 
+
+    app/views/layouts/_user_nav.html.erb:7
+    app/views/layouts/application.html.erb:11
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (45.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 16:14:31) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+Rendered layouts/_user_nav (7.9ms)
+Completed in 119ms (View: 105, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-31 16:14:36) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 17ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 16:14:36) [GET]
+Rendering frontdoor/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 16:14:54) [GET]
+Rendering frontdoor/index
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 16:14:58) [GET]
+  Parameters: {"invitation_token"=>"4efe42d72d0757752d7c5a9b0b6503860aff67d2"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.7ms)
+Rendered rescues/_request_and_response (2.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for ::1 at 2009-08-31 16:17:03) [GET]
+
+ActionController::RoutingError (No route matches "/signup/" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 16:17:08) [GET]
+Rendering frontdoor/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 16:27:15) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.8ms)
+Completed in 101ms (View: 7, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-31 16:27:19) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"Gen", "password"=>"123456"}, "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0="}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'gen') LIMIT 1[0m
+Redirected to http://localhost:3000/form.html
+Completed in 17ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 16:27:24) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.>) on line #7 of app/views/layouts/_user_nav.html.erb:
+4: 				<%= link_to "Edit Profile", edit_user_path(:current) %> | 
+5: 				<%= link_to "Logout", logout_path %> | 
+6: 				<a href="/form.html">Invite to an Event</a>
+7: 				<% if current_user.invitation_limit > 0 %>
+8: 					<p><%= link_to "Send invitation", new_invitation_path %>
+9: 					</p>
+10: 				<% end %>
+
+    app/views/layouts/_user_nav.html.erb:7
+    app/views/layouts/application.html.erb:11
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (127.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#index (for ::1 at 2009-08-31 16:27:49) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, edit, new, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#show (for ::1 at 2009-08-31 16:27:56) [GET]
+  Parameters: {"id"=>"edit"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, edit, new, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 16:28:01) [GET]
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 16:28:55) [GET]
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (113.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 16:29:03) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+Rendered layouts/_user_nav (5.8ms)
+Completed in 23ms (View: 10, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing InvitationsController#new (for ::1 at 2009-08-31 16:29:22) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+Rendered layouts/_user_nav (16.3ms)
+Completed in 26ms (View: 20, DB: 0) | 200 OK [http://localhost/invitations/new]
+
+
+Processing InvitationsController#create (for ::1 at 2009-08-31 16:29:33) [POST]
+  Parameters: {"commit"=>"Invite!", "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0=", "invitation"=>{"recipient_email"=>"carl@betterbilling.net"}}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'carl@betterbilling.net') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.>):
+  app/models/invitation.rb:19:in `sender_has_invitations'
+  app/controllers/invitations_controller.rb:9:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."name" = 'Gen') LIMIT 1[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" ORDER BY users.id DESC LIMIT 1[0m
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-31 16:30:39) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '4') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 17ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 16:30:39) [GET]
+Rendering frontdoor/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 16:30:46) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (0.8ms)
+Completed in 16ms (View: 4, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-08-31 16:31:03) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"hope", "password"=>"charity"}, "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0="}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'hope') LIMIT 1[0m
+Redirected to http://localhost:3000/form.html
+Completed in 18ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing InvitationsController#new (for ::1 at 2009-08-31 16:31:46) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+Rendered layouts/_user_nav (16.2ms)
+Completed in 26ms (View: 19, DB: 0) | 200 OK [http://localhost/invitations/new]
+
+
+Processing InvitationsController#create (for ::1 at 2009-08-31 16:32:02) [POST]
+  Parameters: {"commit"=>"Invite!", "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0=", "invitation"=>{"recipient_email"=>"ma@betterbilling.net"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'ma@betterbilling.net') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "invitation_limit" = 14, "updated_at" = '2009-08-31 23:32:02' WHERE "id" = 7[0m
+  [4;35;1mInvitation Create (0.2ms)[0m   [0mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-08-31 23:32:02', 'ma@betterbilling.net', '593e501700e5746d96f187b5d53bd8987fde3074', '2009-08-31 23:32:02', NULL, 7)[0m
+  [4;36;1mInvitation Update (0.4ms)[0m   [0;1mUPDATE "invitations" SET "updated_at" = '2009-08-31 23:32:02', "sent_at" = '2009-08-31 23:32:02' WHERE "id" = 26[0m
+Sent mail to ma@betterbilling.net
+
+From: IGAD@igadnetwork.com
+To: ma@betterbilling.net
+Subject: Invitation
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+You are invited to join our beta!
+
+http://localhost:3000/signup/593e501700e5746d96f187b5d53bd8987fde3074
+Redirected to http://localhost:3000/
+Completed in 42ms (DB: 1) | 302 Found [http://localhost/invitations]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 16:32:02) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-08-31 16:32:55) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '7') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 19ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 16:32:55) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 16:33:28) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (110.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 16:58:10) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 16:58:20) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 16:58:41) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mInvitation Load (0.5ms)[0m   [0mSELECT * FROM "invitations" WHERE ("invitations"."token" = '593e501700e5746d96f187b5d53bd8987fde3074') LIMIT 1[0m
+  [4;36;1mInvitation Load (0.5ms)[0m   [0;1mSELECT * FROM "invitations" WHERE ("invitations"."token" = '593e501700e5746d96f187b5d53bd8987fde3074') LIMIT 1[0m
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:07:03) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:07:36) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.8ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:12:54) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for ::1 at 2009-08-31 17:13:02) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (72.8ms)
+Completed in 101ms (View: 87, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:13:12) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:13:24) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mInvitation Load (0.4ms)[0m   [0;1mSELECT * FROM "invitations" WHERE ("invitations"."token" = '593e501700e5746d96f187b5d53bd8987fde3074') LIMIT 1[0m
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:18:16) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (107.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:19:28) [GET]
+  Parameters: {"invitation_token"=>"123"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:19:43) [GET]
+  Parameters: {"invitation_token"=>"123"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:20:06) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:20:15) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for ::1 at 2009-08-31 17:20:25) [GET]
+
+ActionController::RoutingError (No route matches "/signup" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:20:43) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (115.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:21:30) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:22:53) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:23:15) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.5ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:23:48) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined method `invitation_token' for #<User:0x2554cc0>) on line #3 of app/views/users/_user.erb:
+1: <% form_for @user do |f| %>
+2:   <%= f.error_messages %>
+3:   <%= f.hidden_field :invitation_token %>
+4:   <p>
+5:     <%= f.label :username %><br />
+6:     <%= f.text_field :username %>
+
+    app/views/users/_user.erb:3
+    app/views/users/_user.erb:1
+    app/views/users/new.html.erb:2
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (134.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:24:07) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (4.5ms)
+Rendered layouts/_user_nav (4.4ms)
+Completed in 27ms (View: 16, DB: 0) | 200 OK [http://localhost/signup/593e501700e5746d96f187b5d53bd8987fde3074]
+
+
+Processing UsersController#create (for ::1 at 2009-08-31 17:25:17) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0=", "user"=>{"password_confirmation"=>"123456", "username"=>"hoho", "password"=>"123456", "email"=>"oho@betterbilling.net"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'oho@betterbilling.net') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'hoho') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '96441860b325a3f9ab8f37f751c6116ac838b515bd23f5871609d6de2daa942b559db73d8e1f6a0146713c06075ee0bd21820a23de90e123b32467be18ea2230') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (2.0ms)
+Rendered layouts/_user_nav (3.1ms)
+Completed in 187ms (View: 7, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:34:30) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.4ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:37:32) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:37:59) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.3ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:38:06) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invitation_token):
+  app/controllers/users_controller.rb:3:in `new'
+  app/controllers/users_controller.rb:3:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for ::1 at 2009-08-31 17:49:54) [GET]
+  Parameters: {"invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}
+  [4;36;1mInvitation Load (0.3ms)[0m   [0;1mSELECT * FROM "invitations" WHERE ("invitations"."token" = '593e501700e5746d96f187b5d53bd8987fde3074') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (3.0ms)
+Rendered layouts/_user_nav (4.2ms)
+Completed in 114ms (View: 91, DB: 0) | 200 OK [http://localhost/signup/593e501700e5746d96f187b5d53bd8987fde3074]
+
+
+Processing UsersController#create (for ::1 at 2009-08-31 17:51:42) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0=", "user"=>{"password_confirmation"=>"123456", "username"=>"ma", "password"=>"123456", "email"=>"ma@betterbilling.net", "invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}}
+  [4;35;1mInvitation Load (0.3ms)[0m   [0mSELECT * FROM "invitations" WHERE ("invitations"."token" = '593e501700e5746d96f187b5d53bd8987fde3074') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'ma@betterbilling.net') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'ma') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'e013fd8ae99ee0b9a2c85901dd88828f8afce77237ab4f791fd3f4b0a7c202c93d4aabf45d74bc863a5930bb7bd7c0bdc79eb4e1ff1c368b5b570e632be670e3') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (3.1ms)
+Rendered layouts/_user_nav (3.0ms)
+Completed in 131ms (View: 8, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for ::1 at 2009-08-31 17:51:47) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"ZG76RfXBb5scZbrHt71p0aHNyf7HkelXRVBIgOYfYc0=", "user"=>{"password_confirmation"=>"123456", "username"=>"mama", "password"=>"123456", "email"=>"ma@betterbilling.net", "invitation_token"=>"593e501700e5746d96f187b5d53bd8987fde3074"}}
+  [4;35;1mInvitation Load (0.4ms)[0m   [0mSELECT * FROM "invitations" WHERE ("invitations"."token" = '593e501700e5746d96f187b5d53bd8987fde3074') LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'ma@betterbilling.net') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'mama') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'd104c901023ecc6d59b7597b5fbf90597d22d2a7c85cd4220f21b6c74c03394c65c28cd7134c9460048fae25688dfdbacb1ab69f61373ef739381d699daec878') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("name", "created_at", "crypted_password", "updated_at", "facebook_uid", "username", "password_salt", "persistence_token", "invitiation_id", "email", "invitation_limit") VALUES(NULL, '2009-09-01 00:51:47', '7973e13f43253824a49f5c80c79a2d338d578bfa2579780bfeef377eb92c3fd8d70e9003334f8e4136f151540b04eba1a6e74cc29aebc0d932ded00a928caf31', '2009-09-01 00:51:47', NULL, 'mama', 'tAmM_7qQDhKtOYTvoL7U', 'd104c901023ecc6d59b7597b5fbf90597d22d2a7c85cd4220f21b6c74c03394c65c28cd7134c9460048fae25688dfdbacb1ab69f61373ef739381d699daec878', NULL, 'ma@betterbilling.net', 25)[0m
+Redirected to http://localhost:3000/
+Completed in 35ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-08-31 17:51:47) [GET]
+Rendering frontdoor/index
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/]
