@@ -1,0 +1,52 @@
+<h1>Listing events</h1>
+
+<table>
+  <tr>
+    <th>Host</th>
+    <th>Location name</th>
+    <th>Title</th>
+    <th>Comment</th>
+    <th>Description</th>
+    <th>Start date of service</th>
+    <th>Finish date of service</th>
+    <th>Location address</th>
+    <th>Open invite</th>
+    <th>Volunteer cap</th>
+    <th>Allow maybe come</th>
+    <th>Display attending</th>
+    <th>Cancelled</th>
+    <th>Show comments</th>
+    <th>Show avatars</th>
+    <th>Allow adding of pictures</th>
+    <th>Allow adding of video</th>
+  </tr>
+
+<% @events.each do |event| %>
+  <tr>
+    <td><%=h event.host_id %></td>
+    <td><%=h event.location_name %></td>
+    <td><%=h event.title %></td>
+    <td><%=h event.comment_id %></td>
+    <td><%=h event.description %></td>
+    <td><%=h event.start_date_of_service %></td>
+    <td><%=h event.finish_date_of_service %></td>
+    <td><%=h event.location_address %></td>
+    <td><%=h event.open_invite %></td>
+    <td><%=h event.volunteer_cap %></td>
+    <td><%=h event.allow_maybe_come %></td>
+    <td><%=h event.display_attending %></td>
+    <td><%=h event.cancelled %></td>
+    <td><%=h event.show_comments %></td>
+    <td><%=h event.show_avatars %></td>
+    <td><%=h event.allow_adding_of_pictures %></td>
+    <td><%=h event.allow_adding_of_video %></td>
+    <td><%= link_to 'Show', event %></td>
+    <td><%= link_to 'Edit', edit_event_path(event) %></td>
+    <td><%= link_to 'Destroy', event, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New event', new_event_path %>

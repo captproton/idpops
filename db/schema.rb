@@ -9,7 +9,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090830213446) do
+ActiveRecord::Schema.define(:version => 20090907201503) do
+
+  create_table "events", :force => true do |t|
+    t.integer  "host_id"
+    t.string   "location_name"
+    t.string   "title"
+    t.integer  "comment_id"
+    t.text     "description"
+    t.datetime "start_date_of_service"
+    t.datetime "finish_date_of_service"
+    t.string   "location_address"
+    t.boolean  "open_invite"
+    t.integer  "volunteer_cap"
+    t.boolean  "allow_maybe_come"
+    t.boolean  "display_attending"
+    t.boolean  "cancelled"
+    t.boolean  "show_comments"
+    t.boolean  "show_avatars"
+    t.boolean  "allow_adding_of_pictures"
+    t.boolean  "allow_adding_of_video"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "invitations", :force => true do |t|
     t.integer  "sender_id"

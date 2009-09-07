@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :events
+
+  map.resources :events
+
+  map.resources :events
+
   map.resources :invitations
 
   map.resources :user_sessions

@@ -1,0 +1,80 @@
+<h1>Editing event</h1>
+
+<% form_for(@event) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :host_id %><br />
+    <%= f.text_field :host_id %>
+  </p>
+  <p>
+    <%= f.label :location_name %><br />
+    <%= f.text_field :location_name %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :comment_id %><br />
+    <%= f.text_field :comment_id %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :start_date_of_service %><br />
+    <%= f.datetime_select :start_date_of_service %>
+  </p>
+  <p>
+    <%= f.label :finish_date_of_service %><br />
+    <%= f.datetime_select :finish_date_of_service %>
+  </p>
+  <p>
+    <%= f.label :location_address %><br />
+    <%= f.text_field :location_address %>
+  </p>
+  <p>
+    <%= f.label :open_invite %><br />
+    <%= f.check_box :open_invite %>
+  </p>
+  <p>
+    <%= f.label :volunteer_cap %><br />
+    <%= f.text_field :volunteer_cap %>
+  </p>
+  <p>
+    <%= f.label :allow_maybe_come %><br />
+    <%= f.check_box :allow_maybe_come %>
+  </p>
+  <p>
+    <%= f.label :display_attending %><br />
+    <%= f.check_box :display_attending %>
+  </p>
+  <p>
+    <%= f.label :cancelled %><br />
+    <%= f.check_box :cancelled %>
+  </p>
+  <p>
+    <%= f.label :show_comments %><br />
+    <%= f.check_box :show_comments %>
+  </p>
+  <p>
+    <%= f.label :show_avatars %><br />
+    <%= f.check_box :show_avatars %>
+  </p>
+  <p>
+    <%= f.label :allow_adding_of_pictures %><br />
+    <%= f.check_box :allow_adding_of_pictures %>
+  </p>
+  <p>
+    <%= f.label :allow_adding_of_video %><br />
+    <%= f.check_box :allow_adding_of_video %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @event %> |
+<%= link_to 'Back', events_path %>

@@ -80,6 +80,19 @@ a {
   list-style: disc;
 }
 #user_nav {
-	float: right;
+	position:absolute;
+	 top:0;
+	 right:0;
+	 width:200px;
 	font-size: 12px;
 }
+
+#yui-main  {
+	background-color: #FFF;
+}
+
+#header_image {
+  padding: 5px 8px;
+	
+}
+

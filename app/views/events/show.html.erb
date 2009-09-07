@@ -1,0 +1,88 @@
+<p>
+  <b>Host:</b>
+  <%=h @event.host_id %>
+</p>
+
+<p>
+  <b>Location name:</b>
+  <%=h @event.location_name %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @event.title %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%=h @event.comment_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @event.description %>
+</p>
+
+<p>
+  <b>Start date of service:</b>
+  <%=h @event.start_date_of_service %>
+</p>
+
+<p>
+  <b>Finish date of service:</b>
+  <%=h @event.finish_date_of_service %>
+</p>
+
+<p>
+  <b>Location address:</b>
+  <%=h @event.location_address %>
+</p>
+
+<p>
+  <b>Open invite:</b>
+  <%=h @event.open_invite %>
+</p>
+
+<p>
+  <b>Volunteer cap:</b>
+  <%=h @event.volunteer_cap %>
+</p>
+
+<p>
+  <b>Allow maybe come:</b>
+  <%=h @event.allow_maybe_come %>
+</p>
+
+<p>
+  <b>Display attending:</b>
+  <%=h @event.display_attending %>
+</p>
+
+<p>
+  <b>Cancelled:</b>
+  <%=h @event.cancelled %>
+</p>
+
+<p>
+  <b>Show comments:</b>
+  <%=h @event.show_comments %>
+</p>
+
+<p>
+  <b>Show avatars:</b>
+  <%=h @event.show_avatars %>
+</p>
+
+<p>
+  <b>Allow adding of pictures:</b>
+  <%=h @event.allow_adding_of_pictures %>
+</p>
+
+<p>
+  <b>Allow adding of video:</b>
+  <%=h @event.allow_adding_of_video %>
+</p>
+
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
