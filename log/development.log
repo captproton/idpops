@@ -5914,3 +5914,79 @@ Completed in 35ms (DB: 1) | 302 Found [http://localhost/users]
 Processing FrontdoorController#index (for ::1 at 2009-08-31 17:51:47) [GET]
 Rendering frontdoor/index
 Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-01 09:27:30) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-01 09:30:30) [GET]
+Rendering frontdoor/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-01 11:43:55) [GET]
+Rendering frontdoor/index
+Completed in 10ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-01 12:02:06) [GET]
+Rendering frontdoor/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for 127.0.0.1 at 2009-09-06 14:43:33) [GET]
+Rendering frontdoor/index
+Completed in 112ms (View: 109, DB: 0) | 200 OK [http://igadnet.local/]
+
+
+Processing FrontdoorController#index (for 127.0.0.1 at 2009-09-06 16:19:35) [GET]
+Rendering frontdoor/index
+Completed in 19ms (View: 15, DB: 0) | 200 OK [http://igadnet.local/]
+
+
+Processing FrontdoorController#index (for 127.0.0.1 at 2009-09-07 03:03:25) [GET]
+Rendering frontdoor/index
+Completed in 102ms (View: 99, DB: 0) | 200 OK [http://igadnet.local/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-09-07 03:03:37) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (23.8ms)
+Completed in 221ms (View: 120, DB: 0) | 200 OK [http://igadnet.local/login]
+
+
+Processing FrontdoorController#index (for 127.0.0.1 at 2009-09-07 03:03:42) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://igadnet.local/]
+
+
+Processing FrontdoorController#index (for 127.0.0.1 at 2009-09-07 03:25:01) [GET]
+Rendering frontdoor/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://igadnet.local/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2009-09-07 03:25:05) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (3.0ms)
+Completed in 63ms (View: 30, DB: 0) | 200 OK [http://igadnet.local/login]
+
+
+Processing FrontdoorController#index (for 127.0.0.1 at 2009-09-07 03:26:14) [GET]
+Rendering frontdoor/index
+Completed in 127ms (View: 1, DB: 0) | 200 OK [http://igadnet.local/]
+
+
+Processing FrontdoorController#index (for 127.0.0.1 at 2009-09-07 03:26:17) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://igadnet.local/]
+
+
+Processing InvitationsController#new (for 127.0.0.1 at 2009-09-07 03:31:20) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (11.9ms)
+Completed in 46ms (View: 23, DB: 0) | 200 OK [http://igadnet.local/invitations/new]

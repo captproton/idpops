@@ -1,23 +1,206 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
 <html>
-  <head>
-    <title><%= h(yield(:title) || "Untitled") %></title>
-    <%= stylesheet_link_tag 'application' %>
-    <%= yield(:head) %>
-  </head>
-  <body>
-    <div id="container">
-<%= render :partial => 'layouts/user_nav' %>
-      <%- flash.each do |name, msg| -%>
-        <%= content_tag :div, msg, :id => "flash_#{name}" %>
-      <%- end -%>
-      
-      <%- if show_title? -%>
-        <h1><%=h yield(:title) %></h1>
-      <%- end -%>
-      
-      <%= yield %>
-    </div>
-  </body>
+	<head>
+	    <title><%= h(yield(:title) || "I Give A Damn Network") %></title>
+	    <%= stylesheet_link_tag 'application' %>
+	    <%= yield(:head) %>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" content="I Give A Damn Network">
+		<meta name="keywords" content="I Give A Damn Network List">
+		<style type="text/css">
+
+		/**
+		 * @tab Page
+		 * @section background
+		 * @tip Choose colors for your list form's background and border. You might choose colors to match your company's branding.
+		 */
+		body {
+			/*@editable*/ background-color:#ffffff;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		/**
+		 * @tab Page
+		 * @section background
+		 */
+		.container {
+			/*@editable*/ border: 1px solid #000000;
+		}
+
+		fieldset {border: none; padding: 0; margin: 0;}
+
+		/**
+		 * @tab Body
+		 * @section foreground
+		 * @tip Choose a color for your list form's foreground.  Pick a color that's easy to read against your text.
+		 */
+		.content {
+			/*@editable*/ background-color:#ffffff;
+			/*@editable*/ padding:20px;
+			font-family:Arial;
+			font-size: 12px;
+			line-height:150%;  /* #3# Editable */
+			color: #333333;  /* #3# Editable */
+		}
+
+		/**
+		 * @tab Header
+		 * @section top bar
+		 * @tip You can make this color stand out, or you might make it the same as your form's background color.
+		 */
+		.headerBar {
+			/*@editable*/ background-color:#ffffff;
+			/*@editable*/ padding:20px;
+			/*@editable*/ border-bottom:0px  #000000;
+		}
+
+		/**
+		 * @tab Header
+		 * @section top bar text
+		 * @tip If you aren't using an image for your header, set the text styles here.
+		 */
+		.headerText {
+			/*@editable*/ color:#666666;
+			/*@editable*/ font-size:32px;
+			/*@editable*/ font-family:Arial;
+			/*@editable*/ font-weight:bold;
+			/*@editable*/ text-align:left;
+		}
+
+		/**
+		 * @tab Body
+		 * @section default text
+		 * @tip This is the default text style for the body of your list form.
+		 */
+		p, label, .formText {
+			/*@editable*/ line-height:150%;
+			/*@editable*/ font-family:Arial;
+			/*@editable*/ font-size: 12px;
+			/*@editable*/ color: #333333;
+		}
+
+		/**
+		 * @tab Alerts/Errors
+		 * @section alerts
+		 * @tip This is the style for the "There are errors below." warning that appears if invalid data is entered.
+		 */
+		.alert {
+			/*@editable*/ font-size:16px;
+			/*@editable*/ line-height:200%;
+			/*@editable*/ color:#FF0000;
+			/*@editable*/ font-family:Arial;
+			/*@editable*/ font-weight:bold;
+		}
+
+		/**
+		 * @tab Alerts/Errors
+		 * @section errors
+		 * @tip This is the style for the error messages that appear beneath each form fields with invalid data.  Use colors that will attract attention.
+		 */
+		div.errorText {
+			/*@editable*/ font-size: 12px;
+			/*@editable*/ line-height:150%;
+			/*@editable*/ font-weight:bold;
+			/*@editable*/ color:#FF0000;
+			/*@editable*/ font-family:Arial;
+			/*@editable*/ background-color:#FFEEEE;
+			/*@editable*/ padding:5px;
+			/*@editable*/ margin:3px;
+		}
+
+		/**
+		 * @tab Body
+		 * @section link style
+		 * @tip Specify the color for all the hyperlinks in your list form.
+		 */
+		a:link, a:active, a:visited, a {
+			/*@editable*/ color:#0000FF;
+		}
+
+		a.poweredBy {
+			font-size:10px;
+			font-family:trebuchet ms;
+			text-decoration: none;
+		}
+
+		.poweredByBox td {
+		text-align: right;
+		}
+
+		/* hCards + hCalendars */
+		.vcard, .vevent {
+			background:#eee;
+			border: 2px solid #ccc !important;
+			padding: 14px;
+			-moz-border-radius: 4px;
+			-webkit-border-radius:4px;
+			border-radius: 4px;
+			margin: 5px 0 !important;
+		}
+
+		span.vcard, 
+		span.vevent {padding: 2px 1px 2px 70px !important; margin: 0 2px 0 !important;}
+
+		.org {display:block; margin:8px 0 0 0; padding-left:19px; background:url(http://igiveadamnnetwork.us1.list-manage.com/images/vcard.png) no-repeat; font-weight:bold; font-size:110%;}
+		.hcard-download {background:url(http://igiveadamnnetwork.us1.list-manage.com/images/hcard-download-or.png) no-repeat; padding:2px 0 2px 32px;}
+
+		/* General Form Formatting */
+		#mergeTable {width:100%;}
+		#archive-list {margin:3em; list-style:square; line-height:1.6em;}
+		.required {text-align:right; font-size:11px; font-weight:bold;}
+		.formText {vertical-align:top;}
+		.subfield {display:block; margin:2px 0; padding:4px; line-height:30px;}
+		.phonefield .subfield, .datefield .subfield {display:inline;}
+		.subfield label {padding-left:4px; font-style:italic;}
+		.mergeTable {border-collapse:separate;}
+		.mergeRow td {padding:12px; border-top:1px solid #ccc;}
+		input, textarea, select {padding:4px;}
+		input:focus, textarea:focus, select:focus {background:#ffc;}
+		.countryfield select {min-width:120px;}
+		.radiogroup label {padding-right:12px;}
+		#archive-list-title {margin-bottom:5px;}
+		#archive-company {font-weight:normal;}
+		#archive-company, #archive-subscribe-link {margin:5px 0;}
+		#archive-subscribe-link {float:right; margin-top:2px;}
+		#forward-friend-table label {font-weight:bold;}
+		#forwardToFriendFooter {padding-top:10px; border-top:1px solid #ccc;}
+		</style>
+	</head>
+	<body>
+		<table width="100%" cellpadding="20" cellspacing="0">
+			<tr>
+				<td align="center" valign="top">
+					<!-- \\\ wrap table /// -->
+					<table width="600" cellpadding="0" cellspacing="0" class="container">
+						<tr>
+							<td align="center" valign="top">
+								<div class="headerBar">
+									<div class="headerText">
+										<img height="127" width="760" align="middle" border="0" src="/images/igadblog.jpg" alt="Sign up!"><br>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top" align="left" class="content">
+								<%= render :partial => 'layouts/user_nav' %>
+								      <%- flash.each do |name, msg| -%>
+								        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+								      <%- end -%>
+
+								      <%- if show_title? -%>
+								        <h1><%=h yield(:title) %></h1>
+								      <%- end -%>
+
+								      <%= yield %>
+							</td>
+						</tr>
+					</table>
+					<!-- /// wrap table \\\ -->
+				</td>
+			</tr>
+		</table>
+	</body>
 </html>
