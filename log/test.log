@@ -157,3 +157,639 @@ Processing UsersController#update (for 0.0.0.0 at 2009-08-30 10:36:58) [PUT]
 
 Processing UsersController#update (for 0.0.0.0 at 2009-08-30 10:36:58) [PUT]
   Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-08-30 17:36:58", updated_at: "2009-08-30 17:36:58", name: nil, facebook_uid: nil>}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '7b3cb1d6801957fa441d97b9d0937bbec7dfb6ea0e08067cd56672e1e693bf1964d5fc1e3c245f683a96b2441542eb960eba85ad4c13def0b3c70e2cddabac14') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-09-07 13:17:38) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-07 20:17:38', NULL, NULL, NULL, NULL, '2009-09-07 20:17:38', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+Redirected to http://test.host/events/1
+Completed in 11ms (DB: 2) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-09-07 13:17:38) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/events
+Rendering events/index
+Completed in 32ms (View: 31, DB: 1) | 200 OK [http://test.host/events]
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-09-07 13:17:38) [GET]
+Rendering template within layouts/events
+Rendering events/new
+Completed in 169ms (View: 169, DB: 0) | 200 OK [http://test.host/events/new]
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-07 13:17:38) [POST]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.6ms)
+Completed in 36ms (View: 8, DB: 0) | 200 OK [http://test.host/invitations]
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-07 13:17:38) [POST]
+  [4;35;1mInvitation Create (0.5ms)[0m   [0mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-09-07 20:17:38', NULL, 'bb57b89381019db038091404e975890c747636e4', '2009-09-07 20:17:38', NULL, NULL)[0m
+
+
+Processing InvitationsController#new (for 0.0.0.0 at 2009-09-07 13:17:38) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.4ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/invitations/new]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-09-07 13:17:38) [POST]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.4ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://test.host/user_sessions]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-09-07 13:17:38) [POST]
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2009-09-07 13:17:38) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/user_sessions/new]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-07 13:17:38) [POST]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (6.1ms)
+Rendered layouts/_user_nav (1.3ms)
+Rendered layouts/_general_footer (0.2ms)
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-07 13:17:38) [POST]
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "crypted_password", "updated_at", "facebook_uid", "username", "password_salt", "persistence_token", "invitiation_id", "email", "invitation_limit") VALUES(NULL, '2009-09-07 20:17:38', NULL, '2009-09-07 20:17:38', NULL, NULL, NULL, NULL, NULL, NULL, 25)[0m
+Redirected to http://test.host/
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/users]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-09-07 13:17:38) [GET]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-07 20:17:38", updated_at: "2009-09-07 20:17:38", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+Rendering template within layouts/application
+Rendering users/edit
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-09-07 13:17:39) [GET]
+  [4;36;1mInvitation Load (0.2ms)[0m   [0;1mSELECT * FROM "invitations" WHERE ("invitations"."token" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (1.9ms)
+Rendered layouts/_user_nav (1.3ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-07 13:17:39) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-07 20:17:38", updated_at: "2009-09-07 20:17:38", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-07 13:17:39) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-07 20:17:38", updated_at: "2009-09-07 20:17:38", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-09-07 16:59:25) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-07 23:59:25', NULL, NULL, NULL, NULL, '2009-09-07 23:59:25', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+Redirected to http://test.host/events/1
+Completed in 10ms (DB: 2) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-09-07 16:59:25) [GET]
+  [4;36;1mEvent Load (0.7ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/events
+Rendering events/index
+Completed in 25ms (View: 23, DB: 1) | 200 OK [http://test.host/events]
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-09-07 16:59:25) [GET]
+Rendering template within layouts/events
+Rendering events/new
+Completed in 102ms (View: 102, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-07 16:59:25) [POST]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.5ms)
+Rendered layouts/_general_footer (0.6ms)
+Completed in 20ms (View: 7, DB: 0) | 200 OK [http://test.host/invitations]
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-07 16:59:25) [POST]
+  [4;36;1mInvitation Create (0.5ms)[0m   [0;1mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-09-07 23:59:25', NULL, '3046b45114328a9e5937a2d9ffd43afcf14e842c', '2009-09-07 23:59:25', NULL, NULL)[0m
+
+
+Processing InvitationsController#new (for 0.0.0.0 at 2009-09-07 16:59:25) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.8ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 7ms (View: 7, DB: 1) | 200 OK [http://test.host/invitations/new]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-09-07 16:59:25) [POST]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.3ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://test.host/user_sessions]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-09-07 16:59:25) [POST]
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2009-09-07 16:59:25) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/user_sessions/new]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '3714ff8e81e6ec5061e065376aac192bd7c5b71564279bc73d6d5b1e5ab21842e4cc6f89811ac288e8e722dfc665ade2bc67f517de1f4a2a4040fc5d6221fba8') LIMIT 1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-07 16:59:25) [POST]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (4.6ms)
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-07 16:59:25) [POST]
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "crypted_password", "updated_at", "facebook_uid", "username", "password_salt", "persistence_token", "invitiation_id", "email", "invitation_limit") VALUES(NULL, '2009-09-07 23:59:25', NULL, '2009-09-07 23:59:25', NULL, NULL, NULL, NULL, NULL, NULL, 25)[0m
+Redirected to http://test.host/
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/users]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-09-07 16:59:25) [GET]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-07 23:59:25", updated_at: "2009-09-07 23:59:25", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+Rendering template within layouts/application
+Rendering users/edit
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-09-07 16:59:25) [GET]
+  [4;36;1mInvitation Load (0.2ms)[0m   [0;1mSELECT * FROM "invitations" WHERE ("invitations"."token" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (1.8ms)
+Rendered layouts/_user_nav (2.3ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-07 16:59:25) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-07 23:59:25", updated_at: "2009-09-07 23:59:25", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-07 16:59:25) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-07 23:59:25", updated_at: "2009-09-07 23:59:25", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-09-07 17:02:11) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mEvent Create (0.6ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-08 00:02:11', NULL, NULL, NULL, NULL, '2009-09-08 00:02:11', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+Redirected to http://test.host/events/1
+Completed in 11ms (DB: 2) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-09-07 17:02:11) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/events
+Rendering events/index
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://test.host/events]
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-09-07 17:02:11) [GET]
+Rendering template within layouts/events
+Rendering events/new
+Completed in 42ms (View: 42, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-07 17:02:11) [POST]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (2.7ms)
+Rendered layouts/_general_footer (0.6ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://test.host/invitations]
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-07 17:02:11) [POST]
+  [4;36;1mInvitation Create (0.6ms)[0m   [0;1mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-09-08 00:02:11', NULL, '56e2a440b03a9e4c6810fe2d2b7cb0588e56080f', '2009-09-08 00:02:11', NULL, NULL)[0m
+
+
+Processing InvitationsController#new (for 0.0.0.0 at 2009-09-07 17:02:11) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/invitations/new]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-09-07 17:02:11) [POST]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://test.host/user_sessions]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-09-07 17:02:11) [POST]
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2009-09-07 17:02:11) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.3ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/user_sessions/new]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '0a9fb241f0013e77489298ba9d75acb3466b5cce98d5c0715a949c847fbd1e8cd94fbcbbf5ccd4e9d9edf7c52e40f6a40b83e0d0892afdd894a568fbd94f8820') LIMIT 1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-07 17:02:11) [POST]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (5.0ms)
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-07 17:02:11) [POST]
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "crypted_password", "updated_at", "facebook_uid", "username", "password_salt", "persistence_token", "invitiation_id", "email", "invitation_limit") VALUES(NULL, '2009-09-08 00:02:11', NULL, '2009-09-08 00:02:11', NULL, NULL, NULL, NULL, NULL, NULL, 25)[0m
+Redirected to http://test.host/
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/users]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-09-07 17:02:11) [GET]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-08 00:02:11", updated_at: "2009-09-08 00:02:11", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+Rendering template within layouts/application
+Rendering users/edit
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-09-07 17:02:11) [GET]
+  [4;36;1mInvitation Load (0.2ms)[0m   [0;1mSELECT * FROM "invitations" WHERE ("invitations"."token" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (2.0ms)
+Rendered layouts/_user_nav (1.3ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-07 17:02:11) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-08 00:02:11", updated_at: "2009-09-08 00:02:11", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-07 17:02:11) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-08 00:02:11", updated_at: "2009-09-08 00:02:11", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-09-07 17:05:42) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-08 00:05:42', NULL, NULL, NULL, NULL, '2009-09-08 00:05:42', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+Redirected to http://test.host/events/1
+Completed in 10ms (DB: 2) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-09-07 17:05:42) [GET]
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/events
+Rendering events/index
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://test.host/events]
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-09-07 17:05:42) [GET]
+Rendering template within layouts/events
+Rendering events/new
+Completed in 116ms (View: 116, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-07 17:05:42) [POST]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.3ms)
+Rendered layouts/_general_footer (0.6ms)
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://test.host/invitations]
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-07 17:05:42) [POST]
+  [4;36;1mInvitation Create (0.5ms)[0m   [0;1mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-09-08 00:05:42', NULL, '611581c913e67a2dd3062e11404c91aac7edcb89', '2009-09-08 00:05:42', NULL, NULL)[0m
+
+
+Processing InvitationsController#new (for 0.0.0.0 at 2009-09-07 17:05:42) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.5ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 1) | 200 OK [http://test.host/invitations/new]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-09-07 17:05:42) [POST]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.7ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://test.host/user_sessions]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-09-07 17:05:42) [POST]
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2009-09-07 17:05:42) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/user_sessions/new]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '3bbe4ef1e8fb3975b48c8a8152b1dc201a4561cbd3a2c99529ca6b76fa0be2c0051d9addfd556c024f8686507f24c26be0b3e43f7bcefb0d917cba9b43bc6778') LIMIT 1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-07 17:05:42) [POST]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (3.1ms)
+Rendered layouts/_user_nav (1.5ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-07 17:05:42) [POST]
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "crypted_password", "updated_at", "facebook_uid", "username", "password_salt", "persistence_token", "invitiation_id", "email", "invitation_limit") VALUES(NULL, '2009-09-08 00:05:42', NULL, '2009-09-08 00:05:42', NULL, NULL, NULL, NULL, NULL, NULL, 25)[0m
+Redirected to http://test.host/
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/users]
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-09-07 17:05:42) [GET]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-08 00:05:42", updated_at: "2009-09-08 00:05:42", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+Rendering template within layouts/application
+Rendering users/edit
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-09-07 17:05:42) [GET]
+  [4;36;1mInvitation Load (0.2ms)[0m   [0;1mSELECT * FROM "invitations" WHERE ("invitations"."token" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (2.0ms)
+Rendered layouts/_user_nav (1.3ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-07 17:05:42) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-08 00:05:42", updated_at: "2009-09-08 00:05:42", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-07 17:05:42) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-08 00:05:42", updated_at: "2009-09-08 00:05:42", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-09-07 18:36:17) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mEvent Create (0.6ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-08 01:36:17', NULL, NULL, NULL, NULL, '2009-09-08 01:36:17', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+Redirected to http://test.host/events/1
+Completed in 11ms (DB: 3) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-09-07 18:36:17) [GET]
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/events
+Rendering events/index
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://test.host/events]
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-09-07 18:36:17) [GET]
+Rendering template within layouts/events
+Rendering events/new
+Completed in 48ms (View: 47, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-07 18:36:17) [POST]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.4ms)
+Rendered layouts/_general_footer (0.6ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://test.host/invitations]
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-07 18:36:17) [POST]
+  [4;36;1mInvitation Create (0.5ms)[0m   [0;1mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-09-08 01:36:17', NULL, 'e3808fb4076ce0be21b37aad00a8fd4d94c84763', '2009-09-08 01:36:17', NULL, NULL)[0m
+
+
+Processing InvitationsController#new (for 0.0.0.0 at 2009-09-07 18:36:17) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.3ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/invitations/new]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-09-07 18:36:17) [POST]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/user_sessions]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-09-07 18:36:18) [POST]
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2009-09-07 18:36:18) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/user_sessions/new]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '41fcac5b77f058d3a71c1f83786f301a1e1d58940723902b60bc49b2831989395950edafb09d413ec1de052a6300fa411ae6e10d5cea47cfbe43e62f2ff6134f') LIMIT 1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-07 18:36:18) [POST]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (3.2ms)
+Rendered layouts/_user_nav (1.3ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-07 18:36:18) [POST]
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "crypted_password", "updated_at", "facebook_uid", "username", "password_salt", "persistence_token", "invitiation_id", "email", "invitation_limit") VALUES(NULL, '2009-09-08 01:36:18', NULL, '2009-09-08 01:36:18', NULL, NULL, NULL, NULL, NULL, NULL, 25)[0m
+Redirected to http://test.host/
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/users]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-09-07 18:36:18) [GET]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-08 01:36:17", updated_at: "2009-09-08 01:36:17", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+Rendering template within layouts/application
+Rendering users/edit
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-09-07 18:36:18) [GET]
+  [4;36;1mInvitation Load (0.3ms)[0m   [0;1mSELECT * FROM "invitations" WHERE ("invitations"."token" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (1.8ms)
+Rendered layouts/_user_nav (1.4ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-07 18:36:18) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-08 01:36:17", updated_at: "2009-09-08 01:36:17", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-07 18:36:18) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-08 01:36:17", updated_at: "2009-09-08 01:36:17", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-09-08 11:43:08) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-08 18:43:08', NULL, NULL, NULL, NULL, '2009-09-08 18:43:08', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+Redirected to http://test.host/events/1
+Completed in 13ms (DB: 3) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-09-08 11:43:08) [GET]
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/events
+Rendering events/index
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://test.host/events]
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-09-08 11:43:08) [GET]
+Rendering template within layouts/events
+Rendering events/new
+Completed in 93ms (View: 92, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-08 11:43:08) [POST]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (2.7ms)
+Rendered layouts/_general_footer (0.7ms)
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://test.host/invitations]
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-08 11:43:08) [POST]
+  [4;36;1mInvitation Create (0.5ms)[0m   [0;1mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-09-08 18:43:08', NULL, 'eb892db1fdaa8c33968aff7c949e681bf7634ecf', '2009-09-08 18:43:08', NULL, NULL)[0m
+
+
+Processing InvitationsController#new (for 0.0.0.0 at 2009-09-08 11:43:08) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.3ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/invitations/new]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-09-08 11:43:08) [POST]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.3ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://test.host/user_sessions]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-09-08 11:43:08) [POST]
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2009-09-08 11:43:08) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.3ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/user_sessions/new]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '98b9d27cf41430f7735a5d330fd92ebce23070baf711d48e5e2e23394d464444c4ed3d20b513db0644823a98c0d68466115dd55d2d092192ab23b0b26437c549') LIMIT 1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-08 11:43:08) [POST]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (3.0ms)
+Rendered layouts/_user_nav (1.4ms)
+Rendered layouts/_general_footer (0.4ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-08 11:43:08) [POST]
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "crypted_password", "updated_at", "facebook_uid", "username", "password_salt", "persistence_token", "invitiation_id", "email", "invitation_limit") VALUES(NULL, '2009-09-08 18:43:08', NULL, '2009-09-08 18:43:08', NULL, NULL, NULL, NULL, NULL, NULL, 25)[0m
+Redirected to http://test.host/
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/users]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-09-08 11:43:08) [GET]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-08 18:43:08", updated_at: "2009-09-08 18:43:08", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+Rendering template within layouts/application
+Rendering users/edit
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-09-08 11:43:08) [GET]
+  [4;36;1mInvitation Load (0.3ms)[0m   [0;1mSELECT * FROM "invitations" WHERE ("invitations"."token" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (1.8ms)
+Rendered layouts/_user_nav (1.8ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-08 11:43:08) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-08 18:43:08", updated_at: "2009-09-08 18:43:08", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-08 11:43:08) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyString", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-08 18:43:08", updated_at: "2009-09-08 18:43:08", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
