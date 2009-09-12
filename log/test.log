@@ -3283,3 +3283,692 @@ Processing UsersController#update (for 0.0.0.0 at 2009-09-11 17:09:22) [PUT]
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-09-11 18:33:33) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:33:33', NULL, NULL, NULL, NULL, '2009-09-12 01:33:33', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+Redirected to http://test.host/events/1
+Completed in 11ms (DB: 2) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:33:33', NULL, NULL, NULL, NULL, '2009-09-12 01:33:33', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+  [4;35;1mEvent Create (0.4ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:33:33', NULL, NULL, NULL, NULL, '2009-09-12 01:33:33', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-09-11 18:33:33) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/events
+Rendering events/index
+Completed in 7ms (View: 5, DB: 2) | 200 OK [http://test.host/events]
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-09-11 18:33:33) [GET]
+Rendering template within layouts/events
+Rendering events/new
+Completed in 71ms (View: 71, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:33:33', NULL, NULL, NULL, NULL, '2009-09-12 01:33:33', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+  [4;36;1mEvent Create (0.4ms)[0m   [0;1mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:33:33', NULL, NULL, NULL, NULL, '2009-09-12 01:33:33', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-11 18:33:33) [POST]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.3ms)
+Rendered layouts/_general_footer (0.6ms)
+Completed in 37ms (View: 8, DB: 1) | 200 OK [http://test.host/invitations]
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-11 18:33:33) [POST]
+  [4;35;1mInvitation Create (0.5ms)[0m   [0mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-09-12 01:33:33', NULL, '8142d0780ae68dde3ded82381f155198d2b3e60f', '2009-09-12 01:33:33', NULL, NULL)[0m
+
+
+Processing InvitationsController#new (for 0.0.0.0 at 2009-09-11 18:33:33) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/invitations/new]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-09-11 18:33:33) [POST]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://test.host/user_sessions]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-09-11 18:33:34) [POST]
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2009-09-11 18:33:34) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/user_sessions/new]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-11 18:33:34) [POST]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (5.1ms)
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-11 18:33:34) [POST]
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "crypted_password", "updated_at", "facebook_uid", "username", "password_salt", "persistence_token", "invitiation_id", "email", "invitation_limit") VALUES(NULL, '2009-09-12 01:33:34', NULL, '2009-09-12 01:33:34', NULL, NULL, NULL, NULL, NULL, NULL, 25)[0m
+Redirected to http://test.host/
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/users]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-09-11 18:33:34) [GET]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyStringGood", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-12 01:33:33", updated_at: "2009-09-12 01:33:33", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+Rendering template within layouts/application
+Rendering users/edit
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-09-11 18:33:34) [GET]
+  [4;36;1mInvitation Load (0.2ms)[0m   [0;1mSELECT * FROM "invitations" WHERE ("invitations"."token" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (1.8ms)
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-11 18:33:34) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyStringGood", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-12 01:33:33", updated_at: "2009-09-12 01:33:33", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-11 18:33:34) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyStringGood", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-12 01:33:33", updated_at: "2009-09-12 01:33:33", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+  [4;35;1mSQL (1.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-09-11 18:35:05) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:35:05', NULL, NULL, NULL, NULL, '2009-09-12 01:35:05', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+Redirected to http://test.host/events/1
+Completed in 10ms (DB: 2) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+  [4;35;1mEvent Create (0.4ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:35:05', NULL, NULL, NULL, NULL, '2009-09-12 01:35:05', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-09-11 18:35:05) [DELETE]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+  [4;36;1mEvent Destroy (0.1ms)[0m   [0;1mDELETE FROM "events" WHERE "id" = 1[0m
+Redirected to http://test.host/events
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "events" [0m
+  [4;36;1mEvent Create (0.6ms)[0m   [0;1mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:35:05', NULL, NULL, NULL, NULL, '2009-09-12 01:35:05', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-09-11 18:35:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/events
+Rendering events/edit
+Completed in 81ms (View: 80, DB: 1) | 200 OK [http://test.host/events/1/edit]
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-09-11 18:35:05) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/events
+Rendering events/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/events]
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-09-11 18:35:05) [GET]
+Rendering template within layouts/events
+Rendering events/new
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:35:05', NULL, NULL, NULL, NULL, '2009-09-12 01:35:05', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-09-11 18:35:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.8ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/events
+Rendering events/show
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://test.host/events/1]
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:35:05', NULL, NULL, NULL, NULL, '2009-09-12 01:35:05', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-09-11 18:35:05) [PUT]
+  Parameters: {"id"=>"1", "event"=>{}}
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Redirected to http://test.host/events/1
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/events/1?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-09-11 18:35:40) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:35:40', NULL, NULL, NULL, NULL, '2009-09-12 01:35:40', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+Redirected to http://test.host/events/1
+Completed in 14ms (DB: 2) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+  [4;35;1mEvent Create (0.9ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:35:40', NULL, NULL, NULL, NULL, '2009-09-12 01:35:40', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-09-11 18:35:40) [DELETE]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.9ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+  [4;36;1mEvent Destroy (0.1ms)[0m   [0;1mDELETE FROM "events" WHERE "id" = 1[0m
+Redirected to http://test.host/events
+Completed in 3ms (DB: 3) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "events" [0m
+  [4;36;1mEvent Create (0.5ms)[0m   [0;1mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:35:40', NULL, NULL, NULL, NULL, '2009-09-12 01:35:40', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-09-11 18:35:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/events
+Rendering events/edit
+Completed in 59ms (View: 57, DB: 1) | 200 OK [http://test.host/events/1/edit]
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-09-11 18:35:40) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/events
+Rendering events/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/events]
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-09-11 18:35:40) [GET]
+Rendering template within layouts/events
+Rendering events/new
+Completed in 22ms (View: 21, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:35:40', NULL, NULL, NULL, NULL, '2009-09-12 01:35:40', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-09-11 18:35:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/events
+Rendering events/show
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://test.host/events/1]
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:35:41', NULL, NULL, NULL, NULL, '2009-09-12 01:35:41', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-09-11 18:35:41) [PUT]
+  Parameters: {"id"=>"1", "event"=>{}}
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Redirected to http://test.host/events/1
+Completed in 6ms (DB: 1) | 302 Found [http://test.host/events/1?]
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-11 18:35:41) [POST]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.6ms)
+Rendered layouts/_general_footer (0.9ms)
+Completed in 67ms (View: 13, DB: 0) | 200 OK [http://test.host/invitations]
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-11 18:35:41) [POST]
+  [4;35;1mInvitation Create (0.5ms)[0m   [0mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-09-12 01:35:41', NULL, '34c9b334a6c7706613f5418e6c599da568f3ef3c', '2009-09-12 01:35:41', NULL, NULL)[0m
+
+
+Processing InvitationsController#new (for 0.0.0.0 at 2009-09-11 18:35:41) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.6ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/invitations/new]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-09-11 18:35:41) [POST]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.6ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://test.host/user_sessions]
+
+
+Processing UserSessionsController#create (for 0.0.0.0 at 2009-09-11 18:35:41) [POST]
+
+
+Processing UserSessionsController#new (for 0.0.0.0 at 2009-09-11 18:35:41) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/user_sessions/new]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-11 18:35:41) [POST]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (5.7ms)
+Rendered layouts/_user_nav (1.3ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-11 18:35:41) [POST]
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "crypted_password", "updated_at", "facebook_uid", "username", "password_salt", "persistence_token", "invitiation_id", "email", "invitation_limit") VALUES(NULL, '2009-09-12 01:35:41', NULL, '2009-09-12 01:35:41', NULL, NULL, NULL, NULL, NULL, NULL, 25)[0m
+Redirected to http://test.host/
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/users]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-09-11 18:35:41) [GET]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyStringGood", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-12 01:35:40", updated_at: "2009-09-12 01:35:40", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+Rendering template within layouts/application
+Rendering users/edit
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-09-11 18:35:41) [GET]
+  [4;36;1mInvitation Load (0.2ms)[0m   [0;1mSELECT * FROM "invitations" WHERE ("invitations"."token" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (1.9ms)
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-11 18:35:41) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyStringGood", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-12 01:35:40", updated_at: "2009-09-12 01:35:40", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-11 18:35:41) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyStringGood", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-12 01:35:40", updated_at: "2009-09-12 01:35:40", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-09-11 18:39:29) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:39:29', NULL, NULL, NULL, NULL, '2009-09-12 01:39:29', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+Redirected to http://test.host/events/1
+Completed in 11ms (DB: 2) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:39:29', NULL, NULL, NULL, NULL, '2009-09-12 01:39:29', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-09-11 18:39:29) [DELETE]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+  [4;36;1mEvent Destroy (0.1ms)[0m   [0;1mDELETE FROM "events" WHERE "id" = 1[0m
+Redirected to http://test.host/events
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "events" [0m
+  [4;36;1mEvent Create (0.4ms)[0m   [0;1mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:39:29', NULL, NULL, NULL, NULL, '2009-09-12 01:39:29', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-09-11 18:39:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/events
+Rendering events/edit
+Completed in 47ms (View: 46, DB: 1) | 200 OK [http://test.host/events/1/edit]
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-09-11 18:39:29) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/events
+Rendering events/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/events]
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-09-11 18:39:29) [GET]
+Rendering template within layouts/events
+Rendering events/new
+Completed in 18ms (View: 18, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;35;1mEvent Create (0.6ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:39:29', NULL, NULL, NULL, NULL, '2009-09-12 01:39:29', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-09-11 18:39:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/events
+Rendering events/show
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://test.host/events/1]
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:39:29', NULL, NULL, NULL, NULL, '2009-09-12 01:39:29', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-09-11 18:39:29) [PUT]
+  Parameters: {"id"=>"1", "event"=>{}}
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Redirected to http://test.host/events/1
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/events/1?]
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-11 18:39:29) [POST]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.5ms)
+Rendered layouts/_general_footer (0.6ms)
+Completed in 25ms (View: 8, DB: 0) | 200 OK [http://test.host/invitations]
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-11 18:39:29) [POST]
+  [4;35;1mInvitation Create (0.5ms)[0m   [0mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-09-12 01:39:29', NULL, 'd0e0f479abb7966964bdfac9692faec954ed0486', '2009-09-12 01:39:29', NULL, NULL)[0m
+
+
+Processing InvitationsController#new (for 0.0.0.0 at 2009-09-11 18:39:29) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/invitations/new]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-11 18:39:29) [POST]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (5.1ms)
+Rendered layouts/_user_nav (1.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://test.host/users]
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-09-11 18:39:29) [POST]
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "crypted_password", "updated_at", "facebook_uid", "username", "password_salt", "persistence_token", "invitiation_id", "email", "invitation_limit") VALUES(NULL, '2009-09-12 01:39:29', NULL, '2009-09-12 01:39:29', NULL, NULL, NULL, NULL, NULL, NULL, 25)[0m
+Redirected to http://test.host/
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/users]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-09-11 18:39:29) [GET]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyStringGood", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-12 01:39:29", updated_at: "2009-09-12 01:39:29", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+Rendering template within layouts/application
+Rendering users/edit
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-09-11 18:39:29) [GET]
+  [4;36;1mInvitation Load (0.2ms)[0m   [0;1mSELECT * FROM "invitations" WHERE ("invitations"."token" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (1.7ms)
+Rendered layouts/_user_nav (1.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-11 18:39:29) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyStringGood", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-12 01:39:29", updated_at: "2009-09-12 01:39:29", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-09-11 18:39:29) [PUT]
+  Parameters: {"id"=>#<User id: 298486374, username: "MyStringGood", email: "MyString", crypted_password: "MyStringMyStringMyStringMyString", password_salt: nil, persistence_token: nil, created_at: "2009-09-12 01:39:29", updated_at: "2009-09-12 01:39:29", name: nil, facebook_uid: nil, invitiation_id: nil, invitation_limit: nil>}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-09-11 18:41:35) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:41:35', NULL, NULL, NULL, NULL, '2009-09-12 01:41:35', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+Redirected to http://test.host/events/1
+Completed in 11ms (DB: 2) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:41:35', NULL, NULL, NULL, NULL, '2009-09-12 01:41:35', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-09-11 18:41:35) [DELETE]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+  [4;36;1mEvent Destroy (0.1ms)[0m   [0;1mDELETE FROM "events" WHERE "id" = 1[0m
+Redirected to http://test.host/events
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "events" [0m
+  [4;36;1mEvent Create (0.4ms)[0m   [0;1mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:41:35', NULL, NULL, NULL, NULL, '2009-09-12 01:41:35', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-09-11 18:41:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/events
+Rendering events/edit
+Completed in 55ms (View: 54, DB: 1) | 200 OK [http://test.host/events/1/edit]
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-09-11 18:41:35) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/events
+Rendering events/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/events]
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-09-11 18:41:35) [GET]
+Rendering template within layouts/events
+Rendering events/new
+Completed in 18ms (View: 18, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:41:35', NULL, NULL, NULL, NULL, '2009-09-12 01:41:35', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-09-11 18:41:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.6ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/events
+Rendering events/show
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://test.host/events/1]
+  [4;35;1mEvent Create (0.4ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:41:35', NULL, NULL, NULL, NULL, '2009-09-12 01:41:35', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-09-11 18:41:35) [PUT]
+  Parameters: {"id"=>"1", "event"=>{}}
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Redirected to http://test.host/events/1
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/events/1?]
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-11 18:41:35) [POST]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.6ms)
+Completed in 35ms (View: 8, DB: 0) | 200 OK [http://test.host/invitations]
+
+
+Processing InvitationsController#create (for 0.0.0.0 at 2009-09-11 18:41:35) [POST]
+  [4;35;1mInvitation Create (0.6ms)[0m   [0mINSERT INTO "invitations" ("created_at", "recipient_email", "token", "updated_at", "sent_at", "sender_id") VALUES('2009-09-12 01:41:35', NULL, '1c0b5bcf60a11fc00cbf3da2b0cad61a718df1b1', '2009-09-12 01:41:35', NULL, NULL)[0m
+
+
+Processing InvitationsController#new (for 0.0.0.0 at 2009-09-11 18:41:35) [GET]
+Rendering template within layouts/application
+Rendering invitations/new
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.2ms)
+Completed in 4ms (View: 4, DB: 1) | 200 OK [http://test.host/invitations/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-09-11 18:47:11) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:47:11', NULL, NULL, NULL, NULL, '2009-09-12 01:47:11', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+Redirected to http://test.host/events/1
+Completed in 11ms (DB: 2) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+  [4;35;1mEvent Create (0.4ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:47:11', NULL, NULL, NULL, NULL, '2009-09-12 01:47:11', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-09-11 18:47:11) [DELETE]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+  [4;36;1mEvent Destroy (0.1ms)[0m   [0;1mDELETE FROM "events" WHERE "id" = 1[0m
+Redirected to http://test.host/events
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "events" [0m
+  [4;36;1mEvent Create (0.5ms)[0m   [0;1mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:47:11', NULL, NULL, NULL, NULL, '2009-09-12 01:47:11', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-09-11 18:47:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.6ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/events
+Rendering events/edit
+Completed in 48ms (View: 47, DB: 1) | 200 OK [http://test.host/events/1/edit]
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-09-11 18:47:11) [GET]
+  [4;36;1mEvent Load (0.2ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/events
+Rendering events/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/events]
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-09-11 18:47:11) [GET]
+Rendering template within layouts/events
+Rendering events/new
+Completed in 18ms (View: 17, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:47:11', NULL, NULL, NULL, NULL, '2009-09-12 01:47:11', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-09-11 18:47:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/events
+Rendering events/show
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://test.host/events/1]
+  [4;35;1mEvent Create (0.4ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:47:11', NULL, NULL, NULL, NULL, '2009-09-12 01:47:11', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-09-11 18:47:11) [PUT]
+  Parameters: {"id"=>"1", "event"=>{}}
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Redirected to http://test.host/events/1
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/events/1?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#create (for 0.0.0.0 at 2009-09-11 18:48:03) [POST]
+  Parameters: {"event"=>{}}
+  [4;35;1mEvent Create (0.4ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:48:03', NULL, NULL, NULL, NULL, '2009-09-12 01:48:03', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+Redirected to http://test.host/events/1
+Completed in 11ms (DB: 2) | 302 Found [http://test.host/events?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+  [4;35;1mEvent Create (0.6ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:48:03', NULL, NULL, NULL, NULL, '2009-09-12 01:48:03', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "events" [0m
+
+
+Processing EventsController#destroy (for 0.0.0.0 at 2009-09-11 18:48:03) [DELETE]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.5ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+  [4;36;1mEvent Destroy (0.1ms)[0m   [0;1mDELETE FROM "events" WHERE "id" = 1[0m
+Redirected to http://test.host/events
+Completed in 2ms (DB: 2) | 302 Found [http://test.host/events/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "events" [0m
+  [4;36;1mEvent Create (0.5ms)[0m   [0;1mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:48:03', NULL, NULL, NULL, NULL, '2009-09-12 01:48:03', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#edit (for 0.0.0.0 at 2009-09-11 18:48:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mEvent Load (0.6ms)[0m   [0mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/events
+Rendering events/edit
+Completed in 47ms (View: 46, DB: 1) | 200 OK [http://test.host/events/1/edit]
+
+
+Processing EventsController#index (for 0.0.0.0 at 2009-09-11 18:48:03) [GET]
+  [4;36;1mEvent Load (0.3ms)[0m   [0;1mSELECT * FROM "events" [0m
+Rendering template within layouts/events
+Rendering events/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/events]
+
+
+Processing EventsController#new (for 0.0.0.0 at 2009-09-11 18:48:03) [GET]
+Rendering template within layouts/events
+Rendering events/new
+Completed in 18ms (View: 18, DB: 0) | 200 OK [http://test.host/events/new]
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:48:03', NULL, NULL, NULL, NULL, '2009-09-12 01:48:03', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#show (for 0.0.0.0 at 2009-09-11 18:48:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mEvent Load (0.6ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Rendering template within layouts/events
+Rendering events/show
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://test.host/events/1]
+  [4;35;1mEvent Create (0.5ms)[0m   [0mINSERT INTO "events" ("volunteer_cap", "display_attending", "open_invite", "created_at", "title", "show_comments", "start_date_of_service", "location_address", "updated_at", "show_avatars", "description", "allow_maybe_come", "cancelled", "host_id", "comment_id", "finish_date_of_service", "allow_adding_of_video", "location_name", "allow_adding_of_pictures") VALUES(NULL, NULL, NULL, '2009-09-12 01:48:03', NULL, NULL, NULL, NULL, '2009-09-12 01:48:03', NULL, 'description', NULL, NULL, NULL, NULL, NULL, NULL, 'location_name234', NULL)[0m
+
+
+Processing EventsController#update (for 0.0.0.0 at 2009-09-11 18:48:03) [PUT]
+  Parameters: {"id"=>"1", "event"=>{}}
+  [4;36;1mEvent Load (0.5ms)[0m   [0;1mSELECT * FROM "events" WHERE ("events"."id" = 1) [0m
+Redirected to http://test.host/events/1
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/events/1?]
