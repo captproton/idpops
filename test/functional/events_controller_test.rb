@@ -21,23 +21,27 @@ class EventsControllerTest < ActionController::TestCase
   end
 
   test "should show event" do
-    get :show, :id => events(:one).to_param
+    event = Factory.create(:event, :location_name  => "location_name234", :description =>  "description" )
+    get :show, :id => event_id
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, :id => events(:one).to_param
+    event = Factory.create(:event, :location_name  => "location_name234", :description =>  "description" )
+    get :edit, :id => event_id
     assert_response :success
   end
 
   test "should update event" do
-    put :update, :id => events(:one).to_param, :event => { }
+    event = Factory.create(:event, :location_name  => "location_name234", :description =>  "description" )
+    put :update, :id => event_id, :event => { }
     assert_redirected_to event_path(assigns(:event))
   end
 
   test "should destroy event" do
+    event = Factory.create(:event, :location_name  => "location_name234", :description =>  "description" )
     assert_difference('Event.count', -1) do
-      delete :destroy, :id => events(:one).to_param
+      delete :destroy, :id => event_id
     end
 
     assert_redirected_to events_path

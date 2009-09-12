@@ -1,8 +1,17 @@
 require 'test_helper'
 
 class EventTest < ActiveSupport::TestCase
-  # Replace this with your real tests.
-  test "the truth" do
-    assert true
-  end
+    def setup
+      # normal Test::Unit setup stuff here
+      @event = Event.new
+      
+    end
+
+    def test_should_be_true
+      assert true
+    end
+
+    should "be true" do
+      assert true
+    end  
 end

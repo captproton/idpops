@@ -4,6 +4,6 @@ one:
   crypted_password: MyStringMyStringMyStringMyString
 
 two:
-  username: MyString
+  username: MyStringGood
   email: MyString
   crypted_password: MyStringMyStringMyStringMyString
