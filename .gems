@@ -7,3 +7,6 @@ right_http_connection --version 1.2.4
 captproton-restfulx --version 1.2.3 --source gems.github.com
 mbleigh-acts-as-taggable-on --version 1.0.5 --source gems.github.com
 authlogic
+webrat --source gems.github.com
+thoughtbot-factory_girl --source gems.github.com
+redgreen --version 1.2.2
