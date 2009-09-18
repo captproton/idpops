@@ -24,7 +24,7 @@ Rails::Initializer.run do |config|
   config.gem 'webrat', :lib => "webrat", :source => "http://gems.github.com"
   config.gem "thoughtbot-factory_girl", :lib => "factory_girl", :source => "http://gems.github.com"
   config.gem 'redgreen', :version=> "1.2.2"
-  config.gem "thoughtbot-paperclip", :lib => "thoughtbot-paperclip", :source => "http://gems.github.com"
+  ## config.gem "thoughtbot-paperclip", :lib => "name", :version => "2.2.9.2", :source => "http://gems.github.com"
   
   
   

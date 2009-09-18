@@ -13,6 +13,31 @@ alt blue light #e1ecff
 
 alt blue dark #94beff
 
+/* =============================================== */
+/*  10. IDEAS LIST 
+/* =============================================== */
+
+
+
+
+
+/*========================================================*/
+/*    Cascading Style Sheet for the Origin App            */
+/*========================================================*/
+
+/*========================================================*/
+/*                  Table of Contents                     */
+/*========================================================*/
+/*  1. COMMON
+/*  2. GRID
+/*  3. HEADER
+/*  4. FOOTER
+/*  5. MAIN
+/*  6. SIDEBAR
+/*  7. BOX and ALTBOX
+/*  8. FORMS
+/*  9. MESSAGES 
+/*========================================================*/
 
 /* =============================================== */
 /*  1. COMMON 
@@ -42,7 +67,6 @@ padding:0;
 .right {float: right;}
 .left {float:left;}
 .centered {text-align:center; }
-
 
 /* =============================================== */
 /*  2. GRID 
@@ -127,7 +151,6 @@ display:block;
 padding:2px 10px;
 }
 
-
 /* =============================================== */
 /*  5. MAIN 
 /* =============================================== */
@@ -191,7 +214,7 @@ color: #38465b;
 .first_alt {
 margin-top:3.25em;
 }
-
+	
 /* =============================================== */
 /*  8. FORMS 
 /* =============================================== */
@@ -313,63 +336,3 @@ color: #6b5e2b;
 }
 
 
-/* =============================================== */
-/*  11. IDEAS 
-/* =============================================== */
-
-
-
-
-#ideas-list table {
-        border-collapse: collapse;
-}
-
-#ideas-list table tr td {
-        padding: 0px;
-        vertical-align: top;
-}
-
-#ideas-list .list-image {
-  width:        50px;
-  height:       50px;
-}
-
-#ideas-list .list-description {
-  width:        50%;
-  text-align:   left;
-}
-
-#ideas-list .list-description dl {
-        margin: 10;
-		text-align:   left;
-}
-
-#ideas-list .list-description dt {
-	color:        #244;
-	font-weight:  bold;
-	font-size:    larger;
-}
-
-#ideas-list .list-description dd {
-        margin: 10;
-		text-align:   left;
-		font-size:    smaller;
-}
-
-#ideas-list .list-actions {
-  font-size:    smaller;
-  text-align:   left;
-  padding-left: 10em;
-}
-
-#ideas-list .list-line-even {
-  background:   #eeffee;
-}
-
-#ideas-list .list-line-odd {
-  background:   #ffffff;
-}
-
-#ideas-list div {
-display: inline-block;
-}

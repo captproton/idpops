@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090907201503) do
+ActiveRecord::Schema.define(:version => 20090918164403) do
 
   create_table "events", :force => true do |t|
     t.integer  "host_id"
@@ -33,6 +33,14 @@ ActiveRecord::Schema.define(:version => 20090907201503) do
     t.datetime "updated_at"
   end
 
+  create_table "ideas", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.integer  "price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "invitations", :force => true do |t|
     t.integer  "sender_id"
     t.string   "recipient_email"
@@ -51,9 +59,13 @@ ActiveRecord::Schema.define(:version => 20090907201503) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
-    t.integer  "facebook_uid",      :limit => 8
+    t.integer  "facebook_uid",        :limit => 8
     t.integer  "invitiation_id"
     t.integer  "invitation_limit"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
 end

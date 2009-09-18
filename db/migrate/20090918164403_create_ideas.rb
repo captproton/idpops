@@ -4,7 +4,7 @@ class CreateIdeas < ActiveRecord::Migration
       t.string :title
       t.text :description
       t.integer :price
-
+      
       t.timestamps
     end
   end
