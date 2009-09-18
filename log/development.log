@@ -7808,3 +7808,38 @@ Migrating to CreateIdeas (20090918164403)
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ideas")[0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-18 14:47:13) [GET]
+Rendering frontdoor/index
+Completed in 50ms (View: 48, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-18 14:47:34) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-09-18 14:47:39) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (99.0ms)
+Rendered layouts/_general_footer (1.3ms)
+Completed in 180ms (View: 126, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-18 14:47:40) [GET]
+
+ActionController::RoutingError (No route matches "/images/igadblog.jpg" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
