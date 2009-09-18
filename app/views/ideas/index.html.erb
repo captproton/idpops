@@ -8,7 +8,7 @@
   </tr>
 
 <% @ideas.each do |idea| %>
-  <tr>
+  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
     <td><%=h idea.title %></td>
     <td><%=h idea.description %></td>
     <td><%=h idea.price %></td>
@@ -22,3 +22,47 @@
 <br />
 
 <%= link_to 'New idea', new_idea_path %>
+
+<div id = "ideas-list">
+	<h3> Listing Ideas </h3>
+		<% if current_user -%>
+		  <%= link_to 'New idea', new_idea_path %>
+		<% end -%>   
+
+  <table>
+	<% for idea in @ideas %>
+		<tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+			
+			<td>
+				<%= image_tag 'icons/Games.png', :class => 'list-image', :size => "60x60" %>
+			</td>
+			
+			<td class = "list-description">
+				<dl>
+					<dt><%= link_to idea.title, idea %> </dt>
+					<dd><%=h truncate(idea.description, :length => 50) %> </dd>
+					<dd><%= idea.price %> $ </dd>
+				</dl>
+		     </td>
+
+			<td class="list-actions">	
+			 	<% if current_user  @transaction = @idea.transaction.new -%>
+				
+				<% form_for @transaction do |f| %>
+					<%= f.hidden_field :idea => "1" %>
+				  
+				- <p> 
+				- <label for="order_name">Pop Amount:</label> 
+				- <%= f.text_field :amount, :size => 40 %> 
+				5 </p> 
+				<td><p><%= f.submit "Pop!" %></p>
+					
+				- <% end %>
+			  </td>
+			 	<% end -%>
+			</td>
+		</tr>
+		<% end %>
+  </table>
+  </div>
+

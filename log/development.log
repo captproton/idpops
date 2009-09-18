@@ -7886,3 +7886,897 @@ Rendering rescues/layout (not_found)
   [4;35;1mSQL (2.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090830213412')[0m
   [4;36;1mSQL (2.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090830213446')[0m
   [4;35;1mSQL (2.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090907201503')[0m
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:27:05) [GET]
+  [4;36;1mIdea Load (0.5ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/ideas
+Rendering ideas/index
+Completed in 65ms (View: 59, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:28:50) [GET]
+  [4;35;1mIdea Load (0.5ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (0.3ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 21ms (View: 15, DB: 0) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-18 15:28:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/igadblog.jpg" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:30:23) [GET]
+  [4;36;1mIdea Load (0.5ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (0.3ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-18 15:30:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/igadblog.jpg" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:32:28) [GET]
+  [4;35;1mIdea Load (0.5ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 23ms (View: 18, DB: 0) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-18 15:32:29) [GET]
+
+ActionController::RoutingError (No route matches "/images/igadblog.jpg" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:33:03) [GET]
+  [4;36;1mIdea Load (0.5ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (1.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 23ms (View: 18, DB: 0) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-18 15:33:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/igadblog.jpg" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:34:08) [GET]
+  [4;35;1mIdea Load (0.5ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (1.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 23ms (View: 17, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:34:26) [GET]
+  [4;36;1mIdea Load (0.6ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (1.4ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:34:32) [GET]
+  [4;35;1mIdea Load (0.5ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (1.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 22ms (View: 17, DB: 0) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:35:51) [GET]
+  [4;36;1mIdea Load (0.5ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (0.4ms)
+Rendered layouts/_general_footer (0.8ms)
+Completed in 104ms (View: 98, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:38:24) [GET]
+  [4;35;1mIdea Load (0.5ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (0.3ms)
+Rendered ideas/_sidebar (0.9ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 29ms (View: 22, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:38:43) [GET]
+  [4;36;1mIdea Load (0.5ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (0.2ms)
+Rendered ideas/_sidebar (0.7ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 22ms (View: 17, DB: 0) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:42:12) [GET]
+  [4;35;1mIdea Load (0.5ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (0.2ms)
+Rendered ideas/_sidebar (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:42:35) [GET]
+  [4;36;1mIdea Load (0.5ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (0.3ms)
+Rendered ideas/_sidebar (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 101ms (View: 96, DB: 0) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#new (for ::1 at 2009-09-18 15:42:53) [GET]
+Rendering template within layouts/application
+Rendering ideas/new
+Rendered layouts/_user_nav (13.3ms)
+Rendered ideas/_sidebar (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 28ms (View: 22, DB: 0) | 200 OK [http://localhost/ideas/new]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:49:23) [GET]
+  [4;35;1mIdea Load (0.5ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered ideas/_sidebar (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 22ms (View: 17, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:49:32) [GET]
+  [4;36;1mIdea Load (0.6ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (1.6ms)
+Rendered ideas/_sidebar (0.3ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 34ms (View: 26, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:51:22) [GET]
+  [4;35;1mIdea Load (0.5ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (0.3ms)
+Rendered ideas/_sidebar_content (0.8ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 117ms (View: 112, DB: 0) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#new (for ::1 at 2009-09-18 15:52:24) [GET]
+Rendering template within layouts/application
+Rendering ideas/new
+Rendered layouts/_user_nav (12.6ms)
+Rendered ideas/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 24ms (View: 18, DB: 0) | 200 OK [http://localhost/ideas/new]
+
+
+Processing IdeasController#create (for ::1 at 2009-09-18 15:52:50) [POST]
+  Parameters: {"commit"=>"Create", "idea"=>{"price"=>"1", "title"=>"celebrity", "description"=>"it's audios"}, "authenticity_token"=>"CAsdUpjQuZHOod+/S6B6ewqd4ZJNtsl2F0RNaTP/1jk="}
+  [4;36;1mIdea Create (0.6ms)[0m   [0;1mINSERT INTO "ideas" ("price", "created_at", "title", "updated_at", "description") VALUES(1, '2009-09-18 22:52:50', 'celebrity', '2009-09-18 22:52:50', 'it''s audios')[0m
+Redirected to http://localhost:3000/ideas/1
+Completed in 44ms (DB: 1) | 302 Found [http://localhost/ideas]
+
+
+Processing IdeasController#show (for ::1 at 2009-09-18 15:52:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mIdea Load (0.3ms)[0m   [0mSELECT * FROM "ideas" WHERE ("ideas"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ideas/show
+Rendered layouts/_user_nav (15.3ms)
+Rendered ideas/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 28ms (View: 21, DB: 0) | 200 OK [http://localhost/ideas/1]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:52:56) [GET]
+  [4;36;1mIdea Load (0.6ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+
+ActionView::TemplateError (undefined method `image_url' for #<Idea:0x2385ef8>) on line #37 of app/views/ideas/index.html.erb:
+34: 		<tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+35: 			
+36: 			<td>
+37: 				<%= image_tag idea.image_url, :class => 'list-image', :size => "60x60" %>
+38: 			</td>
+39: 			
+40: 			<td class = "list-description">
+
+    app/views/ideas/index.html.erb:37
+    app/views/ideas/index.html.erb:33:in `each'
+    app/views/ideas/index.html.erb:33
+    app/controllers/ideas_controller.rb:7:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (129.1ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:53:51) [GET]
+  [4;35;1mIdea Load (0.6ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (0.2ms)
+Rendered ideas/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 27ms (View: 21, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-18 15:53:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/Games.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:54:49) [GET]
+  [4;36;1mIdea Load (0.7ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (0.2ms)
+Rendered ideas/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 28ms (View: 22, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-09-18 15:55:10) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.0ms)
+
+ActionView::TemplateError (Missing template user_sessions/_sidebar_content.erb in view path app/views) on line #37 of app/views/layouts/application.html.erb:
+34: 	</div>
+35: </div>
+36: 	</div>
+37: 	<div class="yui-b"><%= render :partial => 'sidebar_content' %></div>
+38: 		
+39: 
+40: 	</div>
+
+    app/views/layouts/application.html.erb:37
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:58:38) [GET]
+  [4;35;1mIdea Load (0.6ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (0.3ms)
+Rendered layouts/_sidebar_content (0.8ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 31ms (View: 25, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-09-18 15:58:42) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (0.9ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 19ms (View: 6, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-09-18 15:58:56) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"captproton", "password"=>"123456"}, "authenticity_token"=>"GBUPkQLUJUU3yBJILV1WlyS8ejf0l/9neqrURdihnO4="}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'captproton') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 228ms (DB: 1) | 302 Found [http://localhost/user_sessions]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-18 15:58:56) [GET]
+Rendering frontdoor/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:59:18) [GET]
+  [4;35;1mIdea Load (0.7ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.3ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 30ms (View: 24, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 15:59:32) [GET]
+  [4;35;1mIdea Load (0.6ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.5ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 30ms (View: 23, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#add_to_cart (for ::1 at 2009-09-18 15:59:42) [POST]
+  Parameters: {"commit"=>"Pops", "vote"=>{"id"=>"40"}, "authenticity_token"=>"GBUPkQLUJUU3yBJILV1WlyS8ejf0l/9neqrURdihnO4=", "id"=>"1"}
+
+ActionController::UnknownAction (No action responded to add_to_cart. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-18 16:15:46) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 16:15:52) [GET]
+  [4;35;1mIdea Load (0.7ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (0.2ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 111ms (View: 104, DB: 1) | 200 OK [http://localhost/ideas]
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateTransactions (20090918231645)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "transactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "idea_id" integer, "backer_id" integer, "amount" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090918231645')[0m
+  [4;35;1mSQL (1.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("events")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ideas")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("transactions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 16:43:43) [GET]
+  [4;36;1mIdea Load (0.6ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (0.2ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.2ms)
+Completed in 30ms (View: 23, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 16:44:03) [GET]
+  [4;35;1mIdea Load (0.6ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x226d098>) on line #55 of app/views/ideas/index.html.erb:
+52: 				<% end %>
+53: 				
+54: 				<% form_for :transaction, :url => { :action => :create } do |form| %> 
+55: 					<%= f.hidden_field :idea => @idea %>
+56: 				  
+57: 				- <p> 
+58: 				- <label for="order_name">Pop Amount:</label> 
+
+    app/views/ideas/index.html.erb:55
+    app/views/ideas/index.html.erb:54
+    app/views/ideas/index.html.erb:33:in `each'
+    app/views/ideas/index.html.erb:33
+    app/controllers/ideas_controller.rb:7:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (53.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 16:44:22) [GET]
+  [4;35;1mIdea Load (0.7ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x235e63c>) on line #53 of app/views/ideas/index.html.erb:
+50: 
+51: 				
+52: 				<% form_for :transaction, :url => { :action => :create } do |form| %> 
+53: 					<%= f.hidden_field :idea => @idea %>
+54: 				  
+55: 				- <p> 
+56: 				- <label for="order_name">Pop Amount:</label> 
+
+    app/views/ideas/index.html.erb:53
+    app/views/ideas/index.html.erb:52
+    app/views/ideas/index.html.erb:33:in `each'
+    app/views/ideas/index.html.erb:33
+    app/controllers/ideas_controller.rb:7:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (177.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 16:44:48) [GET]
+  [4;35;1mIdea Load (0.6ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x24f61c0>) on line #63 of app/views/ideas/index.html.erb:
+60: 				5 </p> 
+61: 					
+62: 				- <% end %>
+63: 				<td><p><%= f.submit "Pop!" %></p>
+64: 			  </td>
+65: 			 	<% end -%>
+66: 			</td>
+
+    app/views/ideas/index.html.erb:63
+    app/views/ideas/index.html.erb:33:in `each'
+    app/views/ideas/index.html.erb:33
+    app/controllers/ideas_controller.rb:7:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 16:45:00) [GET]
+  [4;35;1mIdea Load (0.8ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x286f66c>) on line #63 of app/views/ideas/index.html.erb:
+60: 				5 </p> 
+61: 					
+62: 				- <% end %>
+63: 				<td><p><%= f.submit "Pop!" %></p>
+64: 			  </td>
+65: 			 	<% end -%>
+66: 			</td>
+
+    app/views/ideas/index.html.erb:63
+    app/views/ideas/index.html.erb:33:in `each'
+    app/views/ideas/index.html.erb:33
+    app/controllers/ideas_controller.rb:7:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 16:45:11) [GET]
+  [4;35;1mIdea Load (0.6ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #63 of app/views/ideas/index.html.erb:
+60: 				5 </p> 
+61: 					
+62: 				- <% end %>
+63: 				<td><p><%= form.submit "Pop!" %></p>
+64: 			  </td>
+65: 			 	<% end -%>
+66: 			</td>
+
+    app/views/ideas/index.html.erb:63:in `form'
+    app/views/ideas/index.html.erb:63
+    app/views/ideas/index.html.erb:33:in `each'
+    app/views/ideas/index.html.erb:33
+    app/controllers/ideas_controller.rb:7:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (141.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 16:45:30) [GET]
+  [4;35;1mIdea Load (0.6ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x2469554>) on line #55 of app/views/ideas/index.html.erb:
+52: 				<% end %>
+53: 				
+54: 				<% form_for :transaction, :url => { :action => :create } do |form| %> 
+55: 					<%= f.hidden_field :idea => @idea %>
+56: 				  
+57: 				- <p> 
+58: 				- <label for="order_name">Pop Amount:</label> 
+
+    app/views/ideas/index.html.erb:55
+    app/views/ideas/index.html.erb:54
+    app/views/ideas/index.html.erb:33:in `each'
+    app/views/ideas/index.html.erb:33
+    app/controllers/ideas_controller.rb:7:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (139.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 16:45:35) [GET]
+  [4;35;1mIdea Load (0.6ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x25ed36c>) on line #63 of app/views/ideas/index.html.erb:
+60: 				5 </p> 
+61: 					
+62: 				- <% end %>
+63: 				<td><p><%= f.submit "Pop!" %></p>
+64: 			  </td>
+65: 			 	<% end -%>
+66: 			</td>
+
+    app/views/ideas/index.html.erb:63
+    app/views/ideas/index.html.erb:33:in `each'
+    app/views/ideas/index.html.erb:33
+    app/controllers/ideas_controller.rb:7:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 16:45:52) [GET]
+  [4;35;1mIdea Load (0.6ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.4ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.2ms)
+Completed in 126ms (View: 119, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#create (for ::1 at 2009-09-18 16:45:56) [POST]
+  Parameters: {"commit"=>"Pop!", "authenticity_token"=>"GBUPkQLUJUU3yBJILV1WlyS8ejf0l/9neqrURdihnO4=", "transaction"=>{"idea"=>"", "amount"=>"20"}}
+  [4;35;1mIdea Create (0.5ms)[0m   [0mINSERT INTO "ideas" ("price", "created_at", "title", "updated_at", "description") VALUES(NULL, '2009-09-18 23:45:56', NULL, '2009-09-18 23:45:56', NULL)[0m
+Redirected to http://localhost:3000/ideas/2
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/ideas]
+
+
+Processing IdeasController#show (for ::1 at 2009-09-18 16:45:56) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mIdea Load (0.3ms)[0m   [0;1mSELECT * FROM "ideas" WHERE ("ideas"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering ideas/show
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (18.4ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 30ms (View: 21, DB: 1) | 200 OK [http://localhost/ideas/2]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 16:47:06) [GET]
+  [4;36;1mIdea Load (0.7ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.3ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 35ms (View: 29, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#create (for ::1 at 2009-09-18 16:47:14) [POST]
+  Parameters: {"commit"=>"Pop!", "authenticity_token"=>"GBUPkQLUJUU3yBJILV1WlyS8ejf0l/9neqrURdihnO4=", "transaction"=>{"idea_id1"=>"", "amount"=>"40"}}
+  [4;36;1mIdea Create (0.4ms)[0m   [0;1mINSERT INTO "ideas" ("price", "created_at", "title", "updated_at", "description") VALUES(NULL, '2009-09-18 23:47:14', NULL, '2009-09-18 23:47:14', NULL)[0m
+Redirected to http://localhost:3000/ideas/3
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/ideas]
+
+
+Processing IdeasController#show (for ::1 at 2009-09-18 16:47:14) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mIdea Load (0.2ms)[0m   [0mSELECT * FROM "ideas" WHERE ("ideas"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering ideas/show
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (21.0ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 33ms (View: 26, DB: 1) | 200 OK [http://localhost/ideas/3]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 16:48:52) [GET]
+  [4;35;1mIdea Load (1.0ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.4ms)
+Rendered layouts/_sidebar_content (0.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 39ms (View: 32, DB: 2) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#create (for ::1 at 2009-09-18 16:48:55) [POST]
+  Parameters: {"commit"=>"Pop!", "authenticity_token"=>"GBUPkQLUJUU3yBJILV1WlyS8ejf0l/9neqrURdihnO4=", "transaction"=>{"amount"=>"23", "idea1"=>""}}
+  [4;35;1mIdea Create (0.5ms)[0m   [0mINSERT INTO "ideas" ("price", "created_at", "title", "updated_at", "description") VALUES(NULL, '2009-09-18 23:48:55', NULL, '2009-09-18 23:48:55', NULL)[0m
+Redirected to http://localhost:3000/ideas/4
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/ideas]
+
+
+Processing IdeasController#show (for ::1 at 2009-09-18 16:48:55) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mIdea Load (0.3ms)[0m   [0;1mSELECT * FROM "ideas" WHERE ("ideas"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering ideas/show
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (35.6ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 48ms (View: 39, DB: 1) | 200 OK [http://localhost/ideas/4]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 16:49:26) [GET]
+  [4;36;1mIdea Load (0.9ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.4ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 41ms (View: 34, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#create (for ::1 at 2009-09-18 16:49:39) [POST]
+  Parameters: {"commit"=>"Pop!", "authenticity_token"=>"GBUPkQLUJUU3yBJILV1WlyS8ejf0l/9neqrURdihnO4=", "transaction"=>{"amount"=>"22", "idea1"=>""}}
+  [4;36;1mIdea Create (0.5ms)[0m   [0;1mINSERT INTO "ideas" ("price", "created_at", "title", "updated_at", "description") VALUES(NULL, '2009-09-18 23:49:39', NULL, '2009-09-18 23:49:39', NULL)[0m
+Redirected to http://localhost:3000/ideas/5
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/ideas]
+
+
+Processing IdeasController#show (for ::1 at 2009-09-18 16:49:39) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mIdea Load (0.3ms)[0m   [0mSELECT * FROM "ideas" WHERE ("ideas"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering ideas/show
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (19.4ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 35ms (View: 24, DB: 1) | 200 OK [http://localhost/ideas/5]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 16:53:34) [GET]
+  [4;35;1mIdea Load (0.8ms)[0m   [0mSELECT * FROM "ideas" [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.transaction):
+  app/controllers/ideas_controller.rb:6:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (122.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 16:54:17) [GET]
+  [4;36;1mIdea Load (0.9ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.transaction):
+  app/controllers/ideas_controller.rb:6:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)

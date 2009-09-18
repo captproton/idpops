@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  idea_id: 1
+  backer_id: 1
+  amount: 1
+
+two:
+  idea_id: 1
+  backer_id: 1
+  amount: 1

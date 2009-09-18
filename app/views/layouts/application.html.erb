@@ -4,12 +4,12 @@
 <head>
    <link rel="stylesheet" href="http://yui.yahooapis.com/2.5.0/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
 
-   <title><%= "I Give A Damn Network - " + h(yield(:title) || "I Give A Damn Network") %></title>
+   <title><%= "IdPops - " + h(yield(:title) || "IdPops") %></title>
    <%= stylesheet_link_tag 'application' %>
    <%= yield(:head) %>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="description" content="I Give A Damn Network">
-	<meta name="keywords" content="I Give A Damn Network List">
+	<meta name="description" content="IdPops">
+	<meta name="keywords" content="IdPops">
 
 </head>
 <body>
@@ -34,8 +34,9 @@
 	</div>
 </div>
 	</div>
-	<div class="yui-b"><!-- YOUR NAVIGATION GOES HERE --></div>
-		sidebar here
+	<div class="yui-b"><%= render :partial => 'layouts/sidebar_content' %></div>
+		
+
 	</div>
    <div id="ft">
    		<%= render :partial => 'layouts/general_footer' %>

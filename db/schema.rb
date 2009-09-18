@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090918164403) do
+ActiveRecord::Schema.define(:version => 20090918231645) do
 
   create_table "events", :force => true do |t|
     t.integer  "host_id"
@@ -46,6 +46,14 @@ ActiveRecord::Schema.define(:version => 20090918164403) do
     t.string   "recipient_email"
     t.string   "token"
     t.datetime "sent_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "transactions", :force => true do |t|
+    t.integer  "idea_id"
+    t.integer  "backer_id"
+    t.integer  "amount"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
