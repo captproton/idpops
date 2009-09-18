@@ -7719,3 +7719,8 @@ Completed in 14ms (View: 11, DB: 0) | 200 OK [http://igadnet.local/]
 Processing FrontdoorController#index (for 127.0.0.1 at 2009-09-11 16:35:43) [GET]
 Rendering frontdoor/index
 Completed in 13ms (View: 10, DB: 0) | 200 OK [http://igadnet.local/]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-18 10:11:29) [GET]
+Rendering frontdoor/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
