@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :username, :on => :create, :message => "must be unique"
   
   
-  attr_accessible :username, :email, :password, :password_confirmation, :invitation_token
+  attr_accessible :username, :email, :password, :password_confirmation
 
 
 end
