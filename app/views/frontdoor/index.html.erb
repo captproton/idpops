@@ -22,9 +22,9 @@
 		    <h2>
 		    	
 					Welcome! 
-					<a href="/session/new">Log In</a> 
+					<%= link_to "Login", login_path %>
 					or 
-					<a href="/users/new">Sign Up</a>
+					<%= link_to "Sign Up", new_user_path %> | 
 						    </h2>
 		  </div>
 		</div>
@@ -61,13 +61,12 @@
 			<h3>Help</h3>
 			<p>
 				Ready to log in?
-				<br/>
-				<a href="/session/new">» Click here to log in</a>
+				<br/> <%= link_to "» Click here to log in", login_path %>
 			</p>
 			<p>
 				Don't have an account?
 				<br/>
-			<a href="/users/new">» Click here to sign up</a>
+				<%= link_to "» Click here to sign up", new_user_path %>
 			</p>
 			<p>
 				Forgot your password?
