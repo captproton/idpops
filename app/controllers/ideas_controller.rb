@@ -3,7 +3,6 @@ class IdeasController < ApplicationController
   # GET /ideas.xml
   def index
     @ideas = Idea.all
-    @transaction = @idea.transaction.new
 
     respond_to do |format|
       format.html # index.html.erb
