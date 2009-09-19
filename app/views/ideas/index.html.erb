@@ -46,15 +46,14 @@
 		     </td>
 
 			<td class="list-actions">	
-			 	<% if current_user  @transaction = @idea.transaction.new -%>
-				
-				<% form_for @transaction do |f| %>
-					<%= f.hidden_field :idea => "1" %>
+			 	<% if current_user  -%>
+
+				<% form_for :transaction, :url => transactions_path  do |f| %>
 				  
-				- <p> 
-				- <label for="order_name">Pop Amount:</label> 
-				- <%= f.text_field :amount, :size => 40 %> 
-				5 </p> 
+				<p> 
+				 <label for="order_name">Pop Amount:</label> 
+				 <%= f.text_field :amount, :size => 40 %> 
+			 </p> 
 				<td><p><%= f.submit "Pop!" %></p>
 					
 				- <% end %>

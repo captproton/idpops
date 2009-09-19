@@ -8780,3 +8780,414 @@ The error occurred while evaluating nil.transaction):
 Rendered rescues/_trace (32.8ms)
 Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 17:12:49) [GET]
+  [4;35;1mIdea Load (0.9ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+ERROR: compiling _run_erb_app47views47ideas47index46html46erb RAISED compile error
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/ideas/index.html.erb:70: syntax error, unexpected kENSURE, expecting kEND
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/ideas/index.html.erb:72: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47ideas47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing ideas</h1>\n\n<table>\n  <tr>\n    <th>Title</th>\n    <th>Description</th>\n    <th>Price</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+
+;  @ideas.each do |idea| ; @output_buffer.concat "\n  <tr class=\""
+; @output_buffer.concat(( cycle('list-line-odd', 'list-line-even') ).to_s); @output_buffer.concat "\">\n    <td>"
+; @output_buffer.concat((h idea.title ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h idea.description ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h idea.price ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Show', idea ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Edit', edit_idea_path(idea) ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Destroy', idea, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New idea', new_idea_path ).to_s); @output_buffer.concat "\n\n<div id = \"ideas-list\">\n\t<h3> Listing Ideas </h3>\n\t\t"
+
+
+
+;  if current_user 
+@output_buffer.concat "\t\t  "; @output_buffer.concat(( link_to 'New idea', new_idea_path ).to_s); @output_buffer.concat "\n\t\t"
+;  end ; @output_buffer.concat "   \n\n  <table>\n\t"
+
+
+;  for idea in @ideas ; @output_buffer.concat "\n\t\t<tr class=\""
+; @output_buffer.concat(( cycle('list-line-odd', 'list-line-even') ).to_s); @output_buffer.concat "\">\n\t\t\t\n\t\t\t<td>\n\t\t\t\t"
+
+
+; @output_buffer.concat(( image_tag 'icons/Games.png', :class => 'list-image', :size => "60x60" ).to_s); @output_buffer.concat "\n\t\t\t</td>\n\t\t\t\n\t\t\t<td class = \"list-description\">\n\t\t\t\t<dl>\n\t\t\t\t\t<dt>"
+
+
+
+
+; @output_buffer.concat(( link_to idea.title, idea ).to_s); @output_buffer.concat " </dt>\n\t\t\t\t\t<dd>"
+; @output_buffer.concat((h truncate(idea.description, :length => 50) ).to_s); @output_buffer.concat " </dd>\n\t\t\t\t\t<dd>"
+; @output_buffer.concat(( idea.price ).to_s); @output_buffer.concat " $ </dd>\n\t\t\t\t</dl>\n\t\t     </td>\n\n\t\t\t<td class=\"list-actions\">\t\n\t\t\t \t"
+
+
+
+
+;  if current_user  @transaction = @idea.transaction.new 
+@output_buffer.concat "\t\t\t\tLine1 ";  form_for :order, :url => { :action => :save_order } do |form| ; @output_buffer.concat "\n\t\t\t\t"
+;  form_for :transaction, :url => transactions_path  do |f| ; @output_buffer.concat "\n\t\t\t\t\t"
+; @output_buffer.concat(( f.hidden_field :idea => "1" ).to_s); @output_buffer.concat "\n\t\t\t\t  \n\t\t\t\t- <p> \n\t\t\t\t- <label for=\"order_name\">Pop Amount:</label> \n\t\t\t\t- "
+
+
+
+; @output_buffer.concat(( f.text_field :amount, :size => 40 ).to_s); @output_buffer.concat " \n\t\t\t\t5 </p> \n\t\t\t\t<td><p>"
+
+; @output_buffer.concat(( f.submit "Pop!" ).to_s); @output_buffer.concat "</p>\n\t\t\t\t\t\n\t\t\t\t- "
+
+;  end ; @output_buffer.concat "\n\t\t\t  </td>\n\t\t\t \t"
+
+;  end 
+@output_buffer.concat "\t\t\t</td>\n\t\t</tr>\n\t\t"
+
+;  end ; @output_buffer.concat "\n  </table>\n  </div>\n\n"
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/ideas/index.html.erb:72:in `compile!'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:947:in `render_without_benchmark'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/controllers/ideas_controller.rb:7:in `index'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `send'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `perform_action_without_filters'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:46:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:13:in `run'
+/Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/ideas/index.html.erb:70: syntax error, unexpected kENSURE, expecting kEND
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/ideas/index.html.erb:72: syntax error, unexpected $end, expecting kEND) on line #70 of app/views/ideas/index.html.erb:
+67:   </div>
+
+    app/views/ideas/index.html.erb:72:in `compile!'
+    app/controllers/ideas_controller.rb:7:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 17:13:12) [GET]
+  [4;36;1mIdea Load (0.9ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.transaction) on line #49 of app/views/ideas/index.html.erb:
+46: 		     </td>
+47: 
+48: 			<td class="list-actions">	
+49: 			 	<% if current_user  @transaction = @idea.transaction.new -%>
+50: 
+51: 				<% form_for :transaction, :url => transactions_path  do |f| %>
+52: 					<%= f.hidden_field :idea => "1" %>
+
+    app/views/ideas/index.html.erb:49
+    app/views/ideas/index.html.erb:33:in `each'
+    app/views/ideas/index.html.erb:33
+    app/controllers/ideas_controller.rb:7:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (45.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 17:13:25) [GET]
+  [4;36;1mIdea Load (1.1ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.3ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 39ms (View: 31, DB: 2) | 200 OK [http://localhost/ideas]
+
+
+Processing TransactionsController#create (for ::1 at 2009-09-18 17:13:34) [POST]
+  Parameters: {"commit"=>"Pop!", "authenticity_token"=>"GBUPkQLUJUU3yBJILV1WlyS8ejf0l/9neqrURdihnO4=", "transaction"=>{"amount"=>"23", "idea1"=>""}}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: idea1):
+  app/controllers/transactions_controller.rb:43:in `new'
+  app/controllers/transactions_controller.rb:43:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TransactionsController#create (for ::1 at 2009-09-18 17:14:01) [POST]
+  Parameters: {"commit"=>"Pop!", "authenticity_token"=>"GBUPkQLUJUU3yBJILV1WlyS8ejf0l/9neqrURdihnO4=", "transaction"=>{"amount"=>"221", "idea1"=>""}}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: idea1):
+  app/controllers/transactions_controller.rb:43:in `new'
+  app/controllers/transactions_controller.rb:43:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TransactionsController#create (for ::1 at 2009-09-18 17:15:13) [POST]
+  Parameters: {"commit"=>"Pop!", "authenticity_token"=>"GBUPkQLUJUU3yBJILV1WlyS8ejf0l/9neqrURdihnO4=", "transaction"=>{"amount"=>"221", "idea1"=>""}}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: idea1):
+  app/controllers/transactions_controller.rb:43:in `new'
+  app/controllers/transactions_controller.rb:43:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (129.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 17:15:16) [GET]
+  [4;36;1mIdea Load (0.9ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.3ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 39ms (View: 33, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing TransactionsController#create (for ::1 at 2009-09-18 17:15:21) [POST]
+  Parameters: {"commit"=>"Pop!", "authenticity_token"=>"GBUPkQLUJUU3yBJILV1WlyS8ejf0l/9neqrURdihnO4=", "transaction"=>{"amount"=>"45"}}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTransaction Create (0.4ms)[0m   [0mINSERT INTO "transactions" ("created_at", "idea_id", "updated_at", "amount", "backer_id") VALUES('2009-09-19 00:15:21', NULL, '2009-09-19 00:15:21', 45, 1)[0m
+Redirected to http://localhost:3000/transactions/1
+Completed in 50ms (DB: 1) | 302 Found [http://localhost/transactions]
+
+
+Processing TransactionsController#show (for ::1 at 2009-09-18 17:15:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTransaction Load (0.3ms)[0m   [0;1mSELECT * FROM "transactions" WHERE ("transactions"."id" = 1) [0m
+Rendering template within layouts/transactions
+Rendering transactions/show
+Completed in 23ms (View: 11, DB: 0) | 200 OK [http://localhost/transactions/1]
+
+
+Processing TransactionsController#create (for ::1 at 2009-09-18 17:16:33) [POST]
+  Parameters: {"commit"=>"Pop!", "authenticity_token"=>"GBUPkQLUJUU3yBJILV1WlyS8ejf0l/9neqrURdihnO4=", "transaction"=>{"amount"=>"45"}}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mTransaction Create (0.4ms)[0m   [0;1mINSERT INTO "transactions" ("created_at", "idea_id", "updated_at", "amount", "backer_id") VALUES('2009-09-19 00:16:33', NULL, '2009-09-19 00:16:33', 45, 1)[0m
+Redirected to http://localhost:3000/transactions/2
+Completed in 32ms (DB: 1) | 302 Found [http://localhost/transactions]
+
+
+Processing TransactionsController#show (for ::1 at 2009-09-18 17:16:33) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mTransaction Load (0.3ms)[0m   [0mSELECT * FROM "transactions" WHERE ("transactions"."id" = 2) [0m
+Rendering template within layouts/transactions
+Rendering transactions/show
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/transactions/2]
+
+
+Processing UsersController#show (for ::1 at 2009-09-18 17:16:45) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, edit, new, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;35;1mTransaction Load (0.4ms)[0m   [0mSELECT * FROM "transactions" LIMIT 1[0m
+  [4;36;1mTransaction Load (0.3ms)[0m   [0;1mSELECT * FROM "transactions" LIMIT 1[0m
+  [4;35;1mTransaction Update (0.5ms)[0m   [0mUPDATE "transactions" SET "updated_at" = '2009-09-19 00:18:03', "idea_id" = 1 WHERE "id" = 1[0m
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-18 17:18:19) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-18 17:18:35) [GET]
+  [4;36;1mIdea Load (0.9ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.3ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 33ms (View: 27, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing TransactionsController#create (for ::1 at 2009-09-18 17:19:07) [POST]
+  Parameters: {"commit"=>"Pop!", "authenticity_token"=>"GBUPkQLUJUU3yBJILV1WlyS8ejf0l/9neqrURdihnO4=", "transaction"=>{"amount"=>"45"}}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mTransaction Create (0.5ms)[0m   [0mINSERT INTO "transactions" ("created_at", "idea_id", "updated_at", "amount", "backer_id") VALUES('2009-09-19 00:19:07', NULL, '2009-09-19 00:19:07', 45, 1)[0m
+Redirected to http://localhost:3000/transactions/3
+Completed in 121ms (DB: 1) | 302 Found [http://localhost/transactions]
+
+
+Processing TransactionsController#show (for ::1 at 2009-09-18 17:19:08) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mTransaction Load (0.3ms)[0m   [0;1mSELECT * FROM "transactions" WHERE ("transactions"."id" = 3) [0m
+Rendering template within layouts/transactions
+Rendering transactions/show
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/transactions/3]
+
+
+Processing TransactionsController#create (for ::1 at 2009-09-18 17:20:05) [POST]
+  Parameters: {"commit"=>"Pop!", "authenticity_token"=>"GBUPkQLUJUU3yBJILV1WlyS8ejf0l/9neqrURdihnO4=", "transaction"=>{"amount"=>"32"}}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mTransaction Create (0.4ms)[0m   [0;1mINSERT INTO "transactions" ("created_at", "idea_id", "updated_at", "amount", "backer_id") VALUES('2009-09-19 00:20:05', NULL, '2009-09-19 00:20:05', 32, 1)[0m
+Redirected to http://localhost:3000/transactions/4
+Completed in 32ms (DB: 1) | 302 Found [http://localhost/transactions]
+
+
+Processing TransactionsController#show (for ::1 at 2009-09-18 17:20:05) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mTransaction Load (0.3ms)[0m   [0mSELECT * FROM "transactions" WHERE ("transactions"."id" = 4) [0m
+Rendering template within layouts/transactions
+Rendering transactions/show
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/transactions/4]
