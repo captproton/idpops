@@ -1,4 +1,18 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :likings
+
+  map.resources :likings
+
+  map.resources :user_profiles
+
+  map.resources :user_profiles
+
+  map.resources :comments
+
+  map.resources :comments
+
+  map.resources :images
+
   map.resources :transactions
 
   map.resources :ideas

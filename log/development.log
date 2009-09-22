@@ -9191,3 +9191,920 @@ Processing TransactionsController#show (for ::1 at 2009-09-18 17:20:05) [GET]
 Rendering template within layouts/transactions
 Rendering transactions/show
 Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/transactions/4]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-18 18:30:20) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateTransactions (20090918231645)
+Migrating to CreateImages (20090921194138)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text, "idea_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090921194138')[0m
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+  [4;35;1mSQL (0.4ms)[0m   [0mALTER TABLE "images" ADD "graphic_file_name" varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "images" ADD "graphic_content_type" varchar(255)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "images" ADD "graphic_file_size" integer[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090921194957')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("events")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ideas")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("images")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("invitations")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("transactions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+New RightAws::S3Interface using single-threaded mode
+Opening new HTTPS connection to idpopsv2.s3.amazonaws.com:443
+Closing HTTPS connection to idpopsv2.s3.amazonaws.com:443
+Opening new HTTPS connection to s3.amazonaws.com:443
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-21 13:56:12) [GET]
+Rendering frontdoor/index
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ImagesController#index (for ::1 at 2009-09-21 13:56:19) [GET]
+  [4;36;1mImage Load (0.7ms)[0m   [0;1mSELECT * FROM "images" [0m
+Rendering template within layouts/images
+Rendering images/index
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#new (for ::1 at 2009-09-21 13:56:22) [GET]
+Rendering template within layouts/images
+Rendering images/new
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/images/new]
+
+
+Processing ImagesController#new (for ::1 at 2009-09-21 13:59:28) [GET]
+Rendering template within layouts/images
+Rendering images/new
+Rendered images/_form (3.7ms)
+Completed in 93ms (View: 86, DB: 0) | 200 OK [http://localhost/images/new]
+
+
+Processing ImagesController#new (for ::1 at 2009-09-21 14:02:01) [GET]
+Rendering template within layouts/images
+Rendering images/new
+ERROR: compiling _run_erb_app47views47images47_form46html46erb_locals_form_object RAISED compile error
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/images/_form.html.erb:1: syntax error, unexpected ',', expecting kEND
+...late=true ;  form_for(@image), :html => { :multipart => true...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/images/_form.html.erb:1: syntax error, unexpected kDO, expecting kEND
+...ml => { :multipart => true} do |f| ; @output_buffer.concat "...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/images/_form.html.erb:21: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47images47_form46html46erb_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form = local_assigns[:form];;@output_buffer = '';  __in_erb_template=true ;  form_for(@image), :html => { :multipart => true} do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :description ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_area :description ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :idea_id ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :idea_id ).to_s); @output_buffer.concat "\n  </p>\n<p>\n\t"
+
+
+; @output_buffer.concat(( f.file_field :graphic ).to_s); @output_buffer.concat "\n</p>\n\n  <p>\n    "
+
+
+
+; @output_buffer.concat(( f.submit 'Create' ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/images/_form.html.erb:21:in `compile!'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/partials.rb:184:in `render_partial'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:262:in `render'
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/images/new.html.erb:3:in `_run_erb_app47views47images47new46html46erb'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:34:in `send'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:34:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:301:in `with_template'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:30:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:947:in `render_without_benchmark'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/controllers/images_controller.rb:29:in `new'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `send'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `perform_action_without_filters'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:46:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:13:in `run'
+/Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/images/_form.html.erb:1: syntax error, unexpected ',', expecting kEND
+...late=true ;  form_for(@image), :html => { :multipart => true...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/images/_form.html.erb:1: syntax error, unexpected kDO, expecting kEND
+...ml => { :multipart => true} do |f| ; @output_buffer.concat "...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/images/_form.html.erb:21: syntax error, unexpected kENSURE, expecting $end) on line #1 of app/views/images/_form.html.erb:
+1: <% form_for(@image), :html => { :multipart => true} do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4:   <p>
+
+    app/views/images/_form.html.erb:21:in `compile!'
+    app/views/images/new.html.erb:3
+    app/controllers/images_controller.rb:29:in `new'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.9ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#new (for ::1 at 2009-09-21 14:03:52) [GET]
+Rendering template within layouts/images
+Rendering images/new
+Rendered images/_form (3.6ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/images/new]
+
+
+Processing ImagesController#new (for ::1 at 2009-09-21 14:04:40) [GET]
+Rendering template within layouts/images
+Rendering images/new
+Rendered images/_form (3.8ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/images/new]
+
+
+Processing ImagesController#new (for ::1 at 2009-09-21 14:05:00) [GET]
+Rendering template within layouts/images
+Rendering images/new
+Rendered images/_form (3.6ms)
+Completed in 15ms (View: 8, DB: 0) | 200 OK [http://localhost/images/new]
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateTransactions (20090918231645)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "believer_id" integer, "idea_id" integer, "words" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090921211101')[0m
+Migrating to CreateUserProfiles (20090921211400)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "user_profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" text, "about" text, "twitter_handle" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090921211400')[0m
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "taggings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tag_id" integer, "taggable_id" integer, "tagger_id" integer, "tagger_type" varchar(255), "taggable_type" varchar(255), "context" varchar(255), "created_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE INDEX "index_taggings_on_tag_id" ON "taggings" ("tag_id")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_taggings_on_taggable_id_and_taggable_type_and_context" ON "taggings" ("taggable_id", "taggable_type", "context")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090921211645')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("comments")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("events")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ideas")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("images")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("invitations")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("taggings")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("transactions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("user_profiles")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-21 14:40:03) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-21 14:40:12) [GET]
+  [4;35;1mIdea Load (1.0ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Rendered layouts/_user_nav (10.7ms)
+Rendered layouts/_sidebar_content (16.0ms)
+Rendered layouts/_general_footer (14.7ms)
+Completed in 147ms (View: 138, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#show (for ::1 at 2009-09-21 14:40:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIdea Load (0.3ms)[0m   [0;1mSELECT * FROM "ideas" WHERE ("ideas"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ideas/show
+Rendered layouts/_user_nav (18.6ms)
+Rendered layouts/_sidebar_content (0.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 56ms (View: 45, DB: 0) | 200 OK [http://localhost/ideas/1]
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateTransactions (20090918231645)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+Migrating to CreateUserProfiles (20090921211400)
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+Migrating to CreateLikings (20090921213853)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "likings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "believer_id" integer, "idea_id" integer, "degree_of" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090921213853')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("images")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("likings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("taggings")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("transactions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("user_profiles")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateLikings (20090921213853)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (80.8ms)[0m   [0mDROP TABLE "likings"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090921213853'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("images")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("taggings")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("transactions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("user_profiles")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateTransactions (20090918231645)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+Migrating to CreateUserProfiles (20090921211400)
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+Migrating to CreateLikings (20090921213853)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "likings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "believer_id" integer, "idea_id" integer, "rating" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090921213853')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("images")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("likings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("taggings")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("transactions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("user_profiles")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateTransactions (20090918231645)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+Migrating to CreateUserProfiles (20090921211400)
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+Migrating to CreateLikings (20090921213853)
+Migrating to AddBelieverTypeToLiking (20090921224415)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "likings" ADD "beliver_type" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090921224415')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("images")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("likings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("taggings")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("transactions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("user_profiles")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-21 15:55:54) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateTransactions (20090918231645)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+Migrating to CreateUserProfiles (20090921211400)
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+Migrating to CreateLikings (20090921213853)
+Migrating to AddBelieverTypeToLiking (20090921224415)
+Migrating to AddInitiatorToIdeas (20090921234718)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "ideas" ADD "initiator_id" integer[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090921234718')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("images")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("likings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("taggings")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("transactions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("user_profiles")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddInitiatorToIdeas (20090921234718)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCREATE TEMPORARY TABLE "altered_ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "initiator_id" integer) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mDROP TABLE "ideas"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_ideas")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_ideas"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090921234718'[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("comments")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("events")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("ideas")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("images")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("invitations")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("likings")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("taggings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("transactions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("user_profiles")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateTransactions (20090918231645)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+Migrating to CreateUserProfiles (20090921211400)
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+Migrating to CreateLikings (20090921213853)
+Migrating to AddBelieverTypeToLiking (20090921224415)
+Migrating to AddInitiatorToIdeas (20090921234718)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mALTER TABLE "ideas" ADD "imaginer_id" integer[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090921234718')[0m
+Migrating to RenameInitiatorToImaginerForIdeas (20090922000848)
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddInitiatorToIdeas (20090921234718)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "imaginer_id" integer) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "ideas"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "imaginer_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_ideas")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_ideas"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090921234718'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("comments")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("events")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("ideas")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("images")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("invitations")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("likings")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("taggings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("transactions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("user_profiles")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateTransactions (20090918231645)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+Migrating to CreateUserProfiles (20090921211400)
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+Migrating to CreateLikings (20090921213853)
+Migrating to AddBelieverTypeToLiking (20090921224415)
+Migrating to AddInitiatorToIdeas (20090921234718)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "ideas" ADD "initiator_id" varchar(255)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090921234718')[0m
+Migrating to RenameInitiatorToImaginerForIdeas (20090922000848)
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "imaginer_id" integer(255)) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "ideas"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "imaginer_id" integer(255)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_ideas")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_ideas"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090922000848')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("comments")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("events")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ideas")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("images")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("invitations")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("likings")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("taggings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("transactions")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("user_profiles")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to RenameInitiatorToImaginerForIdeas (20090922000848)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (73.2ms)[0m   [0mCREATE TEMPORARY TABLE "altered_ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "initiator_id" integer(255)) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mDROP TABLE "ideas"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "initiator_id" integer(255)) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("altered_ideas")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_ideas"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090922000848'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("comments")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("events")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ideas")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("images")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("invitations")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("likings")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("taggings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("transactions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("user_profiles")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddInitiatorToIdeas (20090921234718)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "initiator_id" integer(255)) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "ideas"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_ideas")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDROP TABLE "altered_ideas"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090921234718'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("comments")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("events")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ideas")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("images")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("invitations")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("likings")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("taggings")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("transactions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("user_profiles")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateTransactions (20090918231645)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+Migrating to CreateUserProfiles (20090921211400)
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+Migrating to CreateLikings (20090921213853)
+Migrating to AddBelieverTypeToLiking (20090921224415)
+Migrating to AddInitiatorToIdeas (20090921234718)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "ideas" ADD "initiator_id" integer[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090921234718')[0m
+Migrating to RenameInitiatorToImaginerForIdeas (20090922000848)
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "imaginer_id" integer) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "ideas"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "imaginer_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_ideas")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_ideas"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090922000848')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("comments")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("events")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ideas")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("images")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("invitations")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("likings")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("taggings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("transactions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("user_profiles")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-21 19:04:06) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+
+
+Processing ImagesController#index (for ::1 at 2009-09-21 19:22:04) [GET]
+  [4;36;1mImage Load (0.8ms)[0m   [0;1mSELECT * FROM "images" [0m
+Rendering template within layouts/images
+Rendering images/index
+Completed in 55ms (View: 46, DB: 1) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#new (for ::1 at 2009-09-21 19:22:06) [GET]
+Rendering template within layouts/images
+Rendering images/new
+Rendered images/_form (9.9ms)
+Completed in 51ms (View: 37, DB: 0) | 200 OK [http://localhost/images/new]
+
+
+Processing ImagesController#create (for ::1 at 2009-09-21 19:22:44) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"lvafOHMo6JDfbQKT39uS+5ixqWgPfP/xa2pXF8l//EA=", "image"=>{"idea_id"=>"1", "description"=>"tis a test", "graphic"=>#<File:/var/folders/JL/JL9+cJm-HbWHUiyFmjm8OE+++TI/-Tmp-/RackMultipart20090921-74676-1wsmwzw-0>}}
+  [4;35;1mImage Create (1.3ms)[0m   [0mINSERT INTO "images" ("created_at", "graphic_file_name", "graphic_file_size", "idea_id", "updated_at", "graphic_content_type", "description") VALUES('2009-09-22 02:22:44', 'smBackground1a.gif', 183451, 1, '2009-09-22 02:22:44', 'image/gif', 'tis a test')[0m
+[paperclip] Saving attachments.
+[paperclip] saving images/000/000/001/smBackground1a.gif
+Redirected to http://localhost:3000/images/1
+Completed in 64ms (DB: 1) | 302 Found [http://localhost/images]
+
+
+Processing ImagesController#show (for ::1 at 2009-09-21 19:22:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mImage Load (0.7ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+Completed in 20ms (View: 7, DB: 1) | 200 OK [http://localhost/images/1]
+
+
+Processing ImagesController#index (for ::1 at 2009-09-21 19:23:22) [GET]
+  [4;35;1mImage Load (0.8ms)[0m   [0mSELECT * FROM "images" [0m
+Rendering template within layouts/images
+Rendering images/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#show (for ::1 at 2009-09-21 19:23:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mImage Load (0.4ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+Completed in 92ms (View: 4, DB: 0) | 200 OK [http://localhost/images/1]

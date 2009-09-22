@@ -49,6 +49,7 @@
 			 	<% if current_user  -%>
 
 				<% form_for :transaction, :url => transactions_path  do |f| %>
+				 <%= f.hidden_field :amount, :size => 40 %> 
 				  
 				<p> 
 				 <label for="order_name">Pop Amount:</label> 

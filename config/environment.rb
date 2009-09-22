@@ -24,7 +24,13 @@ Rails::Initializer.run do |config|
   config.gem 'webrat', :lib => "webrat", :source => "http://gems.github.com"
   config.gem "thoughtbot-factory_girl", :lib => "factory_girl", :source => "http://gems.github.com"
   config.gem 'redgreen', :version=> "1.2.2"
-  ## config.gem "thoughtbot-paperclip", :lib => "name", :version => "2.2.9.2", :source => "http://gems.github.com"
+
+  config.gem 'mislav-will_paginate', :version => '2.3.11', :lib => 'will_paginate', :source => 'http://gems.github.com'
+  config.gem "openrain-action_mailer_tls", :version => '1.1.3', :lib => "smtp_tls", :source => "http://gems.github.com"
+  config.gem 'thoughtbot-paperclip', :version => '2.2.9.2', :lib => 'paperclip', :source => 'http://gems.github.com'
+  config.gem 'right_aws', :version => '1.9.0' # TODO change to aws-s3 when paperclip does; right_aws 1.10.0 acts funny
+  config.gem 'right_http_connection', :version => '1.2.4'
+  config.gem "mbleigh-acts-as-taggable-on", :source => "http://gems.github.com", :lib => "acts-as-taggable-on"
   
   
   
