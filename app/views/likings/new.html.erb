@@ -1,0 +1,20 @@
+<% title "New Liking" %>
+
+<% form_for @liking do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :believer_id %><br />
+    <%= f.text_field :believer_id %>
+  </p>
+  <p>
+    <%= f.label :idea_id %><br />
+    <%= f.text_field :idea_id %>
+  </p>
+  <p>
+    <%= f.label :degree_of %><br />
+    <%= f.text_field :degree_of %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>
+
+

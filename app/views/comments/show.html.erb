@@ -1,0 +1,13 @@
+<p>
+  <b>Believer:</b>
+  <%=h @comment.believer_id %>
+</p>
+
+<p>
+  <b>Words:</b>
+  <%=h @comment.words %>
+</p>
+
+
+<%= link_to 'Edit', edit_comment_path(@comment) %> |
+<%= link_to 'Back', comments_path %>

@@ -1,0 +1,21 @@
+<% title "User Profiles" %>
+
+<table>
+  <tr>
+    <th>Url</th>
+    <th>About</th>
+    <th>Twitter Handle</th>
+  </tr>
+  <% for user_profile in @user_profiles %>
+    <tr>
+      <td><%=h user_profile.url %></td>
+      <td><%=h user_profile.about %></td>
+      <td><%=h user_profile.twitter_handle %></td>
+      <td><%= link_to "Show", user_profile %></td>
+      <td><%= link_to "Edit", edit_user_profile_path(user_profile) %></td>
+      <td><%= link_to "Destroy", user_profile, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New User Profile", new_user_profile_path %></p>

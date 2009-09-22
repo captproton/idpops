@@ -1,0 +1,19 @@
+<% form_for @image, :html => { :multipart => true} do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :idea_id %><br />
+    <%= f.text_field :idea_id %>
+  </p>
+<p>
+	<%= f.file_field :graphic %>
+</p>
+
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>

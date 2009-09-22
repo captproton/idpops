@@ -1,0 +1,20 @@
+<% title "Liking" %>
+
+<p>
+  <strong>Believer:</strong>
+  <%=h @liking.believer_id %>
+</p>
+<p>
+  <strong>Idea:</strong>
+  <%=h @liking.idea_id %>
+</p>
+<p>
+  <strong>Degree Of:</strong>
+  <%=h @liking.degree_of %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_liking_path(@liking) %> |
+  <%= link_to "Destroy", @liking, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", likings_path %>
+</p>

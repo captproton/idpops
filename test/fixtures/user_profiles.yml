@@ -1,0 +1,9 @@
+one:
+  url: MyText
+  about: MyText
+  twitter_handle: MyString
+
+two:
+  url: MyText
+  about: MyText
+  twitter_handle: MyString
