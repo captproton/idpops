@@ -2,7 +2,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :images
 
-  map.resources :ideas, :has_many => [:believers, :comments], :shallow => true
+  map.resources :ideas, :has_many => [:likings, :believers, :comments], :shallow => true
 
   map.resources :events
 

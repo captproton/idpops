@@ -14834,3 +14834,2694 @@ ActionController::UnknownAction (No action responded to header. Actions: create,
   /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 13:47:22) [GET]
+  [4;36;1mIdea Load (1.0ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 98ms (View: 89, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 13:47:22) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 13:47:25) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 13:47:25) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 13:47:26) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 13:48:00) [GET]
+  [4;35;1mIdea Load (0.9ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 14ms (View: 6, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 13:48:00) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 13:48:01) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 13:48:01) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 13:48:01) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:00:56) [GET]
+  [4;36;1mIdea Load (1.1ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:00:56) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:00:57) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:00:57) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:01:00) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:02:20) [GET]
+  [4;35;1mIdea Load (0.9ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+ERROR: compiling _run_erb_app47views47layouts47application46html46erb RAISED compile error
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:56: syntax error, unexpected tSTRING_BEG, expecting kDO or '{' or '('
+            <a href="/login">Login</a>
+                            ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:57: syntax error, unexpected tSTRING_BEG, expecting kDO or '{' or '('
+            <a href="/signup">Signup</a>
+                             ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:59: syntax error, unexpected tSTRING_BEG, expecting kDO or '{' or '('
+          <a href="/projects/by/recommended">DISCOVER PROJECTS</a>
+                                            ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:60: syntax error, unexpected tSTRING_BEG, expecting kDO or '{' or '('
+          <a href="/learn-more">LEARN MORE</a>
+                               ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:61: syntax error, unexpected tIDENTIFIER, expecting ')'
+          <a href="http://blog.idpops.com/">BLOG</a>
+                       ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:61: unknown regexp options - blg
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:69: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\n\t    </div>\n\t    <hr c...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:69: syntax error, unexpected $undefined
+...>\n\t    <hr class='clear' />\n\t    <div id='footer'>\n\t  ...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:69: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...lass='clear' />\n\t    <div id='footer'>\n\t      <div id='e...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:69: syntax error, unexpected $undefined
+...' />\n\t    <div id='footer'>\n\t      <div id='etc'>\n\n\t ...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:69: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+... id='footer'>\n\t      <div id='etc'>\n\n\t        <a href=\...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:69: syntax error, unexpected $undefined
+...ter'>\n\t      <div id='etc'>\n\n\t        <a href=\"http://...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:69: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...id='etc'>\n\n\t        <a href=\"http://blog.idpops.com/\">B...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:101: syntax error, unexpected kENSURE, expecting ')'
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:103: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47layouts47application46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html lang='en' xml:lang='en' xmlns:fb='http://www.facebook.com/2008/fbml' xmlns='http://www.w3.org/1999/xhtml'>\n  <head>\n<!-- login -->\n<title>Signup &mdash;\n    IdPops</title>\n\n\t<meta content='text/html; charset=utf-8' http-equiv='Content-Type' />\n"
+
+
+
+
+
+
+
+; @output_buffer.concat(( stylesheet_link_tag "all", :cache => true ).to_s); @output_buffer.concat "\t\n    <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js\" type=\"text/javascript\"></script>\n    <script src=\"http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.2/jquery-ui.min.js\" type=\"text/javascript\"></script>\n    <script src=\"/javascripts/cache-ksr.js?1253742706\" type=\"text/javascript\"></script>\n    <link href='/favicon.png' rel='icon' type='image/png' />\n    \n    \n    \n    <script type='text/javascript'>\n      //<![CDATA[\n        $(function() { initMenu(['projects']); });\n        var AUTH_TOKEN = \"yrMpHzo3LXx7c1W0XhtrnHu6TR/6IH9RFOozyOpAd98=\";\n      //]]>\n    </script>\n    <script src=\"http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php\" type=\"text/javascript\"></script>\n    <script type='text/javascript'>\n      //<![CDATA[\n        var FBKey = 'df623a5548ca0f3b596c6fcc23053de7';\n        $('fb\\\\:login-button').livequery(function() {\n          FB.init(FBKey, '/xd_receiver.html');\n        });\n        $(document).ready(function() {\n          FB.init(FBKey, '/xd_receiver.html');\n          facebook_autolog(false);\n        });\n      //]]>\n    </script>\n    \n  </head>\n  <body class='projects "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( "#{@controller}' id='projects_index'>
+    <div class='center jGrowl' id='growl_section'></div>
+    <!-- // Main site navigation -->
+    <div id='header-outer'>
+      <div id='header'>
+        <!-- // Logo -->
+        <div id='logo'>
+          <h1>
+            <span id='h1title'>
+              <a href='/'>IdPops</a>
+            </span>
+            <a href='/'>
+              <span id='logoimg'></span>
+            </a>
+          </h1>
+        </div>
+        <div class='left' id='navigation'>
+          <div class='right'>
+            <a href="/login">Login</a>
+            <a href="/signup">Signup</a>
+          </div>
+          <a href="/projects/by/recommended">DISCOVER PROJECTS</a>
+          <a href="/learn-more">LEARN MORE</a>
+          <a href="http://blog.idpops.com/">BLOG</a>
+        </div>
+        <div class='clear'></div>
+      </div>
+    </div>
+    
+    <div id='content'>
+
+	      <%= yield ).to_s); @output_buffer.concat "\n\t\n\t    </div>\n\t    <hr class='clear' />\n\t    <div id='footer'>\n\t      <div id='etc'>\n\n\t        <a href=\"http://blog.idpops.com/\">Blog</a>\n\n\t        <a href=\"/learn-more\">Learn More</a>\n\t        <a href=\"/community\">Forums</a>\n\t        <a href=\"/terms-of-use\">Terms of Use</a>\n\n\t        <a href=\"/privacy\">Privacy Policy</a>\n\t        <a href=\"/learn-more\" class=\"last\">Contact</a>\n\n\t      </div>\n\t      <div id='legal'>\n\t        &copy; 2009 IdPops Inc. All designs Copyright by owner.\n\t      </div>\n\t    </div>\n\t    <script type=\"text/javascript\">\n\t    var gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" : \"http://www.\");\n\t    document.write(unescape(\"%3Cscript src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E\"));\n\t    </script>\n\t    <script type=\"text/javascript\">\n\t    try {\n\t    var pageTracker = _gat._getTracker(\"UA-7621056-1\");\n\t    pageTracker._trackPageview();\n\t    } catch(err) {}</script>\n\t  </body>\n\t</html>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:103:in `compile!'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:347:in `_render_with_layout'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:947:in `render_without_benchmark'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/controllers/ideas_controller.rb:12:in `index'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `send'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `perform_action_without_filters'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:46:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:13:in `run'
+/Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:56: syntax error, unexpected tSTRING_BEG, expecting kDO or '{' or '('
+            <a href="/login">Login</a>
+                            ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:57: syntax error, unexpected tSTRING_BEG, expecting kDO or '{' or '('
+            <a href="/signup">Signup</a>
+                             ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:59: syntax error, unexpected tSTRING_BEG, expecting kDO or '{' or '('
+          <a href="/projects/by/recommended">DISCOVER PROJECTS</a>
+                                            ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:60: syntax error, unexpected tSTRING_BEG, expecting kDO or '{' or '('
+          <a href="/learn-more">LEARN MORE</a>
+                               ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:61: syntax error, unexpected tIDENTIFIER, expecting ')'
+          <a href="http://blog.idpops.com/">BLOG</a>
+                       ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:61: unknown regexp options - blg
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:69: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n\t\n\t    </div>\n\t    <hr c...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:69: syntax error, unexpected $undefined
+...>\n\t    <hr class='clear' />\n\t    <div id='footer'>\n\t  ...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:69: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...lass='clear' />\n\t    <div id='footer'>\n\t      <div id='e...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:69: syntax error, unexpected $undefined
+...' />\n\t    <div id='footer'>\n\t      <div id='etc'>\n\n\t ...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:69: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+... id='footer'>\n\t      <div id='etc'>\n\n\t        <a href=\...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:69: syntax error, unexpected $undefined
+...ter'>\n\t      <div id='etc'>\n\n\t        <a href=\"http://...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:69: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...id='etc'>\n\n\t        <a href=\"http://blog.idpops.com/\">B...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:101: syntax error, unexpected kENSURE, expecting ')'
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/layouts/application.html.erb:103: syntax error, unexpected kEND, expecting ')') on line #56 of app/views/layouts/application.html.erb:
+53:         </div>
+54:         <div class='left' id='navigation'>
+55:           <div class='right'>
+56:             <a href="/login">Login</a>
+57:             <a href="/signup">Signup</a>
+58:           </div>
+59:           <a href="/projects/by/recommended">DISCOVER PROJECTS</a>
+
+    app/views/layouts/application.html.erb:103:in `compile!'
+    app/controllers/ideas_controller.rb:12:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.9ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:02:34) [GET]
+  [4;36;1mIdea Load (0.9ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:02:34) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:02:35) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:02:35) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:02:37) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:03:25) [GET]
+  [4;35;1mIdea Load (1.0ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 87ms (View: 79, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:03:26) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:03:26) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:03:26) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:03:26) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:03:39) [GET]
+  [4;36;1mIdea Load (0.9ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:03:39) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:03:39) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:03:39) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:03:40) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:04:21) [GET]
+  [4;35;1mIdea Load (0.9ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:04:21) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:04:21) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:04:21) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:04:21) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:04:53) [GET]
+  [4;36;1mIdea Load (1.1ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:04:53) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:04:54) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:04:54) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:04:54) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:05:02) [GET]
+  [4;35;1mIdea Load (0.9ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:05:02) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:05:05) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:05:06) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:05:06) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:05:07) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:05:09) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:07:33) [GET]
+  [4;36;1mIdea Load (1.0ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 119ms (View: 14, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:07:34) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:07:37) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:07:37) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:07:37) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:09:08) [GET]
+  [4;35;1mIdea Load (1.0ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+
+ActionView::TemplateError (undefined method `name' for "ideas":String) on line #38 of app/views/layouts/application.html.erb:
+35:     </script>
+36:     
+37:   </head>
+38:   <body class='<%= params[:controller].name  %>' id='<%= "#{@controller} #{@action}" %>_index'>
+39: 	
+40:     <div class='center jGrowl' id='growl_section'></div>
+41:     <!-- // Main site navigation -->
+
+    app/views/layouts/application.html.erb:38
+    app/controllers/ideas_controller.rb:12:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (45.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:13:06) [GET]
+  [4;36;1mIdea Load (1.0ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:13:06) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:13:09) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:13:10) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:13:10) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:13:35) [GET]
+  [4;35;1mIdea Load (0.9ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:13:36) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:13:39) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:13:39) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:13:39) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:14:11) [GET]
+  [4;36;1mIdea Load (0.9ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:14:11) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:14:14) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:14:15) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:14:15) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:15:01) [GET]
+  [4;35;1mIdea Load (0.9ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:15:01) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:15:04) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:15:04) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:15:04) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:18:32) [GET]
+  [4;36;1mIdea Load (0.9ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 13ms (View: 6, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:18:32) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:18:35) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:18:36) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:18:36) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:21:03) [GET]
+  [4;35;1mIdea Load (1.2ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 17ms (View: 7, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:21:03) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:21:13) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:21:13) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:21:13) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:23:59) [GET]
+  [4;36;1mIdea Load (1.1ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 11ms (View: 2, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:24:00) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:24:06) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:24:06) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:24:06) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#new (for ::1 at 2009-09-24 14:25:31) [GET]
+Rendering template within layouts/application
+Rendering ideas/new
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/ideas/new]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:25:31) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:25:37) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:25:38) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:25:38) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:26:48) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:26:48) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+Migrating to CreateUserProfiles (20090921211400)
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+Migrating to CreateLikings (20090921213853)
+Migrating to AddBelieverTypeToLiking (20090921224415)
+Migrating to AddInitiatorToIdeas (20090921234718)
+Migrating to RenameInitiatorToImaginerForIdeas (20090922000848)
+Migrating to AddUserToUserProfiles (20090922175959)
+Migrating to CreateProfiles (20090922180721)
+Migrating to DropUserProfiles (20090922181516)
+Migrating to AddToIdeasBlurb (20090924213808)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "ideas" ADD "blurb" text[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "ideas" ADD "deadline" datetime[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090924213808')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("comments")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("events")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ideas")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("images")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("invitations")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("likings")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("profiles")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("taggings")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("transactions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+
+
+Processing LikingsController#index (for ::1 at 2009-09-24 14:44:08) [GET]
+  Parameters: {"idea_id"=>"1"}
+Rendering template within layouts/application
+Rendering likings/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #9 of app/views/likings/index.html.erb:
+6:     <th>Idea</th>
+7:     <th>Degree Of</th>
+8:   </tr>
+9:   <% for liking in @likings %>
+10:     <tr>
+11:       <td><%=h liking.believer_id %></td>
+12:       <td><%=h liking.idea_id %></td>
+
+    app/views/likings/index.html.erb:9
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:44:37) [GET]
+  [4;36;1mIdea Load (1.3ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 119ms (View: 110, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:44:39) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:44:39) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:44:39) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#new (for ::1 at 2009-09-24 14:44:43) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (7.1ms)
+Completed in 40ms (View: 18, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:44:43) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:44:43) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:44:43) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#new (for ::1 at 2009-09-24 14:45:19) [GET]
+Rendering template within layouts/application
+Rendering ideas/new
+Completed in 15ms (View: 7, DB: 0) | 200 OK [http://localhost/ideas/new]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:45:19) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:45:25) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:45:25) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:45:25) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#create (for ::1 at 2009-09-24 14:48:06) [POST]
+  Parameters: {"commit"=>"Create", "idea"=>{"price"=>"1", "title"=>"superstition", "description"=>"stevie ray vaughn"}, "authenticity_token"=>"ZHFdxysMN18pj7cwBeFUqPNCTeQGXqIL9i4G/V/ykls="}
+  [4;35;1mIdea Create (0.5ms)[0m   [0mINSERT INTO "ideas" ("price", "created_at", "title", "updated_at", "deadline", "description", "blurb", "imaginer_id") VALUES(1, '2009-09-24 21:48:06', 'superstition', '2009-09-24 21:48:06', NULL, 'stevie ray vaughn', NULL, NULL)[0m
+Redirected to http://localhost:3000/ideas/4
+Completed in 29ms (DB: 1) | 302 Found [http://localhost/ideas]
+
+
+Processing IdeasController#show (for ::1 at 2009-09-24 14:48:06) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mIdea Load (0.3ms)[0m   [0;1mSELECT * FROM "ideas" WHERE ("ideas"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering ideas/show
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/ideas/4]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:48:06) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:48:09) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:48:09) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 14:48:13) [GET]
+  [4;35;1mIdea Load (1.1ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:48:13) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:48:16) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:48:17) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:48:17) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#new (for ::1 at 2009-09-24 14:48:21) [GET]
+Rendering template within layouts/application
+Rendering ideas/new
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/ideas/new]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:48:22) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:48:26) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:48:26) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:48:26) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#create (for ::1 at 2009-09-24 14:48:52) [POST]
+  Parameters: {"commit"=>"Create", "idea"=>{"price"=>"1", "title"=>"photo bucket", "description"=>"dumpu your pics online"}, "authenticity_token"=>"ZHFdxysMN18pj7cwBeFUqPNCTeQGXqIL9i4G/V/ykls="}
+  [4;36;1mIdea Create (0.5ms)[0m   [0;1mINSERT INTO "ideas" ("price", "created_at", "title", "updated_at", "deadline", "description", "blurb", "imaginer_id") VALUES(1, '2009-09-24 21:48:52', 'photo bucket', '2009-09-24 21:48:52', NULL, 'dumpu your pics online', NULL, NULL)[0m
+Redirected to http://localhost:3000/ideas/5
+Completed in 28ms (DB: 0) | 302 Found [http://localhost/ideas]
+
+
+Processing IdeasController#show (for ::1 at 2009-09-24 14:48:52) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mIdea Load (0.3ms)[0m   [0mSELECT * FROM "ideas" WHERE ("ideas"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering ideas/show
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/ideas/5]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:48:52) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:48:55) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:48:56) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:48:56) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#new (for ::1 at 2009-09-24 14:49:05) [GET]
+Rendering template within layouts/application
+Rendering ideas/new
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/ideas/new]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:49:05) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 14:49:08) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:49:08) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 14:49:09) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mIdea Load (1.4ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+  [4;35;1mIdea Load (0.5ms)[0m   [0mSELECT * FROM "ideas" LIMIT 1[0m
+  [4;36;1mIdea Update (0.5ms)[0m   [0;1mUPDATE "ideas" SET "updated_at" = '2009-09-24 21:55:36', "deadline" = '2009-10-08 21:55:32', "blurb" = 'It''s a great game!' WHERE "id" = 1[0m
+  [4;35;1mIdea Load (0.7ms)[0m   [0mSELECT * FROM "ideas" WHERE ("ideas"."id" = 2) [0m
+  [4;36;1mIdea Update (0.5ms)[0m   [0;1mUPDATE "ideas" SET "updated_at" = '2009-09-24 21:57:00', "deadline" = '2009-10-08 21:56:56', "blurb" = 'Instinctive' WHERE "id" = 2[0m
+  [4;35;1mIdea Load (0.8ms)[0m   [0mSELECT * FROM "ideas" WHERE ("ideas"."id" = 3) [0m
+  [4;36;1mIdea Update (0.5ms)[0m   [0;1mUPDATE "ideas" SET "updated_at" = '2009-09-24 21:57:42', "deadline" = '2009-10-08 21:57:24', "blurb" = 'Instinctive breating' WHERE "id" = 3[0m
+  [4;35;1mIdea Load (0.9ms)[0m   [0mSELECT * FROM "ideas" WHERE ("ideas"."id" = 4) [0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;35;1mIdea Update (0.4ms)[0m   [0mUPDATE "ideas" SET "updated_at" = '2009-09-24 21:59:06', "imaginer_id" = 1 WHERE "id" = 4[0m
+  [4;36;1mIdea Update (0.4ms)[0m   [0;1mUPDATE "ideas" SET "updated_at" = '2009-09-24 21:59:38', "blurb" = 'plays with soul' WHERE "id" = 4[0m
+
+
+Processing IdeasController#new (for ::1 at 2009-09-24 15:04:22) [GET]
+Rendering template within layouts/application
+Rendering ideas/new
+
+ActionView::TemplateError (undefined local variable or method `start_year' for #<ActionView::Base:0x265f1ec>) on line #20 of app/views/ideas/new.html.erb:
+17:   </p>
+18: <p>
+19: 	<%= f.label :deadline %>
+20: 	<%= f.datetime_select(:deadline, :discard_minute => true, start_year => 2009) %>
+21: </p>
+22:   <p>
+23:     <%= f.submit 'Create' %>
+
+    app/views/ideas/new.html.erb:20
+    app/views/ideas/new.html.erb:3
+    app/controllers/ideas_controller.rb:34:in `new'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#new (for ::1 at 2009-09-24 15:05:03) [GET]
+Rendering template within layouts/application
+Rendering ideas/new
+Completed in 165ms (View: 156, DB: 0) | 200 OK [http://localhost/ideas/new]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 15:05:03) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 15:05:06) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 15:05:07) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 15:05:07) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#new (for ::1 at 2009-09-24 15:07:20) [GET]
+Rendering template within layouts/application
+Rendering ideas/new
+Completed in 23ms (View: 14, DB: 0) | 200 OK [http://localhost/ideas/new]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 15:07:20) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 15:07:23) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 15:07:23) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 15:07:23) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)

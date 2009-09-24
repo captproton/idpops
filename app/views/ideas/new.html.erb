@@ -15,6 +15,10 @@
     <%= f.label :price %><br />
     <%= f.text_field :price %>
   </p>
+<p>
+	<%= f.label :deadline %>
+	<%= f.date_select(:deadline, :order => [:month, :day, :year]) %>
+</p>
   <p>
     <%= f.submit 'Create' %>
   </p>
