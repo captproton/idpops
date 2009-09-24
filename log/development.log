@@ -17525,3 +17525,575 @@ ActionController::UnknownAction (No action responded to header. Actions: create,
   /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#new (for ::1 at 2009-09-24 15:13:05) [GET]
+Rendering template within layouts/application
+Rendering ideas/new
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/ideas/new]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 15:13:06) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 15:13:09) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 15:13:09) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 15:13:09) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#create (for ::1 at 2009-09-24 15:13:21) [POST]
+  Parameters: {"commit"=>"Create", "idea"=>{"price"=>"123", "title"=>"google", "deadline(1i)"=>"2009", "deadline(2i)"=>"12", "deadline(3i)"=>"24", "description"=>"search the web"}, "authenticity_token"=>"ZHFdxysMN18pj7cwBeFUqPNCTeQGXqIL9i4G/V/ykls="}
+  [4;36;1mIdea Create (0.5ms)[0m   [0;1mINSERT INTO "ideas" ("price", "created_at", "title", "updated_at", "deadline", "description", "blurb", "imaginer_id") VALUES(123, '2009-09-24 22:13:21', 'google', '2009-09-24 22:13:21', '2009-12-24 00:00:00', 'search the web', NULL, NULL)[0m
+Redirected to http://localhost:3000/ideas/6
+Completed in 28ms (DB: 0) | 302 Found [http://localhost/ideas]
+
+
+Processing IdeasController#show (for ::1 at 2009-09-24 15:13:22) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mIdea Load (0.3ms)[0m   [0mSELECT * FROM "ideas" WHERE ("ideas"."id" = 6) [0m
+Rendering template within layouts/application
+Rendering ideas/show
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/ideas/6]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 15:13:22) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 15:13:25) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 15:13:25) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 15:13:25) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+** acts_as_taggable_on: initialized properly.
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-24 15:41:02) [GET]
+Rendering frontdoor/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 15:41:07) [GET]
+  [4;36;1mIdea Load (1.5ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+Completed in 104ms (View: 95, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 15:41:07) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 15:41:07) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 15:41:07) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#new (for ::1 at 2009-09-24 15:41:12) [GET]
+Rendering template within layouts/application
+Rendering ideas/new
+ERROR: compiling _run_erb_app47views47ideas47new46html46erb RAISED compile error
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/ideas/new.html.erb:3: syntax error, unexpected ',', expecting kEND
+;  form_for(@idea), :html => { :multipart => true...
+                   ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/ideas/new.html.erb:3: syntax error, unexpected kDO, expecting kEND
+...l => { :multipart => true } do |f| ; @output_buffer.concat "...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/ideas/new.html.erb:32: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47ideas47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>New idea</h1>\n\n"
+
+;  form_for(@idea), :html => { :multipart => true } do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :title ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :title ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :description ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_area :description ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :price ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :price ).to_s); @output_buffer.concat "\n  </p>\n<p>\n\t"
+
+
+; @output_buffer.concat(( f.label :deadline ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat(( f.date_select(:deadline, :order => [:month, :day, :year]) ).to_s); @output_buffer.concat "\n</p>\n\n<p>\n\t"
+
+
+
+; @output_buffer.concat(( f.file_field :photo ).to_s); @output_buffer.concat "\n</p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.submit 'Create' ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer.concat(( link_to 'Back', ideas_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/ideas/new.html.erb:32:in `compile!'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:947:in `render_without_benchmark'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/controllers/ideas_controller.rb:34:in `new'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `send'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1327:in `perform_action_without_filters'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:46:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:13:in `run'
+/Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/ideas/new.html.erb:3: syntax error, unexpected ',', expecting kEND
+;  form_for(@idea), :html => { :multipart => true...
+                   ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/ideas/new.html.erb:3: syntax error, unexpected kDO, expecting kEND
+...l => { :multipart => true } do |f| ; @output_buffer.concat "...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/views/ideas/new.html.erb:32: syntax error, unexpected kENSURE, expecting $end) on line #3 of app/views/ideas/new.html.erb:
+1: <h1>New idea</h1>
+2: 
+3: <% form_for(@idea), :html => { :multipart => true } do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/ideas/new.html.erb:32:in `compile!'
+    app/controllers/ideas_controller.rb:34:in `new'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.9ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#new (for ::1 at 2009-09-24 15:41:55) [GET]
+Rendering template within layouts/application
+Rendering ideas/new
+Completed in 80ms (View: 70, DB: 0) | 200 OK [http://localhost/ideas/new]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 15:41:55) [GET]
+  Parameters: {"1253742706"=>nil}
+
+ActionController::RoutingError (No route matches "/javascripts/cache-ksr.js" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 15:41:55) [GET]
+  Parameters: {"id"=>"logo"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#header to gif (for ::1 at 2009-09-24 15:41:55) [GET]
+  Parameters: {"id"=>"bg"}
+
+ActionController::UnknownAction (No action responded to header. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 15:41:55) [GET]
+
+ActionController::RoutingError (No route matches "/favicon.png" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+** acts_as_taggable_on: initialized properly.
+
+
+Processing IdeasController#show (for ::1 at 2009-09-24 15:56:40) [GET]
+  Parameters: {"id"=>"6"}
+
+NameError (uninitialized constant Idea::CONFIG):
+  app/models/idea.rb:6
+  app/controllers/ideas_controller.rb:21:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.4ms)
+Rendered rescues/_request_and_response (78.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#new (for ::1 at 2009-09-24 16:00:48) [GET]
+
+SyntaxError (/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/models/idea.rb:9: syntax error, unexpected tASSOC, expecting kEND
+...                    :bucket => CONFIG['s3_bucket_name'], # T...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/models/idea.rb:10: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+...            :s3_credentials => { :access_key_id => CONFIG['s...
+                              ^
+/Users/heathertanner/Sites/rails/idpops/v2_ipops/app/models/idea.rb:10: syntax error, unexpected ',', expecting kEND):
+  app/controllers/ideas_controller.rb:32:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#new (for ::1 at 2009-09-24 16:01:06) [GET]
+
+NameError (uninitialized constant Idea::CONFIG):
+  app/models/idea.rb:6
+  app/controllers/ideas_controller.rb:32:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+** acts_as_taggable_on: initialized properly.
+New RightAws::S3Interface using single-threaded mode
+Opening new HTTPS connection to idpopsv2.s3.amazonaws.com:443
+##### RightAws::S3Interface returned an error: 409 Conflict
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>BucketAlreadyExists</Code><Message>The requested bucket name is not available. The bucket namespace is shared by all users of the system. Please select a different name and try again.</Message><BucketName>idpopsv2</BucketName><RequestId>0C0455E3FC187CE1</RequestId><HostId>ZgMRSk7pAQ+ZWKIjzCVTRJv3viHWsAnbuoPZ5LqZJblHMamN7Zz12/Fqwcdb83cw</HostId></Error> #####
+##### RightAws::S3Interface request: idpopsv2.s3.amazonaws.com:443/ ####
+** acts_as_taggable_on: initialized properly.
+New RightAws::S3Interface using single-threaded mode
+Opening new HTTPS connection to idpops3a.s3.amazonaws.com:443
+Closing HTTPS connection to idpops3a.s3.amazonaws.com:443
+Opening new HTTPS connection to s3.amazonaws.com:443
+
+
+Processing IdeasController#new (for ::1 at 2009-09-24 16:25:35) [GET]
+
+NameError (uninitialized constant Idea::CONFIG):
+  app/models/idea.rb:6
+  app/controllers/ideas_controller.rb:32:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)

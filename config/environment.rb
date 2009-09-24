@@ -7,6 +7,13 @@ RAILS_GEM_VERSION = '2.3.3' unless defined? RAILS_GEM_VERSION
 require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
+  require 'open-uri'
+  require 'yaml'
+  
+  config.time_zone = 'UTC'
+  config.i18n.default_locale = :en
+  config.active_record.partial_updates = true
+
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
   # -- all .rb files in that directory are automatically loaded.
@@ -52,4 +59,17 @@ Rails::Initializer.run do |config|
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
+  
+  
+  # support yaml and heroku config
+  CONFIG = (YAML.load_file('config/config.yml')[RAILS_ENV] rescue {}).merge(ENV)
+  
+  # consider s3 enabled if the configuration options have been set
+  CONFIG['s3_access_id'] && CONFIG['s3_secret_key'] && CONFIG['s3_bucket_name'] ? CONFIG['s3'] = true : CONFIG['s3'] = false
+  
+  config.action_controller.session = {
+    :key => CONFIG['session_key'],
+    :secret => CONFIG['session_secret']
+  }
+  
 end

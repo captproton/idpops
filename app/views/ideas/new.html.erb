@@ -1,6 +1,6 @@
 <h1>New idea</h1>
 
-<% form_for(@idea) do |f| %>
+<% form_for @idea, :html => { :multipart => true } do |f| %>
   <%= f.error_messages %>
 
   <p>
@@ -18,6 +18,10 @@
 <p>
 	<%= f.label :deadline %>
 	<%= f.date_select(:deadline, :order => [:month, :day, :year]) %>
+</p>
+
+<p>
+	<%= f.file_field :photo %>
 </p>
   <p>
     <%= f.submit 'Create' %>

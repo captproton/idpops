@@ -22,9 +22,13 @@ production:
   # More info from Heroku: http://docs.heroku.com/constraints#read-only-filesystem
   # Visit the Amazon S3 site to sign up for an access_id and secret_key: https://s3.amazonaws.com/
   # The bucket name can be any unique string, and once set here it can be created by running "rake s3:create" 
-  S3_KEY: 0XVAQR64TGCGWZ4W37R2
-  S3_SECRET: 2mkUk7BxE4fVu7J4zCmVGnhIL3kXQGn8GaEpl5QR
+  S3_KEY: AKIAIBMAU5ZEQNC4FE3A
+  S3_SECRET: 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
   S3_BUCKET: idpopsv2
+  s3_access_id: AKIAIBMAU5ZEQNC4FE3A
+  s3_secret_key: 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
+  s3_bucket_name: idpops3a
+  
   
   # EMAIL SETTINGS (optional, required for Heroku)
   # More info from Heroku: http://support.heroku.com/forums/43117/entries/32352
