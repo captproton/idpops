@@ -8,6 +8,5 @@ class Image < ActiveRecord::Base
   			:secret_access_key => ENV['s3_secret_key']
   		},
   		:bucket => ENV['s3_bucket_name'],
-  		:path => ":class/:id_partition/:basename.:extension",
-  		:s3_permissions => "private"
+  		:path => ":class/:id_partition/:basename.:extension"
 end
