@@ -45,22 +45,6 @@
 				</dl>
 		     </td>
 
-			<td class="list-actions">	
-			 	<% if current_user  -%>
-
-				<% form_for :transaction, :url => transactions_path  do |f| %>
-				 <%= f.hidden_field :amount, :size => 40 %> 
-				  
-				<p> 
-				 <label for="order_name">Pop Amount:</label> 
-				 <%= f.text_field :amount, :size => 40 %> 
-			 </p> 
-				<td><p><%= f.submit "Pop!" %></p>
-					
-				- <% end %>
-			  </td>
-			 	<% end -%>
-			</td>
 		</tr>
 		<% end %>
   </table>

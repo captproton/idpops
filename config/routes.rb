@@ -1,32 +1,18 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :likings
-
-  map.resources :likings
-
-  map.resources :user_profiles
-
-  map.resources :user_profiles
-
-  map.resources :comments
-
-  map.resources :comments
 
   map.resources :images
 
-  map.resources :transactions
-
-  map.resources :ideas
-
-  map.resources :events
-
-  map.resources :events
+  map.resources :ideas, :has_many => [:believers, :comments], :shallow => true
 
   map.resources :events
 
   map.resources :invitations
 
   map.resources :user_sessions
-  map.resources :users
+
+  map.resources :users, :has_one  =>  :profile, :shallow => true
+  map.resources :users, :has_many  =>  :ideas, :shallow => true
+  
   
   map.login "/login", :controller => "user_sessions", :action => "new"
   map.logout "/logout", :controller => "user_sessions", :action => "destroy"

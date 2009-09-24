@@ -2,7 +2,12 @@ class IdeasController < ApplicationController
   # GET /ideas
   # GET /ideas.xml
   def index
-    @ideas = Idea.all
+    if params[:user_id]
+      @ideas = User.find(params[:user_id]).imaginings      
+    else
+      @ideas = Idea.all
+    end
+    
 
     respond_to do |format|
       format.html # index.html.erb
@@ -41,6 +46,8 @@ class IdeasController < ApplicationController
   # POST /ideas.xml
   def create
     @idea = Idea.new(params[:idea])
+    @idea.imaginer_id = current_user
+    
 
     respond_to do |format|
       if @idea.save

@@ -1,9 +1,9 @@
 one:
   believer_id: 1
   idea_id: 1
-  degree_of: 1
+  rating: 1
 
 two:
   believer_id: 1
   idea_id: 1
-  degree_of: 1
+  rating: 1

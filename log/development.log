@@ -10108,3 +10108,2651 @@ Processing ImagesController#show (for ::1 at 2009-09-21 19:23:24) [GET]
 Rendering template within layouts/images
 Rendering images/show
 Completed in 92ms (View: 4, DB: 0) | 200 OK [http://localhost/images/1]
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateTransactions (20090918231645)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+Migrating to CreateUserProfiles (20090921211400)
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+Migrating to CreateLikings (20090921213853)
+Migrating to AddBelieverTypeToLiking (20090921224415)
+Migrating to AddInitiatorToIdeas (20090921234718)
+Migrating to RenameInitiatorToImaginerForIdeas (20090922000848)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("images")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("likings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("taggings")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("transactions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("user_profiles")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateTransactions (20090918231645)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+Migrating to CreateUserProfiles (20090921211400)
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+Migrating to CreateLikings (20090921213853)
+Migrating to AddBelieverTypeToLiking (20090921224415)
+Migrating to AddInitiatorToIdeas (20090921234718)
+Migrating to RenameInitiatorToImaginerForIdeas (20090922000848)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("images")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("likings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("taggings")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("transactions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("user_profiles")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to RenameInitiatorToImaginerForIdeas (20090922000848)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "initiator_id" integer) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mDROP TABLE "ideas"[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "initiator_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_ideas")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_ideas"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090922000848'[0m
+Migrating to AddInitiatorToIdeas (20090921234718)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TEMPORARY TABLE "altered_ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "initiator_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ideas")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mDROP TABLE "ideas"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("altered_ideas")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mDROP TABLE "altered_ideas"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090921234718'[0m
+Migrating to AddBelieverTypeToLiking (20090921224415)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TEMPORARY TABLE "altered_likings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "believer_id" integer, "idea_id" integer, "rating" integer, "created_at" datetime, "updated_at" datetime, "beliver_type" varchar(255)) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("likings")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "likings"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "likings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "believer_id" integer, "idea_id" integer, "rating" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_likings")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_likings"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090921224415'[0m
+Migrating to CreateLikings (20090921213853)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mDROP TABLE "likings"[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090921213853'[0m
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mDROP TABLE "taggings"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mDROP TABLE "tags"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090921211645'[0m
+Migrating to CreateUserProfiles (20090921211400)
+  [4;35;1mSQL (0.7ms)[0m   [0mDROP TABLE "user_profiles"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090921211400'[0m
+Migrating to CreateComments (20090921211101)
+  [4;35;1mSQL (0.6ms)[0m   [0mDROP TABLE "comments"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090921211101'[0m
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TEMPORARY TABLE "altered_images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text, "idea_id" integer, "created_at" datetime, "updated_at" datetime, "graphic_file_name" varchar(255), "graphic_content_type" varchar(255), "graphic_file_size" integer) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("images")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "images"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text, "idea_id" integer, "created_at" datetime, "updated_at" datetime, "graphic_content_type" varchar(255), "graphic_file_size" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_images")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_images"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE TEMPORARY TABLE "altered_images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text, "idea_id" integer, "created_at" datetime, "updated_at" datetime, "graphic_content_type" varchar(255), "graphic_file_size" integer) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("images")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mDROP TABLE "images"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text, "idea_id" integer, "created_at" datetime, "updated_at" datetime, "graphic_file_size" integer) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("altered_images")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_images"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE TEMPORARY TABLE "altered_images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text, "idea_id" integer, "created_at" datetime, "updated_at" datetime, "graphic_file_size" integer) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("images")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mDROP TABLE "images"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text, "idea_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_images")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_images"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090921194957'[0m
+Migrating to CreateImages (20090921194138)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mDROP TABLE "images"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090921194138'[0m
+Migrating to CreateTransactions (20090918231645)
+  [4;36;1mSQL (1.9ms)[0m   [0;1mDROP TABLE "transactions"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090918231645'[0m
+Migrating to CreateIdeas (20090918164403)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mDROP TABLE "ideas"[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090918164403'[0m
+Migrating to CreateEvents (20090907201503)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mDROP TABLE "events"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090907201503'[0m
+Migrating to AddInvitationToUsers (20090830213446)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TEMPORARY TABLE "altered_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "facebook_uid" integer(8), "invitiation_id" integer, "invitation_limit" integer, "avatar_file_name" varchar(255), "avatar_content_type" varchar(255), "avatar_file_size" integer, "avatar_updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "facebook_uid" integer(8), "invitiation_id" integer, "avatar_file_name" varchar(255), "avatar_content_type" varchar(255), "avatar_file_size" integer, "avatar_updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("altered_users")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDROP TABLE "altered_users"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TEMPORARY TABLE "altered_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "facebook_uid" integer(8), "invitiation_id" integer, "avatar_file_name" varchar(255), "avatar_content_type" varchar(255), "avatar_file_size" integer, "avatar_updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "facebook_uid" integer(8), "avatar_file_name" varchar(255), "avatar_content_type" varchar(255), "avatar_file_size" integer, "avatar_updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("altered_users")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mDROP TABLE "altered_users"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090830213446'[0m
+Migrating to CreateInvitations (20090830213412)
+  [4;35;1mSQL (1.1ms)[0m   [0mDROP TABLE "invitations"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090830213412'[0m
+Migrating to AddFbConnectUserFields (20090830052906)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TEMPORARY TABLE "altered_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "facebook_uid" integer(8), "avatar_file_name" varchar(255), "avatar_content_type" varchar(255), "avatar_file_size" integer, "avatar_updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "avatar_file_name" varchar(255), "avatar_content_type" varchar(255), "avatar_file_size" integer, "avatar_updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("altered_users")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_users"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TEMPORARY TABLE "altered_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "avatar_file_name" varchar(255), "avatar_content_type" varchar(255), "avatar_file_size" integer, "avatar_updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "avatar_file_name" varchar(255), "avatar_content_type" varchar(255), "avatar_file_size" integer, "avatar_updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("altered_users")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_users"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090830052906'[0m
+Migrating to CreateUsers (20090830024441)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090830024441'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090830024441')[0m
+Migrating to AddFbConnectUserFields (20090830052906)
+  [4;35;1mSQL (0.6ms)[0m   [0mALTER TABLE "users" ADD "name" varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "users" ADD "facebook_uid" integer(8)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090830052906')[0m
+Migrating to CreateInvitations (20090830213412)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "invitations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "sender_id" integer, "recipient_email" varchar(255), "token" varchar(255), "sent_at" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090830213412')[0m
+Migrating to AddInvitationToUsers (20090830213446)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "users" ADD "invitiation_id" integer[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "users" ADD "invitation_limit" integer[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090830213446')[0m
+Migrating to CreateEvents (20090907201503)
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "host_id" integer, "location_name" varchar(255), "title" varchar(255), "comment_id" integer, "description" text, "start_date_of_service" datetime, "finish_date_of_service" datetime, "location_address" varchar(255), "open_invite" boolean, "volunteer_cap" integer, "allow_maybe_come" boolean, "display_attending" boolean, "cancelled" boolean, "show_comments" boolean, "show_avatars" boolean, "allow_adding_of_pictures" boolean, "allow_adding_of_video" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090907201503')[0m
+Migrating to CreateIdeas (20090918164403)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090918164403')[0m
+Migrating to CreateTransactions (20090918231645)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "transactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "idea_id" integer, "backer_id" integer, "amount" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090918231645')[0m
+Migrating to CreateImages (20090921194138)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text, "idea_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090921194138')[0m
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+  [4;35;1mSQL (0.7ms)[0m   [0mALTER TABLE "images" ADD "graphic_file_name" varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "images" ADD "graphic_content_type" varchar(255)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "images" ADD "graphic_file_size" integer[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090921194957')[0m
+Migrating to CreateComments (20090921211101)
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "believer_id" integer, "idea_id" integer, "words" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090921211101')[0m
+Migrating to CreateUserProfiles (20090921211400)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "user_profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" text, "about" text, "twitter_handle" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090921211400')[0m
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "taggings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tag_id" integer, "taggable_id" integer, "tagger_id" integer, "tagger_type" varchar(255), "taggable_type" varchar(255), "context" varchar(255), "created_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE INDEX "index_taggings_on_tag_id" ON "taggings" ("tag_id")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE INDEX "index_taggings_on_taggable_id_and_taggable_type_and_context" ON "taggings" ("taggable_id", "taggable_type", "context")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090921211645')[0m
+Migrating to CreateLikings (20090921213853)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "likings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "believer_id" integer, "idea_id" integer, "rating" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090921213853')[0m
+Migrating to AddBelieverTypeToLiking (20090921224415)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "likings" ADD "beliver_type" varchar(255)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090921224415')[0m
+Migrating to AddInitiatorToIdeas (20090921234718)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mALTER TABLE "ideas" ADD "initiator_id" integer[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090921234718')[0m
+Migrating to RenameInitiatorToImaginerForIdeas (20090922000848)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TEMPORARY TABLE "altered_ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "imaginer_id" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ideas")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDROP TABLE "ideas"[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "imaginer_id" integer) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("altered_ideas")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mDROP TABLE "altered_ideas"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090922000848')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("images")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("likings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("taggings")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("transactions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("user_profiles")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+** acts_as_taggable_on: initialized properly.
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-22 10:55:46) [GET]
+Rendering frontdoor/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for ::1 at 2009-09-22 10:56:36) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (6.6ms)
+Rendered layouts/_user_nav (9.2ms)
+Rendered layouts/_sidebar_content (0.8ms)
+Rendered layouts/_general_footer (0.7ms)
+Completed in 153ms (View: 135, DB: 0) | 200 OK [http://localhost/signup/]
+
+
+Processing UsersController#create (for ::1 at 2009-09-22 10:56:56) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"lvafOHMo6JDfbQKT39uS+5ixqWgPfP/xa2pXF8l//EA=", "user"=>{"password_confirmation"=>"melorbode", "username"=>"captproton", "password"=>"melorbode", "email"=>"captproton@tmail.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'captproton@tmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'captproton') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'c8784bb7e180218a663faeb31205e6ae6b4cdd7bc068b8f05081ad06eb7a053e9d827937de2f0c7c709e41e0a92503973222496731707d18be0f306a6a36c3a0') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."username" = 'captproton') LIMIT 1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "crypted_password", "updated_at", "facebook_uid", "username", "password_salt", "persistence_token", "invitiation_id", "email", "invitation_limit") VALUES(NULL, '2009-09-22 17:56:57', '42b0aacbff966aaa9bc709370f90194a10a2dd45ec3bc630f032f946876b5e72d990190458360590abe0d4e41e85e42de19634427b15d6a27a375e3fe8490f8c', '2009-09-22 17:56:57', NULL, 'captproton', 'pLOGQ-KI3_RnQeh6r50y', 'c8784bb7e180218a663faeb31205e6ae6b4cdd7bc068b8f05081ad06eb7a053e9d827937de2f0c7c709e41e0a92503973222496731707d18be0f306a6a36c3a0', NULL, 'captproton@tmail.com', NULL)[0m
+Redirected to http://localhost:3000/
+Completed in 314ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-22 10:56:57) [GET]
+Rendering frontdoor/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateTransactions (20090918231645)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+Migrating to CreateUserProfiles (20090921211400)
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+Migrating to CreateLikings (20090921213853)
+Migrating to AddBelieverTypeToLiking (20090921224415)
+Migrating to AddInitiatorToIdeas (20090921234718)
+Migrating to RenameInitiatorToImaginerForIdeas (20090922000848)
+Migrating to AddUserToUserProfiles (20090922175959)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mALTER TABLE "user_profiles" ADD "user_id" integer[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090922175959')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("images")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("likings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("taggings")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("transactions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("user_profiles")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing UsersController#show (for ::1 at 2009-09-22 11:02:10) [GET]
+  Parameters: {"id"=>"user_profiles"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, edit, new, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateTransactions (20090918231645)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+Migrating to CreateUserProfiles (20090921211400)
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+Migrating to CreateLikings (20090921213853)
+Migrating to AddBelieverTypeToLiking (20090921224415)
+Migrating to AddInitiatorToIdeas (20090921234718)
+Migrating to RenameInitiatorToImaginerForIdeas (20090922000848)
+Migrating to AddUserToUserProfiles (20090922175959)
+Migrating to CreateProfiles (20090922180721)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" text, "about" text, "twitter_handle" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090922180721')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("images")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("likings")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("profiles")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("taggings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("transactions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("user_profiles")[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateTransactions (20090918231645)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+Migrating to CreateUserProfiles (20090921211400)
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+Migrating to CreateLikings (20090921213853)
+Migrating to AddBelieverTypeToLiking (20090921224415)
+Migrating to AddInitiatorToIdeas (20090921234718)
+Migrating to RenameInitiatorToImaginerForIdeas (20090922000848)
+Migrating to AddUserToUserProfiles (20090922175959)
+Migrating to CreateProfiles (20090922180721)
+Migrating to DropUserProfiles (20090922181516)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mDROP TABLE "user_profiles"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090922181516')[0m
+  [4;35;1mSQL (1.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("images")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("likings")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("profiles")[0m
+  [4;35;1mSQL (3.2ms)[0m   [0mPRAGMA index_list("taggings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mPRAGMA index_list("transactions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (2.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to DropUserProfiles (20090922181516)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (5.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "user_profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" text, "about" text, "twitter_handle" varchar(255), "created_at" datetime, "updated_at" datetime, "user_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090922181516'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("comments")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("events")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("ideas")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("images")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("invitations")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("likings")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("profiles")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("taggings")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("transactions")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("user_profiles")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateTransactions (20090918231645)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+Migrating to CreateUserProfiles (20090921211400)
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+Migrating to CreateLikings (20090921213853)
+Migrating to AddBelieverTypeToLiking (20090921224415)
+Migrating to AddInitiatorToIdeas (20090921234718)
+Migrating to RenameInitiatorToImaginerForIdeas (20090922000848)
+Migrating to AddUserToUserProfiles (20090922175959)
+Migrating to CreateProfiles (20090922180721)
+Migrating to DropUserProfiles (20090922181516)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mDROP TABLE "user_profiles"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090922181516')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("images")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("likings")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("profiles")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("taggings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("transactions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to DropUserProfiles (20090922181516)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "user_profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" text, "about" text, "twitter_handle" varchar(255), "created_at" datetime, "updated_at" datetime, "user_id" integer) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090922181516'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("comments")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("events")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("ideas")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("images")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("invitations")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("likings")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("profiles")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("taggings")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("transactions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("user_profiles")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProfiles (20090922180721)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mDROP TABLE "profiles"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090922180721'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("images")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("likings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("taggings")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tags")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("transactions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("user_profiles")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateTransactions (20090918231645)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+Migrating to CreateUserProfiles (20090921211400)
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+Migrating to CreateLikings (20090921213853)
+Migrating to AddBelieverTypeToLiking (20090921224415)
+Migrating to AddInitiatorToIdeas (20090921234718)
+Migrating to RenameInitiatorToImaginerForIdeas (20090922000848)
+Migrating to AddUserToUserProfiles (20090922175959)
+Migrating to CreateProfiles (20090922180721)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" text, "about" text, "twitter_handle" varchar(255), "user_id" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090922180721')[0m
+Migrating to DropUserProfiles (20090922181516)
+  [4;35;1mSQL (0.5ms)[0m   [0mDROP TABLE "user_profiles"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090922181516')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("images")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("likings")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("profiles")[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mPRAGMA index_list("taggings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("transactions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: database schema has changed: SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "believer_id" integer, "idea_id" integer, "words" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "host_id" integer, "location_name" varchar(255), "title" varchar(255), "comment_id" integer, "description" text, "start_date_of_service" datetime, "finish_date_of_service" datetime, "location_address" varchar(255), "open_invite" boolean, "volunteer_cap" integer, "allow_maybe_come" boolean, "display_attending" boolean, "cancelled" boolean, "show_comments" boolean, "show_avatars" boolean, "allow_adding_of_pictures" boolean, "allow_adding_of_video" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "imaginer_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCREATE TABLE "images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text, "idea_id" integer, "created_at" datetime, "updated_at" datetime, "graphic_file_name" varchar(255), "graphic_content_type" varchar(255), "graphic_file_size" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE "invitations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "sender_id" integer, "recipient_email" varchar(255), "token" varchar(255), "sent_at" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCREATE TABLE "likings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "believer_id" integer, "idea_id" integer, "rating" integer, "created_at" datetime, "updated_at" datetime, "beliver_type" varchar(255)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" text, "about" text, "twitter_handle" varchar(255), "user_id" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "taggings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tag_id" integer, "taggable_id" integer, "tagger_id" integer, "tagger_type" varchar(255), "taggable_type" varchar(255), "context" varchar(255), "created_at" datetime) [0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE INDEX "index_taggings_on_tag_id" ON "taggings" ("tag_id")[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE INDEX "index_taggings_on_taggable_id_and_taggable_type_and_context" ON "taggings" ("taggable_id", "taggable_type", "context")[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE "transactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "idea_id" integer, "backer_id" integer, "amount" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "facebook_uid" integer(8), "invitiation_id" integer, "invitation_limit" integer) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090922181516')[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090830024441')[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090830052906')[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090830213412')[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090830213446')[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090907201503')[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090918164403')[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090921194138')[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090921194957')[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090921211101')[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090921211400')[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090921211645')[0m
+  [4;36;1mSQL (3.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090921213853')[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090921224415')[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090921234718')[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090922000848')[0m
+  [4;36;1mSQL (5.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090922175959')[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090922180721')[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "believer_id" integer, "idea_id" integer, "words" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "host_id" integer, "location_name" varchar(255), "title" varchar(255), "comment_id" integer, "description" text, "start_date_of_service" datetime, "finish_date_of_service" datetime, "location_address" varchar(255), "open_invite" boolean, "volunteer_cap" integer, "allow_maybe_come" boolean, "display_attending" boolean, "cancelled" boolean, "show_comments" boolean, "show_avatars" boolean, "allow_adding_of_pictures" boolean, "allow_adding_of_video" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "imaginer_id" integer) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text, "idea_id" integer, "created_at" datetime, "updated_at" datetime, "graphic_file_name" varchar(255), "graphic_content_type" varchar(255), "graphic_file_size" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "invitations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "sender_id" integer, "recipient_email" varchar(255), "token" varchar(255), "sent_at" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCREATE TABLE "likings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "believer_id" integer, "idea_id" integer, "rating" integer, "created_at" datetime, "updated_at" datetime, "beliver_type" varchar(255)) [0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" text, "about" text, "twitter_handle" varchar(255), "user_id" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE "taggings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tag_id" integer, "taggable_id" integer, "tagger_id" integer, "tagger_type" varchar(255), "taggable_type" varchar(255), "context" varchar(255), "created_at" datetime) [0m
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE INDEX "index_taggings_on_tag_id" ON "taggings" ("tag_id")[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE INDEX "index_taggings_on_taggable_id_and_taggable_type_and_context" ON "taggings" ("taggable_id", "taggable_type", "context")[0m
+  [4;35;1mSQL (0.8ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCREATE TABLE "transactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "idea_id" integer, "backer_id" integer, "amount" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "facebook_uid" integer(8), "invitiation_id" integer, "invitation_limit" integer) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090922181516')[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090830024441')[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090830052906')[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090830213412')[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090830213446')[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090907201503')[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090918164403')[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090921194138')[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090921194957')[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090921211101')[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090921211400')[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090921211645')[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090921213853')[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090921224415')[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090921234718')[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090922000848')[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090922175959')[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090922180721')[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "believer_id" integer, "idea_id" integer, "words" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "host_id" integer, "location_name" varchar(255), "title" varchar(255), "comment_id" integer, "description" text, "start_date_of_service" datetime, "finish_date_of_service" datetime, "location_address" varchar(255), "open_invite" boolean, "volunteer_cap" integer, "allow_maybe_come" boolean, "display_attending" boolean, "cancelled" boolean, "show_comments" boolean, "show_avatars" boolean, "allow_adding_of_pictures" boolean, "allow_adding_of_video" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "price" integer, "created_at" datetime, "updated_at" datetime, "imaginer_id" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "images" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text, "idea_id" integer, "created_at" datetime, "updated_at" datetime, "graphic_file_name" varchar(255), "graphic_content_type" varchar(255), "graphic_file_size" integer) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "invitations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "sender_id" integer, "recipient_email" varchar(255), "token" varchar(255), "sent_at" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "likings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "believer_id" integer, "idea_id" integer, "rating" integer, "created_at" datetime, "updated_at" datetime, "beliver_type" varchar(255)) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "profiles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "url" text, "about" text, "twitter_handle" varchar(255), "user_id" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCREATE TABLE "taggings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tag_id" integer, "taggable_id" integer, "tagger_id" integer, "tagger_type" varchar(255), "taggable_type" varchar(255), "context" varchar(255), "created_at" datetime) [0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE INDEX "index_taggings_on_tag_id" ON "taggings" ("tag_id")[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE INDEX "index_taggings_on_taggable_id_and_taggable_type_and_context" ON "taggings" ("taggable_id", "taggable_type", "context")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE "transactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "idea_id" integer, "backer_id" integer, "amount" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "facebook_uid" integer(8), "invitiation_id" integer, "invitation_limit" integer) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (3.4ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090922181516')[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090830024441')[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090830052906')[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090830213412')[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090830213446')[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090907201503')[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090918164403')[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090921194138')[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090921194957')[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090921211101')[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090921211400')[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090921211645')[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090921213853')[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090921224415')[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090921234718')[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090922000848')[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20090922175959')[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090922180721')[0m
+
+
+Processing UsersController#profile (for ::1 at 2009-09-22 12:33:28) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to profile. Actions: create, edit, new, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#show (for ::1 at 2009-09-22 12:34:39) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, edit, new, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#edit (for ::1 at 2009-09-22 12:35:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'c8784bb7e180218a663faeb31205e6ae6b4cdd7bc068b8f05081ad06eb7a053e9d827937de2f0c7c709e41e0a92503973222496731707d18be0f306a6a36c3a0') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_user (2.3ms)
+Rendered layouts/_user_nav (0.4ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 30ms (View: 9, DB: 0) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing UsersController#1 (for ::1 at 2009-09-22 12:35:39) [GET]
+  Parameters: {"id"=>"profile"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, edit, new, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-22 12:41:52) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+/!\ FAILSAFE /!\  Tue Sep 22 13:16:56 -0700 2009
+  Status: 500 Internal Server Error
+  /Users/heathertanner/Sites/rails/idpops/v2_ipops/config/routes.rb:14: syntax error, unexpected tSYMBEG, expecting kDO or '{' or '('
+  map.resources :ideas, has_many :believers, :shallow => true
+                                  ^
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `each'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:266:in `load!'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:281:in `reload'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:59:in `reload_application'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:28:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:46:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:13:in `run'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+/!\ FAILSAFE /!\  Tue Sep 22 13:23:04 -0700 2009
+  Status: 500 Internal Server Error
+  /Users/heathertanner/Sites/rails/idpops/v2_ipops/config/routes.rb:18: syntax error, unexpected tSYMBEG, expecting kDO or '{' or '('
+  map.resources :users, has_one :profile, :shallow => true
+                                 ^
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `each'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:266:in `load!'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:281:in `reload'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:59:in `reload_application'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:28:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:46:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:13:in `run'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-22 13:23:08) [GET]
+
+ActionController::RoutingError (No route matches "/users/1/profile" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+/!\ FAILSAFE /!\  Tue Sep 22 13:35:57 -0700 2009
+  Status: 500 Internal Server Error
+  /Users/heathertanner/Sites/rails/idpops/v2_ipops/config/routes.rb:15: syntax error, unexpected tSYMBEG, expecting kDO or '{' or '('
+  map.resources :users, has_one :profile, :shallow => true
+                                 ^
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /Users/heathertanner/.gem/ruby/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `each'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:266:in `load!'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:281:in `reload'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:59:in `reload_application'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:28:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:46:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /opt/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:13:in `run'
+    /Users/heathertanner/.gem/ruby/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-22 13:38:57) [GET]
+
+ActionController::RoutingError (No route matches "/users/1" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+
+
+Processing UsersController#show (for ::1 at 2009-09-22 13:41:24) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, edit, new, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#edit (for ::1 at 2009-09-22 13:41:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (1.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'c8784bb7e180218a663faeb31205e6ae6b4cdd7bc068b8f05081ad06eb7a053e9d827937de2f0c7c709e41e0a92503973222496731707d18be0f306a6a36c3a0') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_user (8.3ms)
+Rendered layouts/_user_nav (5.3ms)
+Rendered layouts/_sidebar_content (0.8ms)
+Rendered layouts/_general_footer (0.8ms)
+Completed in 285ms (View: 216, DB: 2) | 200 OK [http://localhost/users/1/edit]
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 13:41:36) [GET]
+  Parameters: {"user_id"=>"1"}
+
+ActiveRecord::RecordNotFound (Couldn't find Profile without an ID):
+  app/controllers/profiles_controller.rb:7:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.7ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ProfilesController#new (for ::1 at 2009-09-22 13:44:57) [GET]
+  Parameters: {"user_id"=>"1"}
+Rendering template within layouts/application
+Rendering profiles/new
+Rendered profiles/_form (4.5ms)
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'c8784bb7e180218a663faeb31205e6ae6b4cdd7bc068b8f05081ad06eb7a053e9d827937de2f0c7c709e41e0a92503973222496731707d18be0f306a6a36c3a0') LIMIT 1[0m
+Rendered layouts/_user_nav (21.4ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.8ms)
+Completed in 48ms (View: 38, DB: 1) | 200 OK [http://localhost/users/1/profile/new]
+
+
+Processing ProfilesController#create (for ::1 at 2009-09-22 13:45:12) [POST]
+  Parameters: {"commit"=>"Submit", "profile"=>{"url"=>"captproton.com", "about"=>"it's me", "twitter_handle"=>"captproton"}, "authenticity_token"=>"lvafOHMo6JDfbQKT39uS+5ixqWgPfP/xa2pXF8l//EA="}
+  [4;36;1mProfile Create (0.7ms)[0m   [0;1mINSERT INTO "profiles" ("created_at", "updated_at", "url", "about", "user_id", "twitter_handle") VALUES('2009-09-22 20:45:12', '2009-09-22 20:45:12', 'captproton.com', 'it''s me', NULL, 'captproton')[0m
+Redirected to http://localhost:3000/profiles/1
+Completed in 45ms (DB: 1) | 302 Found [http://localhost/profiles]
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 13:45:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfile Load (0.3ms)[0m   [0mSELECT * FROM "profiles" WHERE ("profiles"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering profiles/show
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'c8784bb7e180218a663faeb31205e6ae6b4cdd7bc068b8f05081ad06eb7a053e9d827937de2f0c7c709e41e0a92503973222496731707d18be0f306a6a36c3a0') LIMIT 1[0m
+Rendered layouts/_user_nav (77.2ms)
+Rendered layouts/_sidebar_content (0.3ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 133ms (View: 97, DB: 1) | 200 OK [http://localhost/profiles/1]
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 13:45:33) [GET]
+  Parameters: {"user_id"=>"1"}
+
+ActiveRecord::RecordNotFound (Couldn't find Profile without an ID):
+  app/controllers/profiles_controller.rb:7:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mProfile Load (0.5ms)[0m   [0mSELECT * FROM "profiles" LIMIT 1[0m
+  [4;36;1mProfile Update (5.7ms)[0m   [0;1mUPDATE "profiles" SET "updated_at" = '2009-09-22 20:46:28', "user_id" = 1 WHERE "id" = 1[0m
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 13:46:32) [GET]
+  Parameters: {"user_id"=>"1"}
+
+ActiveRecord::RecordNotFound (Couldn't find Profile without an ID):
+  app/controllers/profiles_controller.rb:7:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 13:53:02) [GET]
+  Parameters: {"user_id"=>"1"}
+
+ActiveRecord::RecordNotFound (Couldn't find Profile without an ID):
+  app/controllers/profiles_controller.rb:7:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.6ms)
+Rendered rescues/_request_and_response (2.2ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mProfile Load (0.4ms)[0m   [0mSELECT * FROM "profiles" WHERE ("profiles".user_id = 1) LIMIT 1[0m
+  [4;36;1mProfile Load (0.7ms)[0m   [0;1mSELECT * FROM "profiles" LIMIT 1[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfile Load (0.2ms)[0m   [0;1mSELECT * FROM "profiles" WHERE ("profiles".user_id = 1) LIMIT 1[0m
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 14:23:53) [GET]
+  Parameters: {"user_id"=>"1"}
+
+NameError (undefined local variable or method `param' for #<ProfilesController:0x23e9fc0>):
+  app/controllers/profiles_controller.rb:7:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfile Load (0.3ms)[0m   [0;1mSELECT * FROM "profiles" WHERE ("profiles".user_id = 1) LIMIT 1[0m
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 14:38:04) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProfile Load (0.4ms)[0m   [0mSELECT * FROM "profiles" WHERE ("profiles".user_id = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering profiles/show
+
+ActionView::TemplateError (undefined method `edit_profile_path' for #<ActionView::Base:0x22b04b0>) on line #17 of app/views/profiles/show.html.erb:
+14: </p>
+15: 
+16: <p>
+17:   <%= link_to "Edit", edit_profile_path(@profile) %> |
+18:   <%= link_to "Destroy", @profile, :confirm => 'Are you sure?', :method => :delete %> |
+19:   <%= link_to "View All", profiles_path %>
+20: </p>
+
+    app/views/profiles/show.html.erb:17
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 14:45:07) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProfile Load (0.4ms)[0m   [0mSELECT * FROM "profiles" WHERE ("profiles".user_id = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering profiles/show
+
+ActionView::TemplateError (undefined method `edit_profile_path' for #<ActionView::Base:0x22eca8c>) on line #17 of app/views/profiles/show.html.erb:
+14: </p>
+15: 
+16: <p>
+17:   <%= link_to "Edit", edit_profile_path(@profile) %> |
+18:   <%= link_to "Destroy", @profile, :confirm => 'Are you sure?', :method => :delete %> |
+19:   <%= link_to "View All", profiles_path %>
+20: </p>
+
+    app/views/profiles/show.html.erb:17
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (132.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 14:45:35) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProfile Load (0.3ms)[0m   [0mSELECT * FROM "profiles" WHERE ("profiles".user_id = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering profiles/show
+
+ActionView::TemplateError (undefined method `profile_path' for #<ActionView::Base:0x23de60c>) on line #18 of app/views/profiles/show.html.erb:
+15: 
+16: <p>
+17:   <%# link_to "Edit", edit_profile_path(@profile) %> |
+18:   <%= link_to "Destroy", @profile, :confirm => 'Are you sure?', :method => :delete %> |
+19:   <%= link_to "View All", profiles_path %>
+20: </p>
+
+    app/views/profiles/show.html.erb:18
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 14:46:09) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProfile Load (0.3ms)[0m   [0mSELECT * FROM "profiles" WHERE ("profiles".user_id = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering profiles/show
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'c8784bb7e180218a663faeb31205e6ae6b4cdd7bc068b8f05081ad06eb7a053e9d827937de2f0c7c709e41e0a92503973222496731707d18be0f306a6a36c3a0') LIMIT 1[0m
+Rendered layouts/_user_nav (22.9ms)
+Rendered layouts/_sidebar_content (0.8ms)
+Rendered layouts/_general_footer (0.7ms)
+Completed in 91ms (View: 55, DB: 1) | 200 OK [http://localhost/users/1/profile]
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 14:49:11) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfile Load (0.3ms)[0m   [0;1mSELECT * FROM "profiles" WHERE ("profiles".user_id = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering profiles/show
+
+ActionView::TemplateError (undefined method `edit_user_profile' for #<ActionView::Base:0x2383694>) on line #17 of app/views/profiles/show.html.erb:
+14: </p>
+15: 
+16: <p>
+17:   <%= link_to "Edit", edit_user_profile(@profile) %> |
+18: </p>
+
+    app/views/profiles/show.html.erb:17
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (154.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 14:50:18) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfile Load (0.5ms)[0m   [0;1mSELECT * FROM "profiles" WHERE ("profiles".user_id = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering profiles/show
+
+ActionView::TemplateError (undefined method `edit_user_profile' for #<ActionView::Base:0x248bb90>) on line #17 of app/views/profiles/show.html.erb:
+14: </p>
+15: 
+16: <p>
+17:   <%= link_to "Edit", edit_user_profile(@profile) %> |
+18: </p>
+
+    app/views/profiles/show.html.erb:17
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 14:51:10) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfile Load (0.4ms)[0m   [0;1mSELECT * FROM "profiles" WHERE ("profiles".user_id = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering profiles/show
+
+ActionView::TemplateError (undefined method `user_profile' for #<ActionView::Base:0x2248db0>) on line #17 of app/views/profiles/show.html.erb:
+14: </p>
+15: 
+16: <p>
+17:   <%= link_to "Edit", user_profile(@profile) %> |
+18: </p>
+
+    app/views/profiles/show.html.erb:17
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 14:52:12) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfile Load (0.4ms)[0m   [0;1mSELECT * FROM "profiles" WHERE ("profiles".user_id = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering profiles/show
+
+ActionView::TemplateError (undefined local variable or method `edit_user_profile' for #<ActionView::Base:0x23176b0>) on line #17 of app/views/profiles/show.html.erb:
+14: </p>
+15: 
+16: <p>
+17:   <%= link_to "Edit", edit_user_profile %> |
+18: </p>
+
+    app/views/profiles/show.html.erb:17
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (153.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 14:52:34) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfile Load (0.3ms)[0m   [0;1mSELECT * FROM "profiles" WHERE ("profiles".user_id = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering profiles/show
+
+ActionView::TemplateError (undefined method `edit_user_profile' for #<ActionView::Base:0x242fcb4>) on line #17 of app/views/profiles/show.html.erb:
+14: </p>
+15: 
+16: <p>
+17:   <%= link_to "Edit", edit_user_profile(@profile) %> |
+18: </p>
+
+    app/views/profiles/show.html.erb:17
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#1 (for ::1 at 2009-09-22 14:55:23) [GET]
+  Parameters: {"id"=>"profiles"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, edit, new, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 14:57:40) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfile Load (0.3ms)[0m   [0;1mSELECT * FROM "profiles" WHERE ("profiles".user_id = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering profiles/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'c8784bb7e180218a663faeb31205e6ae6b4cdd7bc068b8f05081ad06eb7a053e9d827937de2f0c7c709e41e0a92503973222496731707d18be0f306a6a36c3a0') LIMIT 1[0m
+Rendered layouts/_user_nav (10.8ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 38ms (View: 18, DB: 1) | 200 OK [http://localhost/users/1/profile]
+
+
+Processing UsersController#edit (for ::1 at 2009-09-22 15:08:10) [GET]
+  Parameters: {"id"=>"current"}
+  [4;36;1mUser Load (1.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'c8784bb7e180218a663faeb31205e6ae6b4cdd7bc068b8f05081ad06eb7a053e9d827937de2f0c7c709e41e0a92503973222496731707d18be0f306a6a36c3a0') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_user (3.6ms)
+Rendered layouts/_user_nav (0.6ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 40ms (View: 13, DB: 2) | 200 OK [http://localhost/users/current/edit]
+
+
+Processing UserSessionsController#destroy (for ::1 at 2009-09-22 15:08:36) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = 'c8784bb7e180218a663faeb31205e6ae6b4cdd7bc068b8f05081ad06eb7a053e9d827937de2f0c7c709e41e0a92503973222496731707d18be0f306a6a36c3a0') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 21ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-22 15:08:36) [GET]
+Rendering frontdoor/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-22 15:10:00) [GET]
+
+ActionController::RoutingError (No route matches "/user/1/profile/edit" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-22 15:10:08) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for ::1 at 2009-09-22 15:10:11) [GET]
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.3ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 77ms (View: 11, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-09-22 15:10:20) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"captproton", "password"=>"ou812ou812"}, "authenticity_token"=>"lvafOHMo6JDfbQKT39uS+5ixqWgPfP/xa2pXF8l//EA="}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'captproton') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Rendered layouts/_user_nav (1.4ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 286ms (View: 12, DB: 0) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for ::1 at 2009-09-22 15:10:30) [POST]
+  Parameters: {"commit"=>"Submit", "user_session"=>{"username"=>"captproton", "password"=>"melorbode"}, "authenticity_token"=>"lvafOHMo6JDfbQKT39uS+5ixqWgPfP/xa2pXF8l//EA="}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'captproton') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 26ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-22 15:10:30) [GET]
+Rendering frontdoor/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 15:10:55) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProfile Load (0.3ms)[0m   [0mSELECT * FROM "profiles" WHERE ("profiles".user_id = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering profiles/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (10.2ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 34ms (View: 14, DB: 1) | 200 OK [http://localhost/users/1/profile]
+
+
+Processing UsersController#edit (for ::1 at 2009-09-22 15:11:07) [GET]
+  Parameters: {"id"=>"current"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered users/_user (1.6ms)
+Rendered layouts/_user_nav (0.4ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 27ms (View: 5, DB: 0) | 200 OK [http://localhost/users/current/edit]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 15:13:36) [GET]
+  [4;36;1mIdea Load (0.9ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.4ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 49ms (View: 37, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#new (for ::1 at 2009-09-22 15:13:40) [GET]
+Rendering template within layouts/application
+Rendering ideas/new
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (173.3ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 195ms (View: 183, DB: 1) | 200 OK [http://localhost/ideas/new]
+
+
+Processing IdeasController#create (for ::1 at 2009-09-22 15:13:53) [POST]
+  Parameters: {"commit"=>"Create", "idea"=>{"price"=>"1", "title"=>"follow the leader", "description"=>"ipsum lorem"}, "authenticity_token"=>"lvafOHMo6JDfbQKT39uS+5ixqWgPfP/xa2pXF8l//EA="}
+  [4;35;1mIdea Create (0.6ms)[0m   [0mINSERT INTO "ideas" ("price", "created_at", "title", "updated_at", "description", "imaginer_id") VALUES(1, '2009-09-22 22:13:53', 'follow the leader', '2009-09-22 22:13:53', 'ipsum lorem', NULL)[0m
+Redirected to http://localhost:3000/ideas/1
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/ideas]
+
+
+Processing IdeasController#show (for ::1 at 2009-09-22 15:13:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIdea Load (0.2ms)[0m   [0;1mSELECT * FROM "ideas" WHERE ("ideas"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ideas/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (24.7ms)
+Rendered layouts/_sidebar_content (0.2ms)
+Rendered layouts/_general_footer (0.2ms)
+Completed in 42ms (View: 32, DB: 1) | 200 OK [http://localhost/ideas/1]
+
+
+Processing LikingsController#index (for ::1 at 2009-09-22 15:13:59) [GET]
+  Parameters: {"idea_id"=>"1"}
+Rendering template within layouts/application
+Rendering likings/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #9 of app/views/likings/index.html.erb:
+6:     <th>Idea</th>
+7:     <th>Degree Of</th>
+8:   </tr>
+9:   <% for liking in @likings %>
+10:     <tr>
+11:       <td><%=h liking.believer_id %></td>
+12:       <td><%=h liking.idea_id %></td>
+
+    app/views/likings/index.html.erb:9
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (45.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#1 (for ::1 at 2009-09-22 15:14:07) [GET]
+  Parameters: {"id"=>"believers"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-22 15:16:26) [GET]
+  Parameters: {"idea_id"=>"1"}
+
+NameError (uninitialized constant BelieversController):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+** acts_as_taggable_on: initialized properly.
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-22 15:17:51) [GET]
+  Parameters: {"idea_id"=>"1"}
+
+NameError (uninitialized constant BelieversController):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (70.1ms)
+Rendered rescues/_request_and_response (4.7ms)
+Rendering rescues/layout (internal_server_error)
+** acts_as_taggable_on: initialized properly.
+  [4;35;1mIdea Load (0.4ms)[0m   [0mSELECT * FROM "ideas" LIMIT 1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing UsersController#1 (for ::1 at 2009-09-22 15:35:30) [GET]
+  Parameters: {"id"=>"ideas"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, edit, new, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 15:35:52) [GET]
+  [4;36;1mIdea Load (1.0ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+
+ActionView::TemplateError (undefined local variable or method `transactions_path' for #<ActionView::Base:0x27c53b0>) on line #51 of app/views/ideas/index.html.erb:
+48: 			<td class="list-actions">	
+49: 			 	<% if current_user  -%>
+50: 
+51: 				<% form_for :transaction, :url => transactions_path  do |f| %>
+52: 				 <%= f.hidden_field :amount, :size => 40 %> 
+53: 				  
+54: 				<p> 
+
+    app/views/ideas/index.html.erb:51
+    app/views/ideas/index.html.erb:33:in `each'
+    app/views/ideas/index.html.erb:33
+    app/controllers/ideas_controller.rb:7:in `index'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 15:36:53) [GET]
+  [4;36;1mIdea Load (0.8ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (8.9ms)
+Rendered layouts/_sidebar_content (0.7ms)
+Rendered layouts/_general_footer (0.7ms)
+Completed in 305ms (View: 127, DB: 1) | 200 OK [http://localhost/ideas]
+** acts_as_taggable_on: initialized properly.
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 15:38:22) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mIdea Load (1.1ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (1.3ms)
+Rendered layouts/_sidebar_content (0.9ms)
+Rendered layouts/_general_footer (2.5ms)
+Completed in 82ms (View: 71, DB: 2) | 200 OK [http://localhost/users/1/ideas]
+
+
+Processing IdeasController#new (for ::1 at 2009-09-22 15:38:38) [GET]
+Rendering template within layouts/application
+Rendering ideas/new
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (24.5ms)
+Rendered layouts/_sidebar_content (0.6ms)
+Rendered layouts/_general_footer (0.4ms)
+Completed in 44ms (View: 34, DB: 0) | 200 OK [http://localhost/ideas/new]
+
+
+Processing IdeasController#create (for ::1 at 2009-09-22 15:38:51) [POST]
+  Parameters: {"commit"=>"Create", "idea"=>{"price"=>"1", "title"=>"herd", "description"=>"feel like cattle"}, "authenticity_token"=>"lvafOHMo6JDfbQKT39uS+5ixqWgPfP/xa2pXF8l//EA="}
+  [4;35;1mIdea Create (0.6ms)[0m   [0mINSERT INTO "ideas" ("price", "created_at", "title", "updated_at", "description", "imaginer_id") VALUES(1, '2009-09-22 22:38:51', 'herd', '2009-09-22 22:38:51', 'feel like cattle', NULL)[0m
+Redirected to http://localhost:3000/ideas/2
+Completed in 17ms (DB: 1) | 302 Found [http://localhost/ideas]
+
+
+Processing IdeasController#show (for ::1 at 2009-09-22 15:38:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mIdea Load (0.3ms)[0m   [0;1mSELECT * FROM "ideas" WHERE ("ideas"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering ideas/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (115.7ms)
+Rendered layouts/_sidebar_content (0.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 134ms (View: 125, DB: 1) | 200 OK [http://localhost/ideas/2]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 15:38:55) [GET]
+  [4;36;1mIdea Load (1.0ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.3ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 37ms (View: 28, DB: 1) | 200 OK [http://localhost/ideas]
+  [4;35;1mIdea Load (0.6ms)[0m   [0mSELECT * FROM "ideas" [0m
+  [4;36;1mIdea Load (0.4ms)[0m   [0;1mSELECT * FROM "ideas" ORDER BY ideas.id DESC LIMIT 1[0m
+  [4;35;1mIdea Update (0.5ms)[0m   [0mUPDATE "ideas" SET "updated_at" = '2009-09-22 22:40:17', "imaginer_id" = 2 WHERE "id" = 2[0m
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 15:40:34) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mIdea Load (2.0ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.3ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 39ms (View: 27, DB: 2) | 200 OK [http://localhost/users/1/ideas]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 15:51:08) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.idea):
+  app/controllers/ideas_controller.rb:7:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 15:51:24) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.idea):
+  app/controllers/ideas_controller.rb:7:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (64.5ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mIdea Load (0.0ms)[0m   [0mSQLite3::SQLException: no such column: likings.user_id: SELECT "ideas".* FROM "ideas" INNER JOIN "likings" ON "ideas".id = "likings".idea_id WHERE (("likings".user_id = 1)) [0m
+  [4;36;1mIdea Load (0.4ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+  [4;35;1mIdea Load (0.2ms)[0m   [0mSELECT * FROM "ideas" WHERE (imaginer_id == 1) [0m
+  [4;36;1mIdea Load (0.3ms)[0m   [0;1mSELECT * FROM "ideas" WHERE (imaginer_id == 1) [0m
+  [4;35;1mIdea Load (0.0ms)[0m   [0mSQLite3::SQLException: no such column: likings.user_id: SELECT "ideas".* FROM "ideas" INNER JOIN "likings" ON "ideas".id = "likings".idea_id WHERE (("likings".user_id = 1)) [0m
+  [4;36;1mIdea Load (0.4ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+  [4;35;1mIdea Load (0.2ms)[0m   [0mSELECT * FROM "ideas" WHERE ("ideas".imaginer_id = 1) [0m
+  [4;36;1mIdea Load (0.3ms)[0m   [0;1mSELECT * FROM "ideas" LIMIT 1[0m
+  [4;35;1mIdea Update (0.4ms)[0m   [0mUPDATE "ideas" SET "updated_at" = '2009-09-22 23:14:31', "imaginer_id" = 1 WHERE "id" = 1[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;35;1mIdea Load (0.4ms)[0m   [0mSELECT * FROM "ideas" WHERE ("ideas".imaginer_id = 1) [0m
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 16:16:25) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.imaginings):
+  app/controllers/ideas_controller.rb:7:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 16:19:31) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.imaginings):
+  app/controllers/ideas_controller.rb:6:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 16:19:45) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.imaginings):
+  app/controllers/ideas_controller.rb:6:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (362.0ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 16:20:03) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;35;1mIdea Load (0.4ms)[0m   [0mSELECT * FROM "ideas" WHERE ("ideas".imaginer_id = 1) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.4ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 52ms (View: 17, DB: 1) | 200 OK [http://localhost/users/1/ideas]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 16:20:36) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;35;1mIdea Load (0.4ms)[0m   [0mSELECT * FROM "ideas" WHERE ("ideas".imaginer_id = 1) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.7ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 47ms (View: 19, DB: 1) | 200 OK [http://localhost/users/1/ideas]
+
+
+Processing IdeasController#new (for ::1 at 2009-09-22 16:21:07) [GET]
+Rendering template within layouts/application
+Rendering ideas/new
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (27.6ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.2ms)
+Completed in 47ms (View: 33, DB: 1) | 200 OK [http://localhost/ideas/new]
+
+
+Processing IdeasController#create (for ::1 at 2009-09-22 16:22:12) [POST]
+  Parameters: {"commit"=>"Create", "idea"=>{"price"=>"1", "title"=>"don't blow it", "description"=>"puff"}, "authenticity_token"=>"lvafOHMo6JDfbQKT39uS+5ixqWgPfP/xa2pXF8l//EA="}
+
+NameError (undefined local variable or method `current_user_id' for #<IdeasController:0x23e8058>):
+  app/controllers/ideas_controller.rb:45:in `create'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (52.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#create (for ::1 at 2009-09-22 16:22:46) [POST]
+  Parameters: {"commit"=>"Create", "idea"=>{"price"=>"1", "title"=>"don't blow it", "description"=>"puff"}, "authenticity_token"=>"lvafOHMo6JDfbQKT39uS+5ixqWgPfP/xa2pXF8l//EA="}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mIdea Create (0.6ms)[0m   [0mINSERT INTO "ideas" ("price", "created_at", "title", "updated_at", "description", "imaginer_id") VALUES(1, '2009-09-22 23:22:47', 'don''t blow it', '2009-09-22 23:22:47', 'puff', 1)[0m
+Redirected to http://localhost:3000/ideas/3
+Completed in 48ms (DB: 1) | 302 Found [http://localhost/ideas]
+
+
+Processing IdeasController#show (for ::1 at 2009-09-22 16:22:47) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mIdea Load (0.3ms)[0m   [0;1mSELECT * FROM "ideas" WHERE ("ideas"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering ideas/show
+  [4;35;1mUser Load (3.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (30.0ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 68ms (View: 36, DB: 4) | 200 OK [http://localhost/ideas/3]
+  [4;36;1mIdea Load (0.5ms)[0m   [0;1mSELECT * FROM "ideas" ORDER BY ideas.id DESC LIMIT 1[0m
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 16:23:18) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;35;1mIdea Load (0.4ms)[0m   [0mSELECT * FROM "ideas" WHERE ("ideas".imaginer_id = 1) [0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.6ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 120ms (View: 98, DB: 1) | 200 OK [http://localhost/users/1/ideas]
+  [4;35;1mIdea Load (0.8ms)[0m   [0mSELECT * FROM "ideas" [0m
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 16:24:13) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  app/controllers/ideas_controller.rb:5:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mIdea Load (0.5ms)[0m   [0;1mSELECT * FROM "ideas" [0m
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 16:25:26) [GET]
+  [4;35;1mIdea Load (1.0ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.4ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 39ms (View: 29, DB: 1) | 200 OK [http://localhost/ideas]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 16:25:35) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;36;1mIdea Load (0.5ms)[0m   [0;1mSELECT * FROM "ideas" WHERE ("ideas".imaginer_id = 1) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.4ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 42ms (View: 17, DB: 1) | 200 OK [http://localhost/users/1/ideas]
+
+
+Processing IdeasController#show (for ::1 at 2009-09-22 16:31:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIdea Load (0.3ms)[0m   [0;1mSELECT * FROM "ideas" WHERE ("ideas"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ideas/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (23.1ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 39ms (View: 28, DB: 1) | 200 OK [http://localhost/ideas/1]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-22 16:31:42) [GET]
+  Parameters: {"idea_id"=>"1"}
+
+NameError (uninitialized constant BelieversController):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (114.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#new (for ::1 at 2009-09-22 16:33:28) [GET]
+Rendering template within layouts/application
+Rendering ideas/new
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (27.3ms)
+Rendered layouts/_sidebar_content (0.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 48ms (View: 38, DB: 0) | 200 OK [http://localhost/ideas/new]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 16:33:33) [GET]
+  [4;35;1mIdea Load (0.9ms)[0m   [0mSELECT * FROM "ideas" [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.3ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 43ms (View: 34, DB: 2) | 200 OK [http://localhost/ideas/]
+
+
+Processing UsersController#new (for ::1 at 2009-09-22 16:33:45) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_user (8.2ms)
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (7.2ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 45ms (View: 25, DB: 1) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#show (for ::1 at 2009-09-22 16:33:51) [GET]
+  Parameters: {"id"=>"1"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, edit, new, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProfilesController#show (for ::1 at 2009-09-22 16:33:57) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProfile Load (0.4ms)[0m   [0mSELECT * FROM "profiles" WHERE ("profiles".user_id = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering profiles/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (8.0ms)
+Rendered layouts/_sidebar_content (0.2ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 37ms (View: 17, DB: 1) | 200 OK [http://localhost/users/1/profile]
+
+
+Processing IdeasController#index (for ::1 at 2009-09-22 16:34:08) [GET]
+  Parameters: {"user_id"=>"1"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ideas/index
+  [4;36;1mIdea Load (0.4ms)[0m   [0;1mSELECT * FROM "ideas" WHERE ("ideas".imaginer_id = 1) [0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (0.3ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 162ms (View: 138, DB: 1) | 200 OK [http://localhost/users/1/ideas]
+  [4;35;1mLiking Load (0.2ms)[0m   [0mSELECT * FROM "likings" [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mLiking Create (0.5ms)[0m   [0;1mINSERT INTO "likings" ("rating", "created_at", "idea_id", "updated_at", "beliver_type", "believer_id") VALUES(NULL, '2009-09-23 00:50:35', 1, '2009-09-23 00:50:35', NULL, 1)[0m
+
+
+Processing IdeasController#show (for ::1 at 2009-09-22 17:50:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mIdea Load (0.3ms)[0m   [0;1mSELECT * FROM "ideas" WHERE ("ideas"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ideas/show
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Rendered layouts/_user_nav (64.4ms)
+Rendered layouts/_sidebar_content (0.1ms)
+Rendered layouts/_general_footer (0.1ms)
+Completed in 79ms (View: 68, DB: 1) | 200 OK [http://localhost/ideas/1]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-22 17:51:01) [GET]
+  Parameters: {"idea_id"=>"1"}
+
+NameError (uninitialized constant BelieversController):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#1 (for ::1 at 2009-09-22 17:51:06) [GET]
+  Parameters: {"id"=>"likings"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-22 17:51:20) [GET]
+
+ActionController::RoutingError (No route matches "/ideas/1/likings/1" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#1 (for ::1 at 2009-09-22 17:51:27) [GET]
+  Parameters: {"id"=>"likings"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-22 17:51:36) [GET]
+  Parameters: {"idea_id"=>"1"}
+
+NameError (uninitialized constant BelieversController):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#1 (for ::1 at 2009-09-22 17:51:45) [GET]
+  Parameters: {"id"=>"users"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#1 (for ::1 at 2009-09-22 17:52:43) [GET]
+  Parameters: {"id"=>"users"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
