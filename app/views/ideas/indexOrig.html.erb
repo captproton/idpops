@@ -1,3 +1,58 @@
+<h1>Listing ideas</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Price</th>
+  </tr>
+
+<% @ideas.each do |idea| %>
+  <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+    <td><%=h idea.title %></td>
+    <td><%=h idea.description %></td>
+    <td><%=h idea.price %></td>
+    <td><%= link_to 'Show', idea %></td>
+    <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
+    <td><%= link_to 'Destroy', idea, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New idea', new_idea_path %>
+
+<div id = "ideas-list">
+	<h3> Listing Ideas </h3>
+		<% if current_user -%>
+		  <%= link_to 'New idea', new_idea_path %>
+		<% end -%>   
+
+  <table>
+	<% for idea in @ideas %>
+		<tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+			
+			<td>
+				<%= image_tag 'icons/Games.png', :class => 'list-image', :size => "60x60" %>
+			</td>
+			
+			<td class = "list-description">
+				<dl>
+					<dt><%= link_to idea.title, idea %> </dt>
+					<dd><%=h truncate(idea.description, :length => 50) %> </dd>
+					<dd><%= idea.price %> $ </dd>
+				</dl>
+		     </td>
+
+		</tr>
+		<% end %>
+  </table>
+  </div>
+
+================================
+
+
 <div id="bcards-little">
   <div class="col0">
     <div class="little grey-frame b-card">

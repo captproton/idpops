@@ -1,2 +1,21 @@
-<% title ("New User") %>  
-<%= render @user %>
+<% title ("Sign Up") %>  
+<div id="new-session">
+  <div class="grey-frame grey-frame-narrow">
+    <div class="grey-frame-inner">
+      <h3 class="title">Sign Up</h3>
+      <a href="/login" class="ajaxable">or log in</a>
+      <br>
+      <br>
+      <div class="left" style="width: 220px;">
+			<%= render @user %>
+	  </div>
+		      <div class="left"><img alt="Or" class="vspacer" src="/images/misc/or.gif?1253742706" width="30" height="178"></div>
+		      <div class="left" id="fb-connect-tout">
+		        <fb:login-button class=" fb_login_not_logged_in FB_ElementReady" background="white" length="long" onlogin="window.location = '/fb/connect'" size="medium"><a id="RES_ID_fb_login" class="fbconnect_login_button"><img alt="Connect" src="http://static.ak.fbcdn.net/rsrc.php/zBT3E/hash/338d3m67.gif" id="fb_login_image"></a></fb:login-button>
+		        <img alt="Tryit" src="/images/misc/tryit.gif?1253742706" width="119" height="40">
+		        <p>Use your Facebook account to login to Kickstarter. It's fast and easy.</p>
+		      </div>
+		      <div class="clear"></div>
+		    </div>
+		  </div>
+		</div>

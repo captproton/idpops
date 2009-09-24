@@ -1,47 +1,100 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
- "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-   <link rel="stylesheet" href="http://yui.yahooapis.com/2.5.0/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang='en' xml:lang='en' xmlns:fb='http://www.facebook.com/2008/fbml' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+<!-- login -->
+<title>Signup &mdash;
+    IdPops</title>
 
-   <title><%= "IdPops - " + h(yield(:title) || "IdPops") %></title>
-   <%= stylesheet_link_tag 'application' %>
-   <%= yield(:head) %>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="description" content="IdPops">
-	<meta name="keywords" content="IdPops">
-
-</head>
-<body>
-<div id="doc2" class="yui-t5">
-   <div id="hd">	<%= render :partial => 'layouts/user_nav' %>
-</div>
-   <div id="bd">
-	<div id="yui-main">
-	<div class="yui-b"><div class="yui-g">
-	<!-- YOUR DATA GOES HERE -->
-	
-	      <%- flash.each do |name, msg| -%>
-	        <%= content_tag :div, msg, :id => "flash_#{name}" %>
-	      <%- end -%>
-
-	      <%- if show_title? -%>
-	        <h1><%=h yield(:title) %></h1>
-	      <%- end -%>
+	<meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+<%= stylesheet_link_tag "all", :cache => true %>	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.2/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="/javascripts/cache-ksr.js?1253742706" type="text/javascript"></script>
+    <link href='/favicon.png' rel='icon' type='image/png' />
+    
+    
+    
+    <script type='text/javascript'>
+      //<![CDATA[
+        $(function() { initMenu(['projects']); });
+        var AUTH_TOKEN = "yrMpHzo3LXx7c1W0XhtrnHu6TR/6IH9RFOozyOpAd98=";
+      //]]>
+    </script>
+    <script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript"></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        var FBKey = 'df623a5548ca0f3b596c6fcc23053de7';
+        $('fb\\:login-button').livequery(function() {
+          FB.init(FBKey, '/xd_receiver.html');
+        });
+        $(document).ready(function() {
+          FB.init(FBKey, '/xd_receiver.html');
+          facebook_autolog(false);
+        });
+      //]]>
+    </script>
+    
+  </head>
+  <body class='users' id='users_new'>
+    <div class='center jGrowl' id='growl_section'></div>
+    <!-- // Main site navigation -->
+    <div id='header-outer'>
+      <div id='header'>
+        <!-- // Logo -->
+        <div id='logo'>
+          <h1>
+            <span id='h1title'>
+              <a href='/'>IdPops</a>
+            </span>
+            <a href='/'>
+              <span id='logoimg'></span>
+            </a>
+          </h1>
+        </div>
+        <div class='left' id='navigation'>
+          <div class='right'>
+            <a href="/login">Login</a>
+            <a href="/signup">Signup</a>
+          </div>
+          <a href="/projects/by/recommended">DISCOVER PROJECTS</a>
+          <a href="/learn-more">LEARN MORE</a>
+          <a href="http://blog.idpops.com/">BLOG</a>
+        </div>
+        <div class='clear'></div>
+      </div>
+    </div>
+    
+    <div id='content'>
 
 	      <%= yield %>
 	
-	</div>
-</div>
-	</div>
-	<div class="yui-b"><%= render :partial => 'layouts/sidebar_content' %></div>
-		
+	    </div>
+	    <hr class='clear' />
+	    <div id='footer'>
+	      <div id='etc'>
 
-	</div>
-   <div id="ft">
-   		<%= render :partial => 'layouts/general_footer' %>
+	        <a href="http://blog.idpops.com/">Blog</a>
 
-   </div>
-</div>
-</body>
-</html>
+	        <a href="/learn-more">Learn More</a>
+	        <a href="/community">Forums</a>
+	        <a href="/terms-of-use">Terms of Use</a>
+
+	        <a href="/privacy">Privacy Policy</a>
+	        <a href="/learn-more" class="last">Contact</a>
+
+	      </div>
+	      <div id='legal'>
+	        &copy; 2009 IdPops Inc. All designs Copyright by owner.
+	      </div>
+	    </div>
+	    <script type="text/javascript">
+	    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	    </script>
+	    <script type="text/javascript">
+	    try {
+	    var pageTracker = _gat._getTracker("UA-7621056-1");
+	    pageTracker._trackPageview();
+	    } catch(err) {}</script>
+	  </body>
+	</html>

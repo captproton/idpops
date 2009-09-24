@@ -14,3 +14,61 @@
 <% end %>
 
 
+<div id="new-session">
+        <div class="grey-frame grey-frame-narrow">
+          <div class="grey-frame-inner">
+            <h3 class="title">Log In</h3>
+            <a class="ajaxable" href="/signup">or sign up</a>
+            <br/>
+            <br/>
+            <div class="left">
+              <form method="post" id="login" class="ajaxable" action="/session"><div style="margin: 0pt; padding: 0pt; display: inline;"><input type="hidden" value="YtOcROziZpGon/fJrVtsaLwfYpPxjWrVd5hlGS5/URE=" name="authenticity_token"/></div>
+                
+                <fieldset>
+                  <label for="email">Email</label>
+                  <input type="text" name="email" id="email" class="text"/>
+                </fieldset>
+                <fieldset>
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" class="password"/>
+                </fieldset>
+                <fieldset>
+                  <input type="checkbox" value="1" name="remember_me" id="remember_me" class="checkbox"/>
+                  <label for="remember_me" class="checkbox">Remember Me</label>
+                </fieldset>
+                <div class="buttons">
+                  <br/>
+                  <input type="submit" value="Login" name="commit" class="button submit"/>
+                </div>
+              </form>
+            </div>
+            <div class="left"><img height="178" width="30" src="/images/misc/or.gif?1253742706" class="vspacer" alt="Or"/></div>
+            <div id="fb-connect-tout" class="left">
+              <fb:login-button size="medium" onlogin="window.location = '/fb/connect'" length="long" background="white" class=" fb_login_not_logged_in FB_ElementReady"><a class="fbconnect_login_button" id="RES_ID_fb_login"><img id="fb_login_image" src="http://static.ak.fbcdn.net/rsrc.php/zBT3E/hash/338d3m67.gif" alt="Connect"/></a></fb:login-button>
+              <img height="40" width="119" src="/images/misc/tryit.gif?1253742706" alt="Tryit"/>
+              <p>Use your Facebook account to login to Kickstarter. It's fast and easy.</p>
+            </div>
+            <div class="clear"/>
+          </div>
+        </div>
+        <br/>
+        <div class="grey-frame grey-frame-narrow">
+          <div class="grey-frame-inner">
+            <div id="pass-what">
+              <h3>Password?!!</h3>
+              <p>Tell us the email you used to sign-up and we’ll get you logged in. Alternatively, you can login with your Facebook account (see above).</p>
+            </div>
+            <div id="pass-what-form">
+      <form method="post" id="reset" class="ajaxable" action="/password/reset"><div style="margin: 0pt; padding: 0pt; display: inline;"><input type="hidden" value="YtOcROziZpGon/fJrVtsaLwfYpPxjWrVd5hlGS5/URE=" name="authenticity_token"/></div>
+                <fieldset>
+                  <label style="text-indent: -5000em;" for="email">your email</label>
+                  <div class="left"><input type="text" style="width: 200px; margin-right: 25px;" name="email" id="email" class="text"/></div>
+                  <div class="left"><input type="submit" value="LOG ME IN" name="commit" class="button submit"/></div>
+                  <div class="clear"/>
+                </fieldset>
+      </form>
+            </div>
+            <div class="clear"/>
+          </div>
+        </div>
+      </div>
