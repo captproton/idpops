@@ -18200,3 +18200,257 @@ Migrating to AddAttachmentsPhotoToIdea (20090924233551)
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags")[0m
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("transactions")[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing FrontdoorController#index (for ::1 at 2009-09-24 16:58:15) [GET]
+Rendering frontdoor/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+Migrating to CreateUserProfiles (20090921211400)
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+Migrating to CreateLikings (20090921213853)
+Migrating to AddBelieverTypeToLiking (20090921224415)
+Migrating to AddInitiatorToIdeas (20090921234718)
+Migrating to RenameInitiatorToImaginerForIdeas (20090922000848)
+Migrating to AddUserToUserProfiles (20090922175959)
+Migrating to CreateProfiles (20090922180721)
+Migrating to DropUserProfiles (20090922181516)
+Migrating to AddToIdeasBlurb (20090924213808)
+Migrating to AddAttachmentsPhotoToIdea (20090924233551)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("images")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("likings")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("profiles")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("taggings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("transactions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+** acts_as_taggable_on: initialized properly.
+  [4;36;1mSQL (1.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20090830024441)
+Migrating to AddFbConnectUserFields (20090830052906)
+Migrating to CreateInvitations (20090830213412)
+Migrating to AddInvitationToUsers (20090830213446)
+Migrating to CreateEvents (20090907201503)
+Migrating to CreateIdeas (20090918164403)
+Migrating to CreateImages (20090921194138)
+Migrating to AddAttachmentsGraphicToImage (20090921194957)
+Migrating to CreateComments (20090921211101)
+Migrating to CreateUserProfiles (20090921211400)
+Migrating to ActsAsTaggableOnMigration (20090921211645)
+Migrating to CreateLikings (20090921213853)
+Migrating to AddBelieverTypeToLiking (20090921224415)
+Migrating to AddInitiatorToIdeas (20090921234718)
+Migrating to RenameInitiatorToImaginerForIdeas (20090922000848)
+Migrating to AddUserToUserProfiles (20090922175959)
+Migrating to CreateProfiles (20090922180721)
+Migrating to DropUserProfiles (20090922181516)
+Migrating to AddToIdeasBlurb (20090924213808)
+Migrating to AddAttachmentsPhotoToIdea (20090924233551)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("events")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("ideas")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("images")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("invitations")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("likings")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("profiles")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("taggings")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_info('index_taggings_on_taggable_id_and_taggable_type_and_context')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_taggings_on_tag_id')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tags")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("transactions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing IdeasController#new (for ::1 at 2009-09-24 17:13:06) [GET]
+
+NameError (uninitialized constant Idea::CONFIG):
+  app/models/idea.rb:6
+  app/controllers/ideas_controller.rb:32:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (139.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ImagesController#index (for ::1 at 2009-09-24 17:13:12) [GET]
+  [4;36;1mImage Load (0.9ms)[0m   [0;1mSELECT * FROM "images" [0m
+Rendering template within layouts/images
+Rendering images/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/images]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 17:13:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#new (for ::1 at 2009-09-24 17:13:15) [GET]
+Rendering template within layouts/images
+Rendering images/new
+Rendered images/_form (4.2ms)
+Completed in 19ms (View: 11, DB: 0) | 200 OK [http://localhost/images/new]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 17:13:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ImagesController#create (for ::1 at 2009-09-24 17:13:28) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"Jbxw7km59vmz2LFbEO+0L72/yEBvQC3Kxr33Vl/AxOs=", "image"=>{"idea_id"=>"ieas", "description"=>"desc", "graphic"=>#<File:/var/folders/JL/JL9+cJm-HbWHUiyFmjm8OE+++TI/-Tmp-/RackMultipart20090924-57044-caimk-0>}}
+  [4;35;1mImage Create (0.6ms)[0m   [0mINSERT INTO "images" ("created_at", "graphic_file_name", "graphic_file_size", "idea_id", "updated_at", "graphic_content_type", "description") VALUES('2009-09-25 00:13:28', 'Fx.png', 25321, 0, '2009-09-25 00:13:28', 'image/png', 'desc')[0m
+[paperclip] Saving attachments.
+[paperclip] saving images/000/000/001/Fx.png
+New RightAws::S3Interface using single-threaded mode
+Opening new HTTPS connection to cms2-refinery.s3.amazonaws.com:443
+Closing HTTPS connection to cms2-refinery.s3.amazonaws.com:443
+Opening new HTTPS connection to s3.amazonaws.com:443
+Closing HTTPS connection to s3.amazonaws.com:443
+Opening new HTTPS connection to cms2-refinery.s3.amazonaws.com:443
+Redirected to http://localhost:3000/images/1
+Completed in 2286ms (DB: 1) | 302 Found [http://localhost/images]
+
+
+Processing ImagesController#show (for ::1 at 2009-09-24 17:13:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mImage Load (0.3ms)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 1) [0m
+Rendering template within layouts/images
+Rendering images/show
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/images/1]
+
+
+Processing ApplicationController#index (for ::1 at 2009-09-24 17:13:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IdeasController#index (for ::1 at 2009-09-24 17:13:40) [GET]
+
+NameError (uninitialized constant Idea::CONFIG):
+  app/models/idea.rb:6
+  app/controllers/ideas_controller.rb:8:in `index'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing IdeasController#new (for ::1 at 2009-09-24 17:14:08) [GET]
+
+NameError (uninitialized constant Idea::CONFIG):
+  app/models/idea.rb:6
+  app/controllers/ideas_controller.rb:32:in `new'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
