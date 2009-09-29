@@ -1,17 +1,5 @@
 <% title "Login" %>
 
-<% form_for @user_session do |f| %>
-  <%= f.error_messages %>
-  <p>
-    <%= f.label :username %><br />
-    <%= f.text_field :username %>
-  </p>
-  <p>
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </p>
-  <p><%= f.submit "Submit" %></p>
-<% end %>
 
 
 <div id="new-session">
@@ -22,16 +10,16 @@
             <br/>
             <br/>
             <div class="left">
-              <form method="post" id="login" class="ajaxable" action="/session"><div style="margin: 0pt; padding: 0pt; display: inline;"><input type="hidden" value="YtOcROziZpGon/fJrVtsaLwfYpPxjWrVd5hlGS5/URE=" name="authenticity_token"/></div>
-                
-                <fieldset>
-                  <label for="email">Email</label>
-                  <input type="text" name="email" id="email" class="text"/>
-                </fieldset>
-                <fieldset>
-                  <label for="password">Password</label>
-                  <input type="password" name="password" id="password" class="password"/>
-                </fieldset>
+				<% form_for @user_session do |f| %>
+				  <%= f.error_messages %>
+				  <fieldset>
+				    <%= f.label :username %><br />
+				    <%= f.text_field :username,  :class => "text" %>
+				  </fieldset>
+				  <fieldset>
+				    <%= f.label :password %><br />
+				    <%= f.password_field :password,  :class => "text" %>
+				  </fieldset>
                 <fieldset>
                   <input type="checkbox" value="1" name="remember_me" id="remember_me" class="checkbox"/>
                   <label for="remember_me" class="checkbox">Remember Me</label>
@@ -40,7 +28,8 @@
                   <br/>
                   <input type="submit" value="Login" name="commit" class="button submit"/>
                 </div>
-              </form>
+				<% end %>
+	
             </div>
             <div class="left"><img height="178" width="30" src="/images/misc/or.gif?1253742706" class="vspacer" alt="Or"/></div>
             <div id="fb-connect-tout" class="left">

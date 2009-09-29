@@ -1,50 +1,29 @@
 <% form_for @user do |f| %>
   <%= f.error_messages %>
-  <p>
+  <fieldset>
     <%= f.label :username %><br />
-    <%= f.text_field :username %>
-  </p>
-  <p>
+    <%= f.text_field :username, :size => '30', :class => 'text' %>
+</fieldset>
+  <fieldset>
     <%= f.label :email %> <br />
-    <%= f.text_field :email %>
-  </p>
-  <p>
+    <%= f.text_field :email, :size => '30', :class => 'text' %>
+</fieldset>
+  <fieldset>
     <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </p>
-  <p>
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %>
-  </p>
-  <p><%= f.submit "Submit" %></p>
+    <%= f.password_field :password, :size => '30', :class => 'text' %>
+</fieldset>
+  <fieldset>
+    <%= f.label :password_confirmation, "RE-ENTER PASSWORD" %><br />
+    <%= f.password_field :password_confirmation, :size => '30', :class => 'text' %>
+</fieldset>
+<fieldset>
+  <input class="confirmation checkbox" id="confirm_terms" name="confirm_terms" value="1" type="checkbox">
+  <label class="checkbox" for="confirm_terms">I accept the <a href="/terms-of-use" onclick="window.open(this.href,'width=1040,height=510,scrollbars=yes','width=1040,height=510,scrollbars=yes');return false;">Terms of Use</a></label>
+</fieldset>
+<br>
+
+<div class="buttons">
+
+ 	<input class="button submit" name="commit" value="Sign me up!" type="submit">
+    </div>
 <% end %>
-
-
-        <form action="/profiles" class="ajaxable requires-confirmation" id="new_user" method="post"><div style="margin: 0pt; padding: 0pt; display: inline;"><input name="authenticity_token" value="YtOcROziZpGon/fJrVtsaLwfYpPxjWrVd5hlGS5/URE=" type="hidden"></div>
-          
-          
-          <fieldset>
-            <label for="user_name">Name</label>
-            <input class="text" id="user_name" name="user[name]" size="30" type="text">
-          </fieldset>
-          <fieldset>
-            <label for="user_email">Email</label>
-            <input class="text" id="user_email" name="user[email]" size="30" type="text">
-          </fieldset>
-          <fieldset>
-            <label for="user_password">Password</label>
-            <input class="password" id="user_password" name="user[password]" type="password">
-          </fieldset>
-          <fieldset>
-            <label for="user_password_confirmation">Re-Enter Password</label>
-            <input class="password" id="user_password_confirmation" name="user[password_confirmation]" type="password">
-          </fieldset>
-          <fieldset>
-            <input class="confirmation checkbox" id="confirm_terms" name="confirm_terms" value="1" type="checkbox">
-            <label class="checkbox" for="confirm_terms">I accept the <a href="/terms-of-use" onclick="window.open(this.href,'width=1040,height=510,scrollbars=yes','width=1040,height=510,scrollbars=yes');return false;">Terms of Use</a></label>
-          </fieldset>
-          <br>
-          <div class="buttons">
-            <input class="button submit" name="commit" value="Sign me up!" type="submit">
-          </div>
-        </form>
